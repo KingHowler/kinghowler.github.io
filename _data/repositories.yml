@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - KingHowler
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - KingHowler/Graph-Plotter
+  - KingHowler/Arduino-Language-Suport
+  - KingHowler/Arduino-Interfaces-using-Winforms
+  - KingHowler/Line-Follower
+  - KingHowler/kingholwer.github.io
