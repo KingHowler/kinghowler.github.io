@@ -5,7 +5,7 @@ description: Extension for VS Code
 img: assets/img/als/icon.jpeg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 # Purpose
