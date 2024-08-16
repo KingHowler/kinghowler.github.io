@@ -21,8 +21,8 @@ However the following issues arose which convinced me to make my own extension f
 <br>
 
 Using "C++" as language mode for .ino files
-
-![.ino with C++](assets/img/als/Screenshot(7).png)
+{% include figure.liquid path="assets/img/als/screenshots/screenshots/Screenshot(7).png" title=".ino with C++" class="img-fluid rounded z-depth-1" %}
+![.ino with C++](assets/img/als/screenshots/screenshots/Screenshot(7).png)
 
 ## What's wrong with Microsoft's Arduino extension?
 
@@ -33,7 +33,7 @@ By default, "arduino output" doesn't use Syntax Highlighting which makes it diff
 
 Using "arduino-output" as language mode for .ino files
 
-![.ino with arduino-output](assets/img/als/Screenshot(8).png)
+![.ino with arduino-output](assets/img/als/screenshots/Screenshot(8).png)
 
 ## What of the other extensions?
 
@@ -61,18 +61,18 @@ I am also thinking about adding my own linter but that is something I won't be d
 
 ## Themes
 ### Arduino IDE Light
-![Homepage](assets/img/als/Screenshot(4).png)
-![Editor](assets/img/als/Screenshot(2).png)
+![Homepage](assets/img/als/screenshots/Screenshot(4).png)
+![Editor](assets/img/als/screenshots/Screenshot(2).png)
 ### Arduino IDE Dark
-![Homepage](assets/img/als/Screenshot(5).png)
-![Editor](assets/img/als/Screenshot(1).png)
+![Homepage](assets/img/als/screenshots/Screenshot(5).png)
+![Editor](assets/img/als/screenshots/Screenshot(1).png)
 
 ---
 
 ## Configure Language
 If not set by default, click on the language mode button in the status bar.<br> It is most likely in the bottom right, with either "C++" or "Plain Text" written on it.
 That will open this menu:<br>
-![Language Mode Menu](assets/img/als/Screenshot(6).png)<br>
+![Language Mode Menu](assets/img/als/screenshots/Screenshot(6).png)<br>
 Click on Arduino to use it or, click on "Configure File Association for '.ino'" and then click on Arduino to set it up permanently
 
 ---
