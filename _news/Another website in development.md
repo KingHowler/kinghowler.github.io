@@ -21,10 +21,10 @@ On hold due to our own personal academics, but we are definately building a webs
 ## Online PCB printing service
 #### Proposed by M. Umar Shahbaz
 
-[x] Appropriate difficulty level
-[x] Useful to others
-[x] Requires work on both front-end and back-end
-[x] If possible, could be sold to certain people
+- [x] Appropriate difficulty level
+- [x] Useful to others
+- [x] Requires work on both front-end and back-end
+- [x] If possible, could be sold to certain people
 
 There are multiple places online that print PCB boards and then deliver it to people's home.
 
