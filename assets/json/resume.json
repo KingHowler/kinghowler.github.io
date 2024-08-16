@@ -2,18 +2,9 @@
   "basics": {
     "name": "M.Umar Shahbaz",
     "label": "Aspiring Programmer",
-    "image": "",
     "email": "m.umarshahbaz.2007@gmail.com",
-    "phone": "+92 343 8085321",
     "url": "https://kinghowler.github.io/",
     "summary": "Learning to create programs which are efficcient and follow the standard programming ethics such as minimizing technical debt and providing proper documentation.I am a frequent user of GitHub and am currently in charge of creating a website with my team",
-    "location": {
-      "address": "C1/12, GOR III, Shadman",
-      "postalCode": "54000",
-      "city": "Lahore",
-      "countryCode": "PK",
-      "region": "Punjab"
-    },
     "profiles": [
       {
         "network": "Reddit",
@@ -144,12 +135,10 @@
     {
       "name": "Physics",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Electronics",
+        "Kinematics",
+        "Dynamics",
+        "Mechanisms"
       ]
     },
     {
