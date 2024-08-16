@@ -18,7 +18,6 @@ However the following issues arose which convinced me to make my own extension f
 - Microsoft's extension for arduino only has "arduino output" as an option for language mode.
 
 <br>
-<br>
 
 Using "C++" as language mode for .ino files
 {% include figure.liquid path="assets/img/als/screenshots/Screenshot(7).png" title=".ino with C++" class="img-fluid rounded z-depth-1" %}
@@ -27,7 +26,6 @@ Using "C++" as language mode for .ino files
 
 By default, "arduino output" doesn't use Syntax Highlighting which makes it difficult to edit/create programs as it becomes confusing to navigate through it, and monotonous enough to make a person quit.
 
-<br>
 <br>
 
 Using "arduino-output" as language mode for .ino files
@@ -51,9 +49,9 @@ In this extension I am doing the following at the moment:
     - Arduino IDE Dark
 
 <br>
-<br>
 
 I am also thinking about adding my own linter but that is something I won't be doing for quite a while.
+
 ---
 
 # Exapmle
