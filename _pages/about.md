@@ -6,7 +6,7 @@ subtitle: To stand at the apex, is my ultimate goal
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_picture.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Student</p>
