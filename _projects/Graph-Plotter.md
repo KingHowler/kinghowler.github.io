@@ -74,11 +74,13 @@ Of these 4, only the first 3 are compulsory and will return an error if left uni
   - points
     - It is a boolean variable which determines whether the plotted graph will show each data point marked with a dot or not
         - ```points = true;``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(2).png" title="Graph with points" class="img-fluid rounded z-depth-1" %}
+
         - ```points = false;``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph without points" class="img-fluid rounded z-depth-1" %}
 
   - subGrid
     - It is a boolean variable which determines whether there will be a subgrid shown or not
         - ```subGrid = true``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph with subGrid" class="img-fluid rounded z-depth-1" %}
+
         - ```subGrid = false``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(4).png" title="Graph without subGrid" class="img-fluid rounded z-depth-1" %}
 
   - xTitle & yTitle
@@ -143,7 +145,9 @@ GP.yCo(y-value);
 
 1. DrawGrid
    - It draws the grid for the GP object based on the parameters set in the ```GridSetup(...);``` fucntion
-   - Note that using this function is perfectly optional and the code will run as expected <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(5).png" title="Graph without grid" class="img-fluid rounded z-depth-1" %} <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(7).png" title="Graph 2 without grid" class="img-fluid rounded z-depth-1" %}
+   - Note that using this function is perfectly optional and the code will run as expected <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(5).png" title="Graph without grid" class="img-fluid rounded z-depth-1" %}
+   
+   {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(7).png" title="Graph 2 without grid" class="img-fluid rounded z-depth-1" %}
 
 2. DrawGraph
    - float[] graph
@@ -260,7 +264,9 @@ GP.totalPoints *= 10;
 DataArray = new float[GP.totalPoints];
 ```
 
-Doing this effectively increases the number of points plotted in each graph in the by a scale of 10 changing the result to this <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(11).png" title="Graph-Plotter resolution example" class="img-fluid rounded z-depth-1" %} <br> The above graph is a plot of ```y = x³``` where the red graph has the default resolution set by the code, and the blue line is the manually overwriten resolution made using the code above
+Doing this effectively increases the number of points plotted in each graph in the by a scale of 10 changing the result to this <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(11).png" title="Graph-Plotter resolution example" class="img-fluid rounded z-depth-1" %}
+
+The above graph is a plot of ```y = x³``` where the red graph has the default resolution set by the code, and the blue line is the manually overwriten resolution made using the code above
 
 It is also important to note that you don't need to use 10 specifically, you can increase by a smaller scale or by a greater scale.
 Another thing to remember is that if it can be increased it can also be decreased when working with extremely high values. It is especially recommended to manually decrease graph resolution if the difference between Xmin and Xmax is large enough to be comparable to the width of your window.
