@@ -33,7 +33,7 @@ So I built a graph plotter of my own using processing and eventually started to 
 - This works using a custom class ```GraphPlotter``` contained in the file ```GP_unit.pde```'
 - To use it you have to declare an object of type ```GraphPlotter``` and then in ```void setup() {}``` You need to initialize it like the following:
 
-    ``` Java
+    ``` java
     GraphPlotter GP;  // Declare object
 
     void setup() {
@@ -47,7 +47,7 @@ So I built a graph plotter of my own using processing and eventually started to 
 
 The class has 4 setup methods which describe the behaviour of the plotted data
 
-``` Java
+``` java
 /* 
 Note : You can actually use whatever name you like
 I used GP as it is easier to remember
@@ -107,7 +107,7 @@ The best part about this graph plotter is that it has multiple types of data inp
    - It can take plot data from mathematical functions, for this specific reason I have included a function which converts the index number into ```x``` allowing easier coding
      - For example if you wanted to write ```y = 4x+5``` you would write it as
 
-        ``` Java
+        ``` java
         Graph1[i] = 4*GP.x(i) + 5;
         ```
 
@@ -116,7 +116,7 @@ The best part about this graph plotter is that it has multiple types of data inp
 4. Programmed Data
    - You can also make data using programming for example:
 
-      ```Java
+      ```java
       // This code produces a square wave of wavelength 34 units (2*17)
       for (int i = 0; i < GP.totalPoints; i+=17) {
         for (int i2 = 0; i2 < 18; i2++) {
@@ -132,7 +132,7 @@ The best part about this graph plotter is that it has multiple types of data inp
 
 The Graph Plotter class contains 2 methods used for drawing
 
-```Java
+```java
 GP.fillBackground(color(255, 255, 255));
 GP.DrawGrid();
 GP.DrawGraph(Graph1, color(255, 0, 0));
@@ -178,7 +178,7 @@ GP.yCo(y-value);
 
 As processing runs in a way that it overwrites previous values, the order of the drawing methods you use also affect your graphs.
 
-- ```Java
+- ```java
     GP.DrawGraph(...);
     GP.fillBackground(...);
     GP.DrawGrid(...);
@@ -186,7 +186,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
     This will only output the Grid, as the Graph was covered by the background function
 
-- ```Java
+- ```java
     GP.DrawGrid(...);
     GP.fillBackground(...);
     GP.DrawGraph(...);
@@ -194,7 +194,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
     This will only output the Graph, as the Grid was covered by the background function
 
-- ```Java
+- ```java
     GP.DrawGrid(...);
     GP.DrawGraph(...);
     GP.fillBackground(...);
@@ -202,7 +202,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
     This will only output nothing, as both the Grid and the graph were covered by the background function
 
-- ```Java
+- ```java
     GP.fillBackground(...);
     GP.DrawGrid(...);
     GP.DrawGraph(...);
@@ -210,7 +210,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
     This will only output a grid with the graph on top of it, they both cover the background function, hence they will be on the background defined in the function. This is a correct way to use the plotter
 
-- ```Java
+- ```java
   GP.fillBackground(...);
   GP.DrawGraph(...);
   GP.DrawGrid(...);
@@ -222,7 +222,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
 ### Caution: The size of each array should always be equal to the ```totalPoints``` variable of the plotter they will be plotted by
 
-```Java
+```java
 // If data1 array is to be plotted using an object gp
 // and data2 array is to be plotted using object xz
 // then the appropriate data handling should be as follows
@@ -251,7 +251,7 @@ When working with small values of x, you would sometimes desire to store data on
 Example Image here
 In this Graph of x³, the line is quite straight rather than being curvy. This issue is much more visible when the grid is of a small scale, but fear not as there is a way to solve it using this.
 
-```Java
+```java
 GP.GridSetup(-8, 8, 1, -2, 2, 1);
 
 // Add this line between your GridSetup and DataArray initialization
