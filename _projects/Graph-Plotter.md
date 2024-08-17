@@ -33,7 +33,7 @@ So I built a graph plotter of my own using processing and eventually started to 
 - This works using a custom class ```GraphPlotter``` contained in the file ```GP_unit.pde```'
 - To use it you have to declare an object of type ```GraphPlotter``` and then in ```void setup() {}``` You need to initialize it like the following:
 
-    ``` Processing
+    ``` Java
     GraphPlotter GP;  // Declare object
 
     void setup() {
@@ -47,7 +47,7 @@ So I built a graph plotter of my own using processing and eventually started to 
 
 The class has 4 setup methods which describe the behaviour of the plotted data
 
-``` Processing
+``` Java
 /* 
 Note : You can actually use whatever name you like
 I used GP as it is easier to remember
@@ -73,17 +73,13 @@ Of these 4, only the first 3 are compulsory and will return an error if left uni
 - GraphSetup
   - points
     - It is a boolean variable which determines whether the plotted graph will show each data point marked with a dot or not
-        > ```points = true;```
-        > {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(2).png" title="Graph with points" class="img-fluid rounded z-depth-1" %}
-        > ```points = false;```
-        > {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph without points" class="img-fluid rounded z-depth-1" %}
+        - ```points = true;``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(2).png" title="Graph with points" class="img-fluid rounded z-depth-1" %}
+        - ```points = false;``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph without points" class="img-fluid rounded z-depth-1" %}
 
   - subGrid
     - It is a boolean variable which determines whether there will be a subgrid shown or not
-        > ```subGrid = true```
-        > !{% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph with subGrid" class="img-fluid rounded z-depth-1" %}
-        > ```subGrid = false```
-        > {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(4).png" title="Graph without subGrid" class="img-fluid rounded z-depth-1" %}
+        - ```subGrid = true``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph with subGrid" class="img-fluid rounded z-depth-1" %}
+        - ```subGrid = false``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(4).png" title="Graph without subGrid" class="img-fluid rounded z-depth-1" %}
 
   - xTitle & yTitle
     - They are string variables which contain the text that will be show alongside the edges of the graphs as titles of each of their respective axeses
@@ -111,7 +107,7 @@ The best part about this graph plotter is that it has multiple types of data inp
    - It can take plot data from mathematical functions, for this specific reason I have included a function which converts the index number into ```x``` allowing easier coding
      - For example if you wanted to write ```y = 4x+5``` you would write it as
 
-        ``` Processing
+        ``` Java
         Graph1[i] = 4*GP.x(i) + 5;
         ```
 
@@ -120,7 +116,7 @@ The best part about this graph plotter is that it has multiple types of data inp
 4. Programmed Data
    - You can also make data using programming for example:
 
-      ```Processing
+      ```Java
       // This code produces a square wave of wavelength 34 units (2*17)
       for (int i = 0; i < GP.totalPoints; i+=17) {
         for (int i2 = 0; i2 < 18; i2++) {
@@ -136,7 +132,7 @@ The best part about this graph plotter is that it has multiple types of data inp
 
 The Graph Plotter class contains 2 methods used for drawing
 
-```Processing
+```Java
 GP.fillBackground(color(255, 255, 255));
 GP.DrawGrid();
 GP.DrawGraph(Graph1, color(255, 0, 0));
@@ -147,9 +143,7 @@ GP.yCo(y-value);
 
 1. DrawGrid
    - It draws the grid for the GP object based on the parameters set in the ```GridSetup(...);``` fucntion
-   - > Note that using this function is perfectly optional and the code will run as expected
-     > {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(5).png" title="Graph without grid" class="img-fluid rounded z-depth-1" %}
-     > {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(7).png" title="Graph 2 without grid" class="img-fluid rounded z-depth-1" %}
+   - Note that using this function is perfectly optional and the code will run as expected <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(5).png" title="Graph without grid" class="img-fluid rounded z-depth-1" %} <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(7).png" title="Graph 2 without grid" class="img-fluid rounded z-depth-1" %}
 
 2. DrawGraph
    - float[] graph
@@ -157,8 +151,7 @@ GP.yCo(y-value);
    - color graphColor
      - It sets the color to be used for plotting this graph
      - ```color(255,0,0)``` can be used as a parameter directly to give rgb values as parameter
-     - > You can use any color you want to
-       > {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(9).png" title="Graph with different colors" class="img-fluid rounded z-depth-1" %}
+     - You can use any color you want to <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(9).png" title="Graph with different colors" class="img-fluid rounded z-depth-1" %}
 
 3. fillBackground
    - It colours the background with the color given to it as a parameter
@@ -185,7 +178,7 @@ GP.yCo(y-value);
 
 As processing runs in a way that it overwrites previous values, the order of the drawing methods you use also affect your graphs.
 
-- ```Processing
+- ```Java
     GP.DrawGraph(...);
     GP.fillBackground(...);
     GP.DrawGrid(...);
@@ -193,7 +186,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
     This will only output the Grid, as the Graph was covered by the background function
 
-- ```Processing
+- ```Java
     GP.DrawGrid(...);
     GP.fillBackground(...);
     GP.DrawGraph(...);
@@ -201,7 +194,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
     This will only output the Graph, as the Grid was covered by the background function
 
-- ```Processing
+- ```Java
     GP.DrawGrid(...);
     GP.DrawGraph(...);
     GP.fillBackground(...);
@@ -209,7 +202,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
     This will only output nothing, as both the Grid and the graph were covered by the background function
 
-- ```Processing
+- ```Java
     GP.fillBackground(...);
     GP.DrawGrid(...);
     GP.DrawGraph(...);
@@ -217,7 +210,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
     This will only output a grid with the graph on top of it, they both cover the background function, hence they will be on the background defined in the function. This is a correct way to use the plotter
 
-- ```Processing
+- ```Java
   GP.fillBackground(...);
   GP.DrawGraph(...);
   GP.DrawGrid(...);
@@ -229,7 +222,7 @@ As processing runs in a way that it overwrites previous values, the order of the
 
 ### Caution: The size of each array should always be equal to the ```totalPoints``` variable of the plotter they will be plotted by
 
-```Processing
+```Java
 // If data1 array is to be plotted using an object gp
 // and data2 array is to be plotted using object xz
 // then the appropriate data handling should be as follows
@@ -258,7 +251,7 @@ When working with small values of x, you would sometimes desire to store data on
 Example Image here
 In this Graph of x³, the line is quite straight rather than being curvy. This issue is much more visible when the grid is of a small scale, but fear not as there is a way to solve it using this.
 
-```Processing
+```Java
 GP.GridSetup(-8, 8, 1, -2, 2, 1);
 
 // Add this line between your GridSetup and DataArray initialization
@@ -267,9 +260,7 @@ GP.totalPoints *= 10;
 DataArray = new float[GP.totalPoints];
 ```
 
-Doing this effectively increases the number of points plotted in each graph in the by a scale of 10 changing the result to this
-> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(11).png" title="Graph-Plotter resolution example" class="img-fluid rounded z-depth-1" %}
-> The above graph is a plot of ```y = x³``` where the red graph has the default resolution set by the code, and the blue line is the manually overriden resolution made using the code above
+Doing this effectively increases the number of points plotted in each graph in the by a scale of 10 changing the result to this <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(11).png" title="Graph-Plotter resolution example" class="img-fluid rounded z-depth-1" %} <br> The above graph is a plot of ```y = x³``` where the red graph has the default resolution set by the code, and the blue line is the manually overwriten resolution made using the code above
 
 It is also important to note that you don't need to use 10 specifically, you can increase by a smaller scale or by a greater scale.
 Another thing to remember is that if it can be increased it can also be decreased when working with extremely high values. It is especially recommended to manually decrease graph resolution if the difference between Xmin and Xmax is large enough to be comparable to the width of your window.
