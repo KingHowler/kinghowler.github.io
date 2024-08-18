@@ -31,7 +31,8 @@ The usual **AND** gate has 2 inputs and 1 output but there are others which can 
 
 The Output of the **AND** gate is **HIGH** whenever all of the inputs of the gate are **HIGH**
 
-###### Truth Table
+#### Truth Table
+
 | A | B | X |
 |---|---|---|
 | 0 | 0 | 0 |
@@ -42,3 +43,34 @@ The Output of the **AND** gate is **HIGH** whenever all of the inputs of the gat
 ### NOT gate
 
 It is also commonly referred to as an **INVERTOR**. It has only 1 input and 1 output. The output is always the inverse of the input
+
+#### Truth Table
+
+| A | X |
+|---|---|
+| 0 | 1 |
+| 1 | 0 |
+
+### BUFFER gate
+
+It is used in a way similar to a relay. Unlike relays instead of controlling Higher voltage circuits using a lower voltage circuit, it converts a low voltage signal into a high voltage signal.
+
+#### Truth Table
+
+| A | X |
+|---|---|
+| 0 | 0 |
+| 1 | 1 |
+
+### Tri-state BUFFER gate
+
+A unique variation of a buffer with a second input, specifically referred to as the enable pin. This new pin essentially disables and enables the gate allowing control for when the buffer gives an output or not.
+
+#### Truth Table
+
+| EN | A | X |
+|----|---|---|
+| 0  | 0 | 0 |
+| 0  | 1 | 0 |
+| 1  | 0 | 0 |
+| 1  | 1 | 1 |

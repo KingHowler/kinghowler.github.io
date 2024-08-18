@@ -6,7 +6,6 @@ title: M. Umar Shahbaz # the website title (if blank, full name will be used ins
 first_name: Muhammad
 middle_name: Umar
 last_name: Shahbaz
-email: m.umarshahbaz.2007@gmail.com
 description: A website containing the full description of the academics, acheivements and projects of Muhammad Umar Shahbaz
 footer_text: >
 keywords: mus, muhammad, umar, shahbaz, portfolio, projects, kinghowler # add your own keywords or leave empty
@@ -106,9 +105,6 @@ work_url: # work page URL
 x_username: # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
-
-contact_note: >
-  It is best to contact me through my official email
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
