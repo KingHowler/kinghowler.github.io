@@ -1,4 +1,8 @@
 {
-  "singleQuote": false,
-  "trailingComma": "es5",
+  "htmlWhitespaceSensitivity": "ignore",
+  "jsxSingleQuote": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 80,
+  "tabWidth": 2
 }
