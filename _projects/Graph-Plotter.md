@@ -74,13 +74,13 @@ Of these 4, only the first 3 are compulsory and will return an error if left uni
   - points
     - It is a boolean variable which determines whether the plotted graph will show each data point marked with a dot or not
         - ```points = true;``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(2).png" title="Graph with points" class="img-fluid rounded z-depth-1" %}
-
+          <br>
         - ```points = false;``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph without points" class="img-fluid rounded z-depth-1" %}
 
   - subGrid
     - It is a boolean variable which determines whether there will be a subgrid shown or not
         - ```subGrid = true``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph with subGrid" class="img-fluid rounded z-depth-1" %}
-
+          <br>
         - ```subGrid = false``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(4).png" title="Graph without subGrid" class="img-fluid rounded z-depth-1" %}
 
   - xTitle & yTitle
