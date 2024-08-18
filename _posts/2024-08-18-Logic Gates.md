@@ -10,10 +10,6 @@ pretty_table: true
 <style>
 th, td {
   border:1px solid black;
-  padding: 4px, 12px;
-}
-table {
-  text-allign: center;
 }
 </style>
 
@@ -30,9 +26,13 @@ It is worth it to remind you that each input or output of a gate can have 3 stat
 - **LOW** can mean **FALSE**, **0**, and in electronics **Negative Current**
 - **FLOATING** is a state which is unique only to actual electronics, it is used to denote that the pin is not connected and can have any value. It is essential for you to make connections in such a way that no pin is left empty as it may cause uncertain errors by randomly switching between **HIGH** and **LOW**
 
+---
+
 # Basic logic gates
 
 All logic gates can be expressed in terms of 2 logic gates, **AND** and **NOT**. With the sole exception of a **BUFFER** gate which is used in to increase voltage and power.
+
+---
 
 ### AND gate
 
@@ -49,6 +49,8 @@ The Output of the **AND** gate is **HIGH** whenever all of the inputs of the gat
 | 1 | 0 | 0 |
 | 1 | 1 | 1 | 
 
+---
+
 ### NOT gate
 
 It is also commonly referred to as an **INVERTOR**. It has only 1 input and 1 output. The output is always the inverse of the input
@@ -60,6 +62,8 @@ It is also commonly referred to as an **INVERTOR**. It has only 1 input and 1 ou
 | 0 | 1 |
 | 1 | 0 |
 
+---
+
 ### BUFFER gate
 
 It is used in a way similar to a relay. Unlike relays instead of controlling Higher voltage circuits using a lower voltage circuit, it converts a low voltage signal into a high voltage signal.
@@ -70,6 +74,8 @@ It is used in a way similar to a relay. Unlike relays instead of controlling Hig
 |---|---|
 | 0 | 0 |
 | 1 | 1 |
+
+---
 
 ### Tri-state BUFFER gate
 
@@ -83,3 +89,5 @@ A unique variation of a buffer with a second input, specifically referred to as 
 | 0  | 1 | 0 |
 | 1  | 0 | 0 |
 | 1  | 1 | 1 |
+
+---

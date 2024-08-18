@@ -73,17 +73,22 @@ Of these 4, only the first 3 are compulsory and will return an error if left uni
 - GraphSetup
   - points
     - It is a boolean variable which determines whether the plotted graph will show each data point marked with a dot or not
-        - ```points = true;``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(2).png" title="Graph with points" class="img-fluid rounded z-depth-1" %}
+        - ```points = true;```
 
+          {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(2).png" title="Graph with points" class="img-fluid rounded z-depth-1" %}
 
-        - ```points = false;``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph without points" class="img-fluid rounded z-depth-1" %}
+        -  ```points = false;```
+
+          {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph without points" class="img-fluid rounded z-depth-1" %}
 
   - subGrid
     - It is a boolean variable which determines whether there will be a subgrid shown or not
-        - ```subGrid = true``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph with subGrid" class="img-fluid rounded z-depth-1" %}
+        - ```subGrid = true```
+          {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(3).png" title="Graph with subGrid" class="img-fluid rounded z-depth-1" %}
           
 
-        - ```subGrid = false``` <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(4).png" title="Graph without subGrid" class="img-fluid rounded z-depth-1" %}
+        - ```subGrid = false```
+          {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(4).png" title="Graph without subGrid" class="img-fluid rounded z-depth-1" %}
 
   - xTitle & yTitle
     - They are string variables which contain the text that will be show alongside the edges of the graphs as titles of each of their respective axeses
