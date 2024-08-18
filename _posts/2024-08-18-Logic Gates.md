@@ -9,6 +9,8 @@ categories: Digital-Electronics-Course
 <style>
 th, td {
   border:1px solid black;
+  text-allign: center;
+  padding: 4px, 12px;
 }
 </style>
 
