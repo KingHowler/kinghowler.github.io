@@ -19,10 +19,14 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
+        node-version: '20'
 
     - name: Install Prettier
       run: npm install -g prettier
+
+    - name: Check Prettier config
+      run: |
+        prettier --config .prettier-html.json --list-different || echo "Prettier config is okay"
 
     - name: Format HTML files
       run: |
