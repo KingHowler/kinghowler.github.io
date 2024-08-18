@@ -73,4 +73,36 @@ A unique variation of a buffer with a second input, specifically referred to as 
 |   0   | |   0   | |   0   |
 |   0   | |   1   | |   0   |
 |   1   | |   0   | |   0   |
-|   1   | |   1   | |   1   | 
+|   1   | |   1   | |   1   |
+
+<table>
+  <thead>
+    <tr>
+      <th>EN</th>
+      <th>A</th>
+      <th>X</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+  </tbody>
+</table>
