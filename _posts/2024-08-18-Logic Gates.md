@@ -2,12 +2,9 @@
 layout: page
 title: Digital Electronics \#1 - Logic Gates
 description: Post \#1 from the Digital Electronics series
-img: 
-importance: 1
 date: 2024-08-18
-inline: false
 tags: Electronics
-related_publications: false
+categories: Digital\ Electronics-Course
 ---
 
 Digital electronics is a core aspect of modern technology, focusing on systems that use digital signals rather than continuous ones. In simpler terms, instead of working with smooth, varying signals like in analog electronics, digital electronics deals with distinct values—typically just 0s and 1s. This digital approach allows for the creation of reliable and flexible devices, from everyday gadgets like smartphones and computers to intricate communication systems. By using components like logic gates and microprocessors, digital electronics forms the backbone of the digital world, driving advancements and innovation in countless applications.

@@ -9,4 +9,4 @@ related_posts: false
 
 I will be soon starting a Digital Electronics beginner course on this website.
 
-You can find the course in the posts section or by opening the Electronics tag.
+You can find the course in the posts section or by opening the Digital Electronics Category.
