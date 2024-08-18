@@ -1,0 +1,37 @@
+name: HTML Formatter
+
+on:
+  push:
+    branches:
+      - gh-pages
+  pull_request:
+    branches:
+      - gh-pages
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # or your preferred version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Format files with Config One
+        run: npx prettier --config .prettier-config-html-formatter.json --write '**/*.html'
+
+      - name: Commit formatted files
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: 'GitHub Actions'
+          author_email: 'actions@github.com'
+          message: 'Formatted HTML Output'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
