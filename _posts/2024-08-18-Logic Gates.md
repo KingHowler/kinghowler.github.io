@@ -5,7 +5,7 @@ description: Post No.1 from the Digital Electronics series
 date: 2024-08-18
 tags: Electronics
 categories: Digital-Electronics-Course
-pretty_table: false
+pretty_table: true
 ---
 <style>
 th, td {
