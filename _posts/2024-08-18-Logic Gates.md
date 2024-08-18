@@ -5,6 +5,7 @@ description: Post No.1 from the Digital Electronics series
 date: 2024-08-18
 tags: Electronics
 categories: Digital-Electronics-Course
+pretty_table: true
 ---
 
 Digital electronics is a core aspect of modern technology, focusing on systems that use digital signals rather than continuous ones. In simpler terms, instead of working with smooth, varying signals like in analog electronics, digital electronics deals with distinct values—typically just 0s and 1s. This digital approach allows for the creation of reliable and flexible devices, from everyday gadgets like smartphones and computers to intricate communication systems. By using components like logic gates and microprocessors, digital electronics forms the backbone of the digital world, driving advancements and innovation in countless applications.
@@ -31,7 +32,7 @@ The Output of the **AND** gate is **HIGH** whenever all of the inputs of the gat
 #### Truth Table
 
 | A | B | X |
-|---|---|---|
+|:-:|:-:|:-:|
 | 0 | 0 | 0 |
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |
@@ -44,7 +45,7 @@ It is also commonly referred to as an **INVERTOR**. It has only 1 input and 1 ou
 #### Truth Table
 
 | A | X |
-|---|---|
+|:-:|:-:|
 | 0 | 1 |
 | 1 | 0 |
 
@@ -55,7 +56,7 @@ It is used in a way similar to a relay. Unlike relays instead of controlling Hig
 #### Truth Table
 
 | A | X |
-|---|---|
+|:-:|:-:|
 | 0 | 0 |
 | 1 | 1 |
 
@@ -66,7 +67,7 @@ A unique variation of a buffer with a second input, specifically referred to as 
 #### Truth Table
 
 | EN | A | X |
-|----|---|---|
+|:--:|:-:|:-:|
 | 0  | 0 | 0 |
 | 0  | 1 | 0 |
 | 1  | 0 | 0 |
