@@ -23,7 +23,7 @@ jobs:
 
     - name: Run Tidy HTML
       run: |
-          find . -name '*.html' -exec tidy -q -e {} \;
+          find . -name '*.html' -exec tidy -q -i -w 0 {} \;
           
     - name: Commit formatted files
       run: |
