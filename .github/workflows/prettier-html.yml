@@ -1,0 +1,16 @@
+name: Pretty HTML
+
+on:
+  workflow_dispatch:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+
+      - name: Find and Remove </source> Tags
+        run:  find . -type f -name "*.html" -exec sed -i 's/<\/source>//g' {} +
