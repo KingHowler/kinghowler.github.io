@@ -14,6 +14,18 @@ jobs:
 
       - name: Find and Remove </source> Tags
         run:  find . -type f -name "*.html" -exec sed -i 's/<\/source>//g' {} +
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check for Prettier
+        run: npx prettier --version || echo "Prettier not found"
+
+      - name: Run Prettier on HTML files
+        run: npx prettier --write '**/*.html'
 
       - name: Commit and push changes
         run: |
