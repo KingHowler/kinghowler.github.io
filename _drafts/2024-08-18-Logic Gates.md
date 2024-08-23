@@ -7,6 +7,7 @@ tags: Electronics
 categories: Digital-Electronics-Course
 pretty_table: true
 ---
+
 <style>
 th, td {
   border:1px solid black;
@@ -20,6 +21,7 @@ In this series I intend to teach you the basics of Digital Electronics
 ---
 
 ## Logic States
+
 It is worth it to remind you that each input or output of a gate can have 3 states, "HIGH", "LOW" & "FLOATING".
 
 - **HIGH** can mean **TRUE**, **1**, and in electronics **Positive Current**
@@ -42,12 +44,12 @@ The Output of the **AND** gate is **HIGH** whenever all of the inputs of the gat
 
 #### Truth Table
 
-| A | B | X |
-|---|---|---|
-| 0 | 0 | 0 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
-| 1 | 1 | 1 | 
+| A   | B   | X   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 0   |
+| 1   | 0   | 0   |
+| 1   | 1   | 1   |
 
 ---
 
@@ -57,10 +59,10 @@ It is also commonly referred to as an **INVERTOR**. It has only 1 input and 1 ou
 
 #### Truth Table
 
-| A | X |
-|---|---|
-| 0 | 1 |
-| 1 | 0 |
+| A   | X   |
+| --- | --- |
+| 0   | 1   |
+| 1   | 0   |
 
 ---
 
@@ -70,10 +72,10 @@ It is used in a way similar to a relay. Unlike relays instead of controlling Hig
 
 #### Truth Table
 
-| A | X |
-|---|---|
-| 0 | 0 |
-| 1 | 1 |
+| A   | X   |
+| --- | --- |
+| 0   | 0   |
+| 1   | 1   |
 
 ---
 
@@ -83,11 +85,11 @@ A unique variation of a buffer with a second input, specifically referred to as 
 
 #### Truth Table
 
-| EN | A | X |
-|----|---|---|
-| 0  | 0 | 0 |
-| 0  | 1 | 0 |
-| 1  | 0 | 0 |
-| 1  | 1 | 1 |
+| EN  | A   | X   |
+| --- | --- | --- |
+| 0   | 0   | 0   |
+| 0   | 1   | 0   |
+| 1   | 0   | 0   |
+| 1   | 1   | 1   |
 
 ---

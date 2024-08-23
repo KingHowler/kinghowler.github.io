@@ -45,8 +45,8 @@ In this extension I am doing the following at the moment:
 - Include Syntax Highlighting
 - Add Arduino as default language for .ino files, this will disable C++ linter automatically each time you open .ino file allowing you to avoid the numerous errors formed due to arduino-specific functions
 - Include 2 Themes as a bonus for users who prefer the Arduino IDE's charming looks
-    - Arduino IDE Light
-    - Arduino IDE Dark
+  - Arduino IDE Light
+  - Arduino IDE Dark
 
 <br>
 
@@ -57,12 +57,15 @@ I am also thinking about adding my own linter but that is something I won't be d
 # Exapmle
 
 ## Themes
+
 ### Arduino IDE Light
 
 {% include figure.liquid path="assets/img/als/screenshots/Screenshot(4).png" title="Homepage" class="img-fluid rounded z-depth-1" %}
 
 {% include figure.liquid path="assets/img/als/screenshots/Screenshot(2).png" title="Editor" class="img-fluid rounded z-depth-1" %}
+
 ### Arduino IDE Dark
+
 {% include figure.liquid path="assets/img/als/screenshots/Screenshot(5).png" title="Homepage" class="img-fluid rounded z-depth-1" %}
 
 {% include figure.liquid path="assets/img/als/screenshots/Screenshot(1).png" title="Editor" class="img-fluid rounded z-depth-1" %}
@@ -70,6 +73,7 @@ I am also thinking about adding my own linter but that is something I won't be d
 ---
 
 ## Configure Language
+
 If not set by default, click on the language mode button in the status bar.<br> It is most likely in the bottom right, with either "C++" or "Plain Text" written on it.
 That will open this menu:<br>
 {% include figure.liquid path="assets/img/als/screenshots/Screenshot(6).png" title="Language Mode Menu" class="img-fluid rounded z-depth-1" %}
@@ -83,11 +87,13 @@ Click on Arduino to use it or, click on "Configure File Association for '.ino'" 
 All notable changes to the "Arduino Language Support" extension will be documented in this file.
 
 ## Unreleased
+
 - v2.0.0
   - Added
     - .ino file linter
 
 ## Released
+
 - v1.0.4
   - Fixed
     - Allowed to be used by older versions of VS Code upto and including 1.43.0

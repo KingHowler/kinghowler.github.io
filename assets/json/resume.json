@@ -45,12 +45,7 @@
       "startDate": "2023-08-15",
       "endDate": "2025-06-10",
       "score": "Official Pending, Internal: 2A*s 1A 1B",
-      "courses": [
-        "Computer Science",
-        "Physics",
-        "Mathematics",
-        "Chemistry"
-      ]
+      "courses": ["Computer Science", "Physics", "Mathematics", "Chemistry"]
     }
   ],
   "awards": [
@@ -100,22 +95,12 @@
     {
       "name": "Physics",
       "level": "Expert",
-      "keywords": [
-        "Kinematics",
-        "Dynamics",
-        "Electricity"
-      ]
+      "keywords": ["Kinematics", "Dynamics", "Electricity"]
     },
     {
       "name": "Programming",
       "level": "Expert",
-      "keywords": [
-        "C++",
-        "Python",
-        "Markdown",
-        "Arduino",
-        "Processing"
-      ]
+      "keywords": ["C++", "Python", "Markdown", "Arduino", "Processing"]
     }
   ],
   "languages": [
@@ -133,12 +118,7 @@
   "interests": [
     {
       "name": "Physics",
-      "keywords": [
-        "Electronics",
-        "Kinematics",
-        "Dynamics",
-        "Mechanisms"
-      ]
+      "keywords": ["Electronics", "Kinematics", "Dynamics", "Mechanisms"]
     },
     {
       "name": "Programming",
@@ -150,11 +130,7 @@
     },
     {
       "name": "Robotics",
-      "keywords": [
-        "Automation",
-        "IoT",
-        "Custom builds"
-      ]
+      "keywords": ["Automation", "IoT", "Custom builds"]
     }
   ],
   "projects": [
@@ -183,10 +159,7 @@
     {
       "name": "Line Follower Bot",
       "summary": "Arduino based Line Follower bot using 5 IR sensor Array, contains an optimized code with estimated 25% decrease in time duration compared to hobyists builds",
-      "highlights": [
-        "State-Lock system",
-        "Function-behaviour"
-      ],
+      "highlights": ["State-Lock system", "Function-behaviour"],
       "startDate": "2023-08-20",
       "endDate": "2023-08-22",
       "url": "https://www.github.com/KingHowler/Line-Follower"

@@ -18,7 +18,9 @@ On hold due to our own personal academics, but we are definately building a webs
 - If possible, could be sold to certain people
 
 # Proposed Idea
+
 ## Online PCB printing service
+
 #### Proposed by M. Umar Shahbaz
 
 - [x] Appropriate difficulty level
