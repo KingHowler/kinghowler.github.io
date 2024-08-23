@@ -26,16 +26,7 @@
       "startDate": "2020-04-04",
       "endDate": "2023-06-10",
       "score": "5A*s 3A",
-      "courses": [
-        "Computer Science",
-        "Physics",
-        "Mathematics",
-        "Chemistry",
-        "English",
-        "Urdu",
-        "Islamiat",
-        "Pakistan Studies"
-      ]
+      "courses": ["Computer Science", "Physics", "Mathematics", "Chemistry", "English", "Urdu", "Islamiat", "Pakistan Studies"]
     },
     {
       "institution": "Lahore Grammar School Johar Town Boys Campus",
@@ -122,11 +113,7 @@
     },
     {
       "name": "Programming",
-      "keywords": [
-        "Software development",
-        "Embedded system development",
-        "Web development"
-      ]
+      "keywords": ["Software development", "Embedded system development", "Web development"]
     },
     {
       "name": "Robotics",
@@ -137,22 +124,14 @@
     {
       "name": "Arduino Language Support",
       "summary": "Extension for Microsoft VS Code",
-      "highlights": [
-        "Seperate grammar file for .ino",
-        "2 Themes based on Arduino IDE"
-      ],
+      "highlights": ["Seperate grammar file for .ino", "2 Themes based on Arduino IDE"],
       "startDate": "2024-08-03",
       "url": "https://www.github.com/KingHowler/Arduino-Language-Support"
     },
     {
       "name": "Graph Plotter",
       "summary": "Library to plot graphs easily in Processing IDE",
-      "highlights": [
-        "Raw Data Graphs",
-        "Math Functions Graphs",
-        "Programmed Data Graphs",
-        "Serial Port Graphs"
-      ],
+      "highlights": ["Raw Data Graphs", "Math Functions Graphs", "Programmed Data Graphs", "Serial Port Graphs"],
       "startDate": "2024-07-02",
       "url": "https://www.github.com/KingHowler/Graph-Plotter"
     },
@@ -167,12 +146,7 @@
     {
       "name": "Arduino Toolbox",
       "summary": "Winforms application to interact with an arduino microcontroller",
-      "highlights": [
-        "Read Available Ports",
-        "Serial Monitor",
-        "Gyroscope Reader",
-        "Robotic Arm Controller"
-      ],
+      "highlights": ["Read Available Ports", "Serial Monitor", "Gyroscope Reader", "Robotic Arm Controller"],
       "startDate": "2024-01-15",
       "endDate": "2024-01-23",
       "url": "https://www.github.com/KingHowler/Arduino-Interfaces-using-Winforms"

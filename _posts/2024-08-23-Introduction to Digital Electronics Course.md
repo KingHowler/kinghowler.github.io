@@ -8,6 +8,7 @@ categories: Digital-Electronics-Course
 featured: true
 pretty_table: true
 ---
+
 <style>
 th, td {
   border:1px solid black;
