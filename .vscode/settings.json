@@ -32,8 +32,6 @@
     ".pre-commit-config.yaml": true,
     ".git-blame-ignore-revs": true
   },
-  "cSpell.enableFiletypes": [
-    "markdown"
-  ],
+  "cSpell.enableFiletypes": ["markdown"],
   "cSpell.language": "en,en-GB"
 }
