@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introduction to Digital Electronics
+title: Basic Logic Gates and Truth Tables
 description: Course outline
 date: 2024-08-23
 tags: Electronics
