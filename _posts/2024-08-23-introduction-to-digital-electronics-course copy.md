@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Introduction to Digital Electronics
-description: Lecture 1 of Digital Electronics Course
-date: 2024-08-25
+description: Course outline
+date: 2024-08-23
 tags: Electronics
 categories: Digital-Electronics-Course
 featured: true
@@ -137,6 +137,3 @@ The Truth Table for an **XOR** gate is as follows:
 ### Multi-Input Logic Gates
 
 The Logic Gates **AND, OR, NAND, NOR, XOR** all have 2 inputs, but it is not uncommon to see these same logic gates with a different number of Inputs. This is because the circuit is arranged in a certain way that the form a "Tree-like" structure. for example
-
-{% include figure.liquid path="assets/img/dec/logic-gates/XOR.png" title="XOR" class="img-fluid rounded z-depth-1" %}
-nothing happens
