@@ -5,7 +5,7 @@ description: Lecture 1 of Digital Electronics Course
 date: 2024-08-23
 tags: Electronics
 categories: Digital-Electronics-Course
-featured: true
+featured: false
 pretty_table: true
 ---
 
