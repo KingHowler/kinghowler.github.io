@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Basic Logic Gates and Truth Tables
-description: Lecture 1 of Digital Electronics Course
+description: Course outline
 date: 2024-08-25
 tags: Electronics
 categories: Digital-Electronics-Course

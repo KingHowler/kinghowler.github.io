@@ -15,128 +15,38 @@ th, td {
 }
 </style>
 
-For this lecture let's start with the very basics.
+Digital Electronics is a subset of both Physics and Computer Science, though it is also similar to Computer Engineering. Digital Electronics refers to the handling of logic circuits and other binary-based systems. In this course I will be teaching you the basics of Digital Electronics.
 
-#### What is Digital Electronics?
-
-It is the branch of physics which deals with logic signals and the electronic components that produce them. It includes usage of boolean algebra, logic circuits and ICs which have complex transistor logic implemented inside them. It is somewhat similar to Computer Engineering.
+A complete list of the topics which I will be covering are displayed below in a chronological order starting from the beginning to the end.
 
 ---
 
-## Truth Tables
-
-A truth table shows every single possible input combination and the respective outputs for each. For example, an AND Gate has the following Truth Table:
-
-| Input A | Input B | Output X |
-| ------- | ------- | -------- |
-| 0       | 0       | 0        |
-| 0       | 1       | 0        |
-| 1       | 0       | 0        |
-| 1       | 1       | 1        |
-
-> Don't worry I will be explaining what an AND gate is as well
-
-In digital electronics, 1 denotes "ON" while 0 denotes "OFF"
-
-> The meaning of 1 and 0 will be described in more detail in `Lecture #2: Logic States, pull-up & pull-down`
-
----
-
-## The 6 Basic Logic gates
-
-### AND gate
-
-{% include figure.liquid path="assets/img/dec/logic-gates/AND.png" title="AND" class="img-fluid rounded z-depth-1" %}
-
-The **AND** gate has 2 inputs. When both of the inputs are set to 1, only then will the output also result in 1.
-
-The Truth Table for an **AND** gate is as follows:
-
-| Input A | Input B | Output X |
-| ------- | ------- | -------- |
-| 0       | 0       | 0        |
-| 0       | 1       | 0        |
-| 1       | 0       | 0        |
-| 1       | 1       | 1        |
-
-### NOT gate
-
-{% include figure.liquid path="assets/img/dec/logic-gates/NOT.png" title="NOT" class="img-fluid rounded z-depth-1" %}
-
-The **NOT** gate has 1 input. In it the output is always the exact opposite of the input
-
-The Truth Table for a **NOT** gate is as follows:
-
-| Input A | Output X |
-| ------- | -------- |
-| 0       | 1        |
-| 1       | 0        |
-
-### OR gate
-
-{% include figure.liquid path="assets/img/dec/logic-gates/OR.png" title="OR" class="img-fluid rounded z-depth-1" %}
-
-The **OR** gate has 2 inputs. If any of the inputs is 1, then the output also result in 1.
-
-The Truth Table for an **OR** gate is as follows:
-
-| Input A | Input B | Output X |
-| ------- | ------- | -------- |
-| 0       | 0       | 0        |
-| 0       | 1       | 1        |
-| 1       | 0       | 1        |
-| 1       | 1       | 1        |
-
-### NAND gate
-
-{% include figure.liquid path="assets/img/dec/logic-gates/NAND.png" title="NAND" class="img-fluid rounded z-depth-1" %}
-
-The **NAND** gate has 2-inputs. It is basically a **NOT** gate connected to the output of an **AND** gate. When both of the inputs are set to 1 only then will the output result in 0.
-
-The Truth Table for a **NAND** gate is as follows:
-
-| Input A | Input B | Output X |
-| ------- | ------- | -------- |
-| 0       | 0       | 1        |
-| 0       | 1       | 1        |
-| 1       | 0       | 1        |
-| 1       | 1       | 0        |
-
-### NOR gate
-
-{% include figure.liquid path="assets/img/dec/logic-gates/NOR.png" title="NOR" class="img-fluid rounded z-depth-1" %}
-
-The **NOR** gate has 2-inputs. It is basically a **NOT** gate connected to the output of an **OR** gate. When both of the inputs are set to 0 only then will the output result in 1.
-
-The Truth Table for a **NOR** gate is as follows:
-
-| Input A | Input B | Output X |
-| ------- | ------- | -------- |
-| 0       | 0       | 1        |
-| 0       | 1       | 0        |
-| 1       | 0       | 0        |
-| 1       | 1       | 0        |
-
-### XOR gate
-
-{% include figure.liquid path="assets/img/dec/logic-gates/XOR.png" title="XOR" class="img-fluid rounded z-depth-1" %}
-
-The **XOR** gate is sometimes also referred to as the "Exclusive OR gate". It has 2-inputs and when both of the inputs have different values. only then will the output also result in 1.
-
-The Truth Table for an **XOR** gate is as follows:
-
-| Input A | Input B | Output X |
-| ------- | ------- | -------- |
-| 0       | 0       | 0        |
-| 0       | 1       | 1        |
-| 1       | 0       | 1        |
-| 1       | 1       | 0        |
-
----
-
-### Multi-Input Logic Gates
-
-The Logic Gates **AND, OR, NAND, NOR, XOR** all have 2 inputs, but it is not uncommon to see these same logic gates with a different number of Inputs. This is because the circuit is arranged in a certain way that the form a "Tree-like" structure. for example
-
-{% include figure.liquid path="assets/img/dec/logic-gates/XOR.png" title="XOR" class="img-fluid rounded z-depth-1" %}
-nothing happens
+| Serial No.    | Topic                                             |
+| ------------- | ------------------------------------------------- |
+| Lecture #1    | Basic Logic Gates and Truth Tables                |
+| Lecture #2    | Logic States, pull-up & pull-down                 |
+| Lecture #3    | Basic Electronics part 1                          |
+| Lecture #4    | Basic Electronics part 2                          |
+| Lecture #5    | Transistor Logic                                  |
+| Lecture #6    | 74XX IC series (Logic Gates)                      |
+| Experiment #1 | Automatic Night Light                             |
+| Lecture #7    | Binary, bits and bytes                            |
+| Lecture #8    | Half Adder & Full Adder                           |
+| Lecture #9    | Binary Subtraction                                |
+| Lecture #10   | Latches                                           |
+| Lecture #11   | SR Latch                                          |
+| Lecture #12   | D Latch                                           |
+| Lecture #13   | JK Latch                                          |
+| Lecture #14   | 74XX IC series (Latches)                          |
+| Experiment #2 | Laser Security System                             |
+| Lecture #15   | 555 Timer IC (Astable mode)                       |
+| Lecture #16   | 555 Timer IC (Monostable mode)                    |
+| Lecture #17   | 555 Timer IC (Bistable mode)                      |
+| Experiment #3 | Strobe Lights                                     |
+| Experiment #4 | Specific Time duration Outputs                    |
+| Experiment #5 | Delayed Outputs                                   |
+| Lecture #18   | Ring Counters                                     |
+| Experiment #6 | Traffic Lights                                    |
+| Lecture #19   | 7 Segment (single digit), 7447 IC & BCD           |
+| Lecture #20   | Column Switching and 7 Segment (multiple digits)  |
+| Lecture #21   | Multiplexing                                      |
