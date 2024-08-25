@@ -17,6 +17,8 @@ th, td {
 
 Digital Electronics is a subset of both Physics and Computer Science, though it is also similar to Computer Engineering. Digital Electronics refers to the handling of logic circuits and other binary-based systems. In this course I will be teaching you the basics of Digital Electronics.
 
+You can find all of the lectures [here](https://kinghowler.github.io/blog/category/digital-electronics-course/)
+
 A complete list of the topics which I will be covering are displayed below in a chronological order starting from the beginning to the end.
 
 ---
