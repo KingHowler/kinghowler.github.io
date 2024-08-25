@@ -27,7 +27,7 @@ It is the branch of physics which deals with logic signals and the electronic co
 
 A truth table shows every single possible input combination and the respective outputs for each. For example, an AND Gate has the following Truth Table:
 
-| Input A | Input B | Output X |
+| Input A | Input B | Output Q |
 | ------- | ------- | -------- |
 | 0       | 0       | 0        |
 | 0       | 1       | 0        |
@@ -52,7 +52,7 @@ The **AND** gate has 2 inputs. When both of the inputs are set to 1, only then w
 
 The Truth Table for an **AND** gate is as follows:
 
-| Input A | Input B | Output X |
+| Input A | Input B | Output Q |
 | ------- | ------- | -------- |
 | 0       | 0       | 0        |
 | 0       | 1       | 0        |
@@ -69,7 +69,7 @@ The **NOT** gate has 1 input. In it the output is always the exact opposite of t
 
 The Truth Table for a **NOT** gate is as follows:
 
-| Input A | Output X |
+| Input A | Output Q |
 | ------- | -------- |
 | 0       | 1        |
 | 1       | 0        |
@@ -84,7 +84,7 @@ The **OR** gate has 2 inputs. If any of the inputs is 1, then the output also re
 
 The Truth Table for an **OR** gate is as follows:
 
-| Input A | Input B | Output X |
+| Input A | Input B | Output Q |
 | ------- | ------- | -------- |
 | 0       | 0       | 0        |
 | 0       | 1       | 1        |
@@ -101,7 +101,7 @@ The **NAND** gate has 2-inputs. It is basically a **NOT** gate connected to the 
 
 The Truth Table for a **NAND** gate is as follows:
 
-| Input A | Input B | Output X |
+| Input A | Input B | Output Q |
 | ------- | ------- | -------- |
 | 0       | 0       | 1        |
 | 0       | 1       | 1        |
@@ -118,7 +118,7 @@ The **NOR** gate has 2-inputs. It is basically a **NOT** gate connected to the o
 
 The Truth Table for a **NOR** gate is as follows:
 
-| Input A | Input B | Output X |
+| Input A | Input B | Output Q |
 | ------- | ------- | -------- |
 | 0       | 0       | 1        |
 | 0       | 1       | 0        |
@@ -135,7 +135,7 @@ The **XOR** gate is sometimes also referred to as the "Exclusive OR gate". It ha
 
 The Truth Table for an **XOR** gate is as follows:
 
-| Input A | Input B | Output X |
+| Input A | Input B | Output Q |
 | ------- | ------- | -------- |
 | 0       | 0       | 0        |
 | 0       | 1       | 1        |
@@ -152,7 +152,7 @@ For example, a 4-input **AND** gate is basically an **AND** which has each of it
 
 The Truth Table for such a circuit would be as follows:
 
-| Input A | Input B | Input C | Input D | (A **AND** B) E | (C **AND** D) F | Output X (E **AND** F) |
+| Input A | Input B | Input C | Input D | (A **AND** B) E | (C **AND** D) F | Output Q (E **AND** F) |
 | ------- | ------- | ------- | ------- | --------------- | --------------- | ---------------------- |
 | 0       | 0       | 0       | 0       | 0               | 0               | 0                      |
 | 0       | 0       | 0       | 1       | 0               | 0               | 0                      |
