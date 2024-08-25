@@ -42,9 +42,9 @@ In digital electronics, 1 denotes "ON" while 0 denotes "OFF"
 
 ---
 
-## The 6 Basic Logic gates
+# The 6 Basic Logic gates
 
-### AND gate
+## AND gate
 
 {% include figure.liquid path="assets/img/dec/logic-gates/AND.png" title="AND" class="img-fluid rounded z-depth-1" %}
 
@@ -58,8 +58,10 @@ The Truth Table for an **AND** gate is as follows:
 | 0       | 1       | 0        |
 | 1       | 0       | 0        |
 | 1       | 1       | 1        |
+<br><br>
 
-### NOT gate
+
+## NOT gate
 
 {% include figure.liquid path="assets/img/dec/logic-gates/NOT.png" title="NOT" class="img-fluid rounded z-depth-1" %}
 
@@ -71,8 +73,10 @@ The Truth Table for a **NOT** gate is as follows:
 | ------- | -------- |
 | 0       | 1        |
 | 1       | 0        |
+<br><br>
 
-### OR gate
+
+## OR gate
 
 {% include figure.liquid path="assets/img/dec/logic-gates/OR.png" title="OR" class="img-fluid rounded z-depth-1" %}
 
@@ -86,8 +90,10 @@ The Truth Table for an **OR** gate is as follows:
 | 0       | 1       | 1        |
 | 1       | 0       | 1        |
 | 1       | 1       | 1        |
+<br><br>
 
-### NAND gate
+
+## NAND gate
 
 {% include figure.liquid path="assets/img/dec/logic-gates/NAND.png" title="NAND" class="img-fluid rounded z-depth-1" %}
 
@@ -101,8 +107,10 @@ The Truth Table for a **NAND** gate is as follows:
 | 0       | 1       | 1        |
 | 1       | 0       | 1        |
 | 1       | 1       | 0        |
+<br><br>
 
-### NOR gate
+
+## NOR gate
 
 {% include figure.liquid path="assets/img/dec/logic-gates/NOR.png" title="NOR" class="img-fluid rounded z-depth-1" %}
 
@@ -116,8 +124,10 @@ The Truth Table for a **NOR** gate is as follows:
 | 0       | 1       | 0        |
 | 1       | 0       | 0        |
 | 1       | 1       | 0        |
+<br><br>
 
-### XOR gate
+
+## XOR gate
 
 {% include figure.liquid path="assets/img/dec/logic-gates/XOR.png" title="XOR" class="img-fluid rounded z-depth-1" %}
 
@@ -136,4 +146,27 @@ The Truth Table for an **XOR** gate is as follows:
 
 ### Multi-Input Logic Gates
 
-The Logic Gates **AND, OR, NAND, NOR, XOR** all have 2 inputs, but it is not uncommon to see these same logic gates with a different number of Inputs. This is because the circuit is arranged in a certain way that the form a "Tree-like" structure. for example
+The Logic Gates **AND, OR, NAND, NOR, XOR** all have 2 inputs, but it is not uncommon to see these same logic gates with a different number of Inputs. This is because the circuit is arranged in a certain way that the form a "Tree-like" structure. 
+
+For example, a 4-input **AND** gate is basically an **AND** which has each of it's 2 inputs connected to the outputs of two other **AND** gates, effectively emulating as a single 4-input **AND** gate instead of a 4-input Logic Circuit.
+
+The Truth Table for such a circuit would be as follows:
+
+| Input A | Input B | Input C | Input D | (A **AND** B) E | (C **AND** D) F |  Output X (E **AND** F) |
+| ------- | ------- | ------- | ------- | --------------- | --------------- | ----------------------- |
+| 0       | 0       | 0       | 0       | 0               | 0               | 0                       |
+| 0       | 0       | 0       | 1       | 0               | 0               | 0                       |
+| 0       | 0       | 1       | 0       | 0               | 0               | 0                       |
+| 0       | 0       | 1       | 1       | 0               | 1               | 0                       |
+| 0       | 1       | 0       | 0       | 0               | 0               | 0                       |
+| 0       | 1       | 0       | 1       | 0               | 0               | 0                       |
+| 0       | 1       | 1       | 0       | 0               | 0               | 0                       |
+| 0       | 1       | 1       | 1       | 0               | 1               | 0                       |
+| 1       | 0       | 0       | 0       | 0               | 0               | 0                       |
+| 1       | 0       | 0       | 1       | 0               | 0               | 0                       |
+| 1       | 0       | 1       | 0       | 0               | 0               | 0                       |
+| 1       | 0       | 1       | 1       | 0               | 1               | 0                       |
+| 1       | 1       | 0       | 0       | 1               | 0               | 0                       |
+| 1       | 1       | 0       | 1       | 1               | 0               | 0                       |
+| 1       | 1       | 1       | 0       | 1               | 0               | 0                       |
+| 1       | 1       | 1       | 1       | 1               | 1               | 1                       |
