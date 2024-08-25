@@ -58,6 +58,7 @@ The Truth Table for an **AND** gate is as follows:
 | 0       | 1       | 0        |
 | 1       | 0       | 0        |
 | 1       | 1       | 1        |
+
 <br><br>
 
 
@@ -73,6 +74,7 @@ The Truth Table for a **NOT** gate is as follows:
 | ------- | -------- |
 | 0       | 1        |
 | 1       | 0        |
+
 <br><br>
 
 
@@ -90,6 +92,7 @@ The Truth Table for an **OR** gate is as follows:
 | 0       | 1       | 1        |
 | 1       | 0       | 1        |
 | 1       | 1       | 1        |
+
 <br><br>
 
 
@@ -107,6 +110,7 @@ The Truth Table for a **NAND** gate is as follows:
 | 0       | 1       | 1        |
 | 1       | 0       | 1        |
 | 1       | 1       | 0        |
+
 <br><br>
 
 
@@ -124,6 +128,7 @@ The Truth Table for a **NOR** gate is as follows:
 | 0       | 1       | 0        |
 | 1       | 0       | 0        |
 | 1       | 1       | 0        |
+
 <br><br>
 
 
