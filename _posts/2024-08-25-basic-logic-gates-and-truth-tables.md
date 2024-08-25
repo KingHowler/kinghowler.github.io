@@ -46,7 +46,7 @@ In digital electronics, 1 denotes "ON" while 0 denotes "OFF"
 
 ## AND gate
 
-{% include figure.liquid path="assets/img/dec/logic-gates/AND.png" title="AND" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/dec/logic-gates/AND.svg" title="AND" class="img-fluid rounded z-depth-1" %}
 
 The **AND** gate has 2 inputs. When both of the inputs are set to 1, only then will the output also result in 1.
 
@@ -63,7 +63,7 @@ The Truth Table for an **AND** gate is as follows:
 
 ## NOT gate
 
-{% include figure.liquid path="assets/img/dec/logic-gates/NOT.png" title="NOT" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/dec/logic-gates/NOT.svg" title="NOT" class="img-fluid rounded z-depth-1" %}
 
 The **NOT** gate has 1 input. In it the output is always the exact opposite of the input
 
@@ -78,7 +78,7 @@ The Truth Table for a **NOT** gate is as follows:
 
 ## OR gate
 
-{% include figure.liquid path="assets/img/dec/logic-gates/OR.png" title="OR" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/dec/logic-gates/OR.svg" title="OR" class="img-fluid rounded z-depth-1" %}
 
 The **OR** gate has 2 inputs. If any of the inputs is 1, then the output also result in 1.
 
@@ -95,7 +95,7 @@ The Truth Table for an **OR** gate is as follows:
 
 ## NAND gate
 
-{% include figure.liquid path="assets/img/dec/logic-gates/NAND.png" title="NAND" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/dec/logic-gates/NAND.svg" title="NAND" class="img-fluid rounded z-depth-1" %}
 
 The **NAND** gate has 2-inputs. It is basically a **NOT** gate connected to the output of an **AND** gate. When both of the inputs are set to 1 only then will the output result in 0.
 
@@ -112,7 +112,7 @@ The Truth Table for a **NAND** gate is as follows:
 
 ## NOR gate
 
-{% include figure.liquid path="assets/img/dec/logic-gates/NOR.png" title="NOR" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/dec/logic-gates/NOR.svg" title="NOR" class="img-fluid rounded z-depth-1" %}
 
 The **NOR** gate has 2-inputs. It is basically a **NOT** gate connected to the output of an **OR** gate. When both of the inputs are set to 0 only then will the output result in 1.
 
@@ -129,7 +129,7 @@ The Truth Table for a **NOR** gate is as follows:
 
 ## XOR gate
 
-{% include figure.liquid path="assets/img/dec/logic-gates/XOR.png" title="XOR" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/dec/logic-gates/XOR.svg" title="XOR" class="img-fluid rounded z-depth-1" %}
 
 The **XOR** gate is sometimes also referred to as the "Exclusive OR gate". It has 2-inputs and when both of the inputs have different values. only then will the output also result in 1.
 
