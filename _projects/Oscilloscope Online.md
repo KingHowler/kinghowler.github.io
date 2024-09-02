@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oscilloscope Online
-description: Using p5.js
+description: UOnline Serial Graph Plotter using p5.js
 img: assets/img/oscilloscope-online/icon.png
 importance: 1
 category: work
