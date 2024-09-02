@@ -2,7 +2,7 @@
 layout: page
 title: Graph Plotter
 description: Library for Processing IDE
-img: assets/img/gp/screenshots/Screenshot%20(11).png
+img: assets/img/gp/icon.png
 importance: 1
 category: work
 related_publications: false
