@@ -10,6 +10,8 @@ related_publications: false
 
 An online Oscilloscope that lets you read data from your serial device and plot a graph of it. At the moment, it can plot 4 graphs.
 
+{% include figure.liquid path="assets/img/oscilloscope-online/Screenshot(1).png" title="Example image" class="img-fluid rounded z-depth-1" %}
+
 The plotter gives you many customization options which includes the following:
 
 - Minimum (x, y) coordinate
