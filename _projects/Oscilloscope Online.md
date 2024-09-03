@@ -8,6 +8,11 @@ category: Work
 related_publications: false
 ---
 
+[<img src="https://github-readme-stats.vercel.app/api/pin/?username=KingHowler&repo=Oscilloscope-Online" height="130" alt="activity-graph graph"/>](https://www.github.com/KingHowler/Oscilloscope-Online)
+
+
+---
+
 An online Oscilloscope that lets you read data from your serial device and plot a graph of it. At the moment, it can plot 4 graphs.
 
 {% include figure.liquid path="assets/img/oscilloscope-online/Screenshot(1).png" title="Example image" class="img-fluid rounded z-depth-1" %}

@@ -23,7 +23,7 @@ A completely raw electronics projects for converting a keypad button input from 
 
 #### Submodule 1: Clock Circuit
 
-This module will generate a 20-30Hz square wave which will be used along with submodule 2 to help control the keyboards inout and help differentiate between the buttons on the keypad.
+This module will generate a 20-30Hz square wave which will be used along with submodule 2 to help control the keyboards input and help differentiate between the buttons on the keypad.
 
 > Items
 >

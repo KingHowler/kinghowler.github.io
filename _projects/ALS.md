@@ -8,6 +8,12 @@ category: Work
 related_publications: false
 ---
 
+
+[<img src="https://github-readme-stats.vercel.app/api/pin/?username=KingHowler&repo=Arduino-Language-Support" height="130" alt="activity-graph graph"/>](https://www.github.com/KingHowler/Arduino-Language-Support)
+
+
+---
+
 # Purpose
 
 I am a robotics enthusiast and, on one certain occasion, wanted to edit my Arduino project in Visual Studio Code.
@@ -54,7 +60,7 @@ I am also thinking about adding my own linter but that is something I won't be d
 
 ---
 
-# Exapmle
+# Example
 
 ## Themes
 

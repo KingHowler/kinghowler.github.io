@@ -8,6 +8,11 @@ category: Work
 related_publications: false
 ---
 
+[<img src="https://github-readme-stats.vercel.app/api/pin/?username=KingHowler&repo=Graph-Plotter" height="130" alt="activity-graph graph"/>](https://www.github.com/KingHowler/Graph-Plotter)
+
+
+---
+
 A custom library for plotting graphs on Processing IDE.
 
 > Uses
@@ -86,7 +91,7 @@ Of these 4, only the first 3 are compulsory and will return an error if left uni
 {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(4).png" title="Graph without subGrid" class="img-fluid rounded z-depth-1" %}
 
 - xTitle & yTitle
-  - They are string variables which contain the text that will be show alongside the edges of the graphs as titles of each of their respective axeses
+  - They are string variables which contain the text that will be show alongside the edges of the graphs as titles of each of their respective axises
 - GridSetup
   - Ymin and Xmin
     - The smallest (x, y) value desired to be seen
@@ -150,7 +155,7 @@ GP.yCo(y-value);
 
 1. DrawGrid
 
-   - It draws the grid for the GP object based on the parameters set in the `GridSetup(...);` fucntion
+   - It draws the grid for the GP object based on the parameters set in the `GridSetup(...);` function
    - Note that using this function is perfectly optional and the code will run as expected <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(5).png" title="Graph without grid" class="img-fluid rounded z-depth-1" %}
 
    {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(7).png" title="Graph 2 without grid" class="img-fluid rounded z-depth-1" %}
@@ -276,14 +281,14 @@ DataArray = new float[GP.totalPoints];
 
 Doing this effectively increases the number of points plotted in each graph in the by a scale of 10 changing the result to this <br> {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(11).png" title="Graph-Plotter resolution example" class="img-fluid rounded z-depth-1" %}
 
-The above graph is a plot of `y = x³` where the red graph has the default resolution set by the code, and the blue line is the manually overwriten resolution made using the code above
+The above graph is a plot of `y = x³` where the red graph has the default resolution set by the code, and the blue line is the manually overwritten resolution made using the code above
 
 It is also important to note that you don't need to use 10 specifically, you can increase by a smaller scale or by a greater scale.
 Another thing to remember is that if it can be increased it can also be decreased when working with extremely high values. It is especially recommended to manually decrease graph resolution if the difference between Xmin and Xmax is large enough to be comparable to the width of your window.
 
 ## Customization
 
-The `master_template.pde` already contains an example with a graph of x³.Additionally you have already been made aware of the customiztion offered by the setup methods and the drawing methods.
+The `master_template.pde` already contains an example with a graph of x³.Additionally you have already been made aware of the customization offered by the setup methods and the drawing methods.
 
 Now what you need to understand is that the main use of the `Offset(...);` & `SizeSetup(...)` is. It is to allow drawing multiple graphs in the same window as other items including other graph plotter objects
 {% include figure.liquid path="assets/img/gp/screenshots/Screenshot%20(8).png" title="2 Graph-Plotter objects" class="img-fluid rounded z-depth-1" %}

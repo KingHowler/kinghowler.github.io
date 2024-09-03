@@ -2,7 +2,7 @@
   "files.exclude": {
     "**/_data/": true,
     "**/_includes/": true,
-    "**/_layouts/": false,
+    "**/_layouts/": true,
     "**/_plugins/": true,
     "**/_sass/": true,
     "**/.devcontainer/": true,

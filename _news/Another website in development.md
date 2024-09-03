@@ -6,11 +6,11 @@ inline: false
 related_posts: false
 ---
 
-I am building another website with a few friends. As of the momment we are browsing for ideas. The current proposed idea is an online PCB Printing service for pakistan.
+I am building another website with a few friends. As of the moment we are browsing for ideas. The current proposed idea is an online PCB Printing service for pakistan.
 
 ---
 
-On hold due to our own personal academics, but we are definately building a website. We are looking for an idea that fulfills the following requirements:
+On hold due to our own personal academics, but we are definitely building a website. We are looking for an idea that fulfills the following requirements:
 
 - Appropriate difficulty level
 - Useful to others
