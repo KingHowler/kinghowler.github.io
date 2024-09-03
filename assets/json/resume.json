@@ -3,7 +3,7 @@
     "name": "M.Umar Shahbaz",
     "label": "Aspiring Programmer",
     "url": "https://kinghowler.github.io/",
-    "summary": "Learning to create programs which are efficcient and follow the standard programming ethics such as minimizing technical debt and providing proper documentation.I am a frequent user of GitHub and am currently in charge of creating a website with my team",
+    "summary": "Learning to create programs which are efficient and follow the standard programming ethics such as minimizing technical debt and providing proper documentation.I am a frequent user of GitHub and am currently in charge of creating a website with my team",
     "profiles": [
       {
         "network": "Reddit",
@@ -41,7 +41,7 @@
   ],
   "awards": [
     {
-      "title": "Award Of Excellence & Certificate of Acheivement",
+      "title": "Award Of Excellence & Certificate of Achievement",
       "date": "2024-03-01",
       "awarder": "Crescent Model Higher Secondary School",
       "summary": "Awarded due to outstanding results in O levels"
@@ -77,7 +77,7 @@
       "issuer": "Aitchison College Science and Engineering Concept"
     },
     {
-      "name": "Certificate of Participation, for participating in Artifical Intelligence and Computer Science Workshop",
+      "name": "Certificate of Participation, for participating in Artificial Intelligence and Computer Science Workshop",
       "date": "2024-07-26",
       "issuer": "Crescent Model Higher Secondary School"
     }
@@ -124,7 +124,7 @@
     {
       "name": "Arduino Language Support",
       "summary": "Extension for Microsoft VS Code",
-      "highlights": ["Seperate grammar file for .ino", "2 Themes based on Arduino IDE"],
+      "highlights": ["Separate grammar file for .ino", "2 Themes based on Arduino IDE"],
       "startDate": "2024-08-03",
       "url": "https://www.github.com/KingHowler/Arduino-Language-Support"
     },
@@ -145,7 +145,7 @@
     },
     {
       "name": "Line Follower Bot",
-      "summary": "Arduino based Line Follower bot using 5 IR sensor Array, contains an optimized code with estimated 25% decrease in time duration compared to hobyists builds",
+      "summary": "Arduino based Line Follower bot using 5 IR sensor Array, contains an optimized code with estimated 25% decrease in time duration compared to hobbyists builds",
       "highlights": ["State-Lock system", "Function-behaviour"],
       "startDate": "2023-08-20",
       "endDate": "2023-08-22",
