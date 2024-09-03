@@ -49,6 +49,7 @@ Today the topic of our discussion will be the **Floating** State.
 - It can also occur due to hardware malfunction but it is best to look for faults in the wiring before deciding to change all of the hardware.
 
 **How to ensure floating state doesn't occur in my circuit?**
+
 - This brings us to our other topic of discussion for today, **Pull-up** and **Pull-down**.
 
 ---
