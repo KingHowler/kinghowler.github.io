@@ -4,7 +4,7 @@ title: Arduino Language Support
 description: Extension for VS Code
 img: assets/img/als/icon.jpeg
 importance: 1
-category: work
+category: Work
 related_publications: false
 ---
 

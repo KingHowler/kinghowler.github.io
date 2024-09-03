@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: To stand at the apex, is my ultimate goal
+subtitle: Climbing to greater heights everyday
 
 profile:
   align: right
@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Student A Levels CAIE</p><br>
-    <p>Lahore Grammer School Johar Town for Boys</p>
+    <p>Lahore Grammar School Johar Town for Boys</p>
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
