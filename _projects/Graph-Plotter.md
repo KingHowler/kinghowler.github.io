@@ -10,7 +10,6 @@ related_publications: false
 
 [<img src="https://github-readme-stats.vercel.app/api/pin/?username=KingHowler&repo=Graph-Plotter" height="130" alt="activity-graph graph"/>](https://www.github.com/KingHowler/Graph-Plotter)
 
-
 ---
 
 A custom library for plotting graphs on Processing IDE.
