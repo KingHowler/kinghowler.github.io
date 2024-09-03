@@ -136,6 +136,14 @@
       "url": "https://www.github.com/KingHowler/Graph-Plotter"
     },
     {
+      "name": "Oscilloscope Online",
+      "summary": "Website to plot live graphs from a serial device",
+      "highlights": ["p5.js", "Wide variety of customization options", "Web Serial Communication", "Multiple Graphs", "Open Source"],
+      "startDate": "2024-09-01",
+      "endDate": "2024-09-03",
+      "url": "https://kinghowler.github.io/Oscilloscope-Online"
+    },
+    {
       "name": "Line Follower Bot",
       "summary": "Arduino based Line Follower bot using 5 IR sensor Array, contains an optimized code with estimated 25% decrease in time duration compared to hobyists builds",
       "highlights": ["State-Lock system", "Function-behaviour"],
