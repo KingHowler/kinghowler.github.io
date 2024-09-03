@@ -49,7 +49,7 @@ Today the topic of our discussion will be the **Floating** State.
 - It can also occur due to hardware malfunction but it is best to look for faults in the wiring before deciding to change all of the hardware.
 
 **How to ensure floating state doesn't occur in my circuit?**
-This brings us to our other topic of discussion for today, **Pull-up** and **Pull-down**.
+- This brings us to our other topic of discussion for today, **Pull-up** and **Pull-down**.
 
 ---
 
@@ -65,7 +65,7 @@ Below is an example where a pin has been pulled up. A pushbutton attached to GND
 
 ### Pull-down
 
-Pull-down refers to attaching the pin to a drain or GND through a resistor. This means that the pin will always be in the **LOW** state unless a positive current is passed. It is important to use resistor to avoid a short circuit between the pull-up and the input.
+Pull-down refers to attaching the pin to a drain or GND through a resistor. This means that the pin will always be in the **LOW** state unless a positive current is passed. It is important to use resistor to avoid a short circuit between the pull-down and the input.
 
 Below is an example where a pin has been pulled down. A pushbutton attached to VCC is acting as the input.
 
