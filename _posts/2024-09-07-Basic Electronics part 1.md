@@ -17,44 +17,47 @@ A conductor is anything that allows electricity to pass through it. It provides 
 
 ## Insulators
 
-An insulator is the opposite. It doesn't allow electricity to pass through it. It serves as a of stopping flow of electricity. In electronics they are widely used for casing and covering.
+An insulator is the opposite. It doesn't allow electricity to pass through it. It serves as way a of stopping flow of electricity. In electronics they are widely used for casing and covering.
 
 ## Voltage or Potential Difference
 
-> SI Unit : Volts (V)
-> Symbol : V
+> SI Unit : Volts (V) <br> Symbol : V
 
 It is the measure of the difference in electric potential between 2 points. It serves as the driving force of electrons, causing them to move from one point to another.
 
-$$Voltage = \frac{Work done to move charge}{Charge moved}$$
+$$Voltage = \frac{Work}{Charge}$$
+
+Where **Work** refers to the total work done to move the charges and **Charge** refers to the total charge moved.
 
 > In symbols
-> $$V = \frac{W}{Q}
+> $$V = \frac{W}{Q}$$
 
 1 Volt is the electric potential needed to do 1 Joule of work by moving 1 Coulomb of charge through the entire circuit.
 
 ## Current
 
-> SI Unit : Amperes (A)
-> Symbol : I
+> SI Unit : Amperes (A) <br> Symbol : I
 
 It is the rate of flow of charge per unit time.
 
-$$Current = \frac{Charge moved from point A to point B}{time duration of flow}$$
+$$Current = \frac{Charge}{time}$$
+
+Where **Charge** refers to the total charged moved and **time** refers to the time during which the charge was moving.
 
 > In symbols
-> $$I = \frac{Q}{t}
+> $$I = \frac{Q}{t}$$
 
 1 Ampere is when 1 Coulomb of charge is moved around the entire circuit in 1 Second.
 
 ## Resistance
 
-> SI Unit : Ohms (Ω)
-> Symbol : R
+> SI Unit : Ohms (Ω) <br> Symbol : R
 
 It is the ability of a material to resist the flow of electric current through it. It is a property possessed by all materials.
 
-$$Resistance of the material = \frac{Potential Difference across material}{Current flowing through Material}$$
+$$Resistance = \frac{Voltage}{Current}$$
+
+Where **Voltage** refers to the potential difference being applied across the material and **Current** refers to the current in the material.
 
 > In symbols
 > $$R = \frac{V}{I}$$
@@ -63,18 +66,21 @@ $$Resistance of the material = \frac{Potential Difference across material}{Curre
 
 ## Power
 
-> SI Unit : Watt (W)
-> Symbol : P
+> SI Unit : Watt (W) <br> Symbol : P
 
 It is the rate of work done per unit time.
 
-$$Power = \frac{Work done}{time duration}$$
+$$Power = \frac{Work}{time}$$
+
+Where **Work** is the work done and **time** is the time during which the work was done.
 
 > In symbols
-> $$P = \frac{W}{t}
+> $$P = \frac{W}{t}$$
 
 This equation is also used to derive the equation:
 $$Power = Current \times Voltage$$
+
+Where **Current** is the current present in the material and **Voltage** is the potential difference across the material.
 
 > In symbols
 > $$P = IV$$
