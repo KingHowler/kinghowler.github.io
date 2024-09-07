@@ -5,15 +5,7 @@ description: Lecture 2 of Digital Electronics Course
 date: 2024-09-01
 tags: Electronics
 categories: Digital-Electronics-Course
-featured: false
-pretty_table: true
 ---
-
-<style>
-th, td {
-  border:1px solid black;
-}
-</style>
 
 Before you know how to make actual digital electronics, there is one more thing that you need to know. What are the 3 possible logic states and how do I use them in my circuits?
 
