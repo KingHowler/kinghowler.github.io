@@ -2,7 +2,7 @@
 layout: page
 title: Basic Electronics part 1
 description: Lecture 3 of Digital Electronics Course
-date: 2024-09-07
+date: 2024-09-08
 tags: Electronics
 categories: Digital-Electronics-Course
 ---

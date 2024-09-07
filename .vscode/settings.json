@@ -6,7 +6,7 @@
     "**/_plugins/": true,
     "**/_sass/": true,
     "**/.devcontainer/": true,
-    "**/.github/": false,
+    "**/.github/": true,
     "**/bin/": true,
     "**/lighthouse_results/": true,
     "**/readme_preview/": true,
