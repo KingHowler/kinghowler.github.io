@@ -29,11 +29,11 @@ My name is Muhammad Umar Shahbaz, born in Pakistan. From a young age, I've been 
 
 In addition to my passion for technology, I also enjoy reading books. Whether it's fiction, non-fiction, or something technical, I find that reading broadens my perspective and fuels my curiosity. When I'm not coding, building, or reading, you can often find me on a sports field. Playing sports is another significant part of my life, keeping me active and helping me maintain a balanced lifestyle. Through all these pursuits, I remain committed to learning, growing, and pursuing excellence in everything I do.
 
-###
+---
 
-<h3 align="center">I am currently doing the following</h3>
+<h1>I am currently doing the following</h1>
 
-###
+<br>
 
 - Simulations
 - Robotics
@@ -43,11 +43,11 @@ In addition to my passion for technology, I also enjoy reading books. Whether it
 
 Note: These last two are things which in I am not "an expert" but in the other three, I can make projects with a certain amount of profficiency.
 
-###
+---
 
 <h1 align="left">Works in Progress</h1>
 
-###
+<br>
 
 | Project Title                 | Description                                                                                                |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -57,13 +57,13 @@ Note: These last two are things which in I am not "an expert" but in the other t
 | **HeatGraphs**                | Software to plot graphs of your computers Temperatures. This will help in benchmarking your computer.      |
 | **Robotic Arm Simulation**    | Simulation for a standard 4 axis Robotic Arm which you can control using a serial device.                  |
 
-###
+---
 
-<h3 align="left">🛠 Language and tools</h3>
+<h3 align="center">🛠 Language and tools</h3>
 
-###
+<br>
 
-<div align="left">
+<div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="40" alt="arduino logo"  />
@@ -90,17 +90,6 @@ Note: These last two are things which in I am not "an expert" but in the other t
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" height="40" alt="unity logo"  />
 </div>
+<br><br>
 
-###
-
-<h3 align="left">   My GitHub Statistics :</h3>
-
-###
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=KingHowler&hide_title=false&hide_rank=false&rank_icon=percentile&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&order=1" height="170" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=KingHowler&size_weight=0.4&count_weight=0.6&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=8&exclude_repo=kinghowler.github.io&theme=dark&hide_border=false&order=2" height="170" alt="languages graph"  />
-  <img src="https://streak-stats.demolab.com?user=KingHowler&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" height="170" alt="streak graph"  />
-  <img src="https://github-profile-trophy.vercel.app?username=KingHowler&theme=darkhub&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph"  />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KingHowler&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
-</div>
+---
