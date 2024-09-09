@@ -29,6 +29,8 @@ My name is Muhammad Umar Shahbaz, born in Pakistan. From a young age, I've been 
 
 In addition to my passion for technology, I also enjoy reading books. Whether it's fiction, non-fiction, or something technical, I find that reading broadens my perspective and fuels my curiosity. When I'm not coding, building, or reading, you can often find me on a sports field. Playing sports is another significant part of my life, keeping me active and helping me maintain a balanced lifestyle. Through all these pursuits, I remain committed to learning, growing, and pursuing excellence in everything I do.
 
+<br><br><br><br>
+
 ---
 
 <h1>I am currently doing the following</h1>
@@ -75,8 +77,6 @@ Note: These last two are things which in I am not "an expert" but in the other t
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="40" alt="csharp logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg" height="40" alt="markdown logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
   <img width="12" />
