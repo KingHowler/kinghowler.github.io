@@ -6,10 +6,11 @@ img: assets/img/als/icon.jpeg
 importance: 1
 category: Work
 related_publications: false
----
-
-[<img src="https://github-readme-stats.vercel.app/api/pin/?username=KingHowler&repo=Arduino-Language-Support" height="130" alt="activity-graph graph"/>](https://www.github.com/KingHowler/Arduino-Language-Support)
-
+repo: 
+  owner_username: KingHowler
+  repo_name: Arduino-Language-Support
+  display_owner: true
+  max_lines_description: 5
 ---
 
 # Purpose
