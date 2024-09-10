@@ -9,13 +9,15 @@ layout: default
       <div class="repo p-2 text-center"></div>
       <a href="https://github.com/{{ page.repo.owner_username }}/{{ page.repo.repo_name }}">
         <img
-          class="repo-img-light w-100"
+          class="repo-img-light"
           alt="{{ page.repo.owner_username }}/{{ page.repo.repo_name }}"
-          src="https://github-readme-stats.vercel.app/api/pin/?username={{ page.repo.owner_username }}&repo={{ page.repo.repo_name }}&theme={{ site.repo_theme_light }}&show_owner={{ page.repo.display_owner }}&description_lines_count={{ page.repo.max_lines_description }}"
+          style="height: 200px;"
+          src="https://github-readme-stats.vercel.app/api/pin/?username={{ page.repo.owner_username }}&repo={{ page.repo.repo_name }}&theme={{ site.repo_theme_light }}&show_owner={{ page.repo.display_owner }}&description_lines_count={{ page.repo.max_lines_description }}&height="
         >
         <img
-          class="repo-img-dark w-100"
+          class="repo-img-dark"
           alt="{{ page.repo.owner_username }}/{{ page.repo.repo_name }}"
+          style="height: 200px;"
           src="https://github-readme-stats.vercel.app/api/pin/?username={{ page.repo.owner_username }}&repo={{ page.repo.repo_name }}&theme={{ site.repo_theme_dark }}&show_owner={{ page.repo.display_owner }}&description_lines_count={{ page.repo.max_lines_description }}"
         >
       </a>

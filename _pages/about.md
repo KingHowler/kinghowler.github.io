@@ -43,8 +43,7 @@ In addition to my passion for technology, I also enjoy reading books. Whether it
 - Database Management
 - Front-end Programming
 
-Note: These last two are things which in I am not "an expert" but in the other three, I can make projects with a certain amount of profficiency.
-
+**Note: I am relatively new to front-end and database management but in terms of Robotics, Back-end Programming and 2D Simulations I have a good amount of experience. As of the moment I am learning how to do 3D Simulations**
 ---
 
 <h1 align="left">Works in Progress</h1>
