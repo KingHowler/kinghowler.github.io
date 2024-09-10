@@ -9,7 +9,7 @@ related_publications: false
 repo:
   owner_username: KingHowler
   repo_name: Arduino-Language-Support
-  display_owner: true
+  display_owner: false
   max_lines_description: 5
 ---
 

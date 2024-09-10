@@ -11,17 +11,18 @@ layout: default
         <img
           class="repo-img-light"
           alt="{{ page.repo.owner_username }}/{{ page.repo.repo_name }}"
-          style="height: 200px;"
+          style="height: 150px;"
           src="https://github-readme-stats.vercel.app/api/pin/?username={{ page.repo.owner_username }}&repo={{ page.repo.repo_name }}&theme={{ site.repo_theme_light }}&show_owner={{ page.repo.display_owner }}&description_lines_count={{ page.repo.max_lines_description }}&height="
         >
         <img
           class="repo-img-dark"
           alt="{{ page.repo.owner_username }}/{{ page.repo.repo_name }}"
-          style="height: 200px;"
+          style="height: 150px;"
           src="https://github-readme-stats.vercel.app/api/pin/?username={{ page.repo.owner_username }}&repo={{ page.repo.repo_name }}&theme={{ site.repo_theme_dark }}&show_owner={{ page.repo.display_owner }}&description_lines_count={{ page.repo.max_lines_description }}"
         >
       </a>
       </div>
+      <br><br><br><br>
     {% endif %}
   </header>
 

@@ -6,10 +6,11 @@ img: assets/img/gp/icon.png
 importance: 1
 category: Work
 related_publications: false
----
-
-[<img src="https://github-readme-stats.vercel.app/api/pin/?username=KingHowler&repo=Graph-Plotter" height="130" alt="activity-graph graph"/>](https://www.github.com/KingHowler/Graph-Plotter)
-
+repo:
+  owner_username: KingHowler
+  repo_name: Graph-Plotter
+  display_owner: false
+  max_lines_description: 5
 ---
 
 A custom library for plotting graphs on Processing IDE.
