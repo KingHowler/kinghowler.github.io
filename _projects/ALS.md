@@ -6,7 +6,7 @@ img: assets/img/als/icon.jpeg
 importance: 1
 category: Work
 related_publications: false
-repo: 
+repo:
   owner_username: KingHowler
   repo_name: Arduino-Language-Support
   display_owner: true
