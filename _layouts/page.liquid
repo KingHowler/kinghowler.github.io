@@ -6,7 +6,7 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-description">{{ page.description }}</p>
     {% if page.repositories %}
-        <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+      <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
         {% for repo in page.repositories %}
           {% include repository/repo.liquid repository=repo %}
         {% endfor %}
