@@ -6,11 +6,8 @@ img: assets/img/gp/icon.png
 importance: 1
 category: Work
 related_publications: false
-repo:
-  owner_username: KingHowler
-  repo_name: Graph-Plotter
-  display_owner: false
-  max_lines_description: 5
+repositories:
+  - KingHowler/Graph-Plotter
 ---
 
 A custom library for plotting graphs on Processing IDE.

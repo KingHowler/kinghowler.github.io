@@ -6,11 +6,8 @@ img: assets/img/oscilloscope-online/icon.png
 importance: 1
 category: Work
 related_publications: false
-repo:
-  owner_username: KingHowler
-  repo_name: Oscilloscope-Online
-  display_owner: false
-  max_lines_description: 5
+repositories:
+  - KingHowler/Oscilloscope-Online
 ---
 
 An online Oscilloscope that lets you read data from your serial device and plot a graph of it. At the moment, it can plot 4 graphs.

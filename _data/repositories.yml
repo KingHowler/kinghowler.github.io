@@ -6,6 +6,7 @@ repo_description_lines_max: 3
 github_repos:
   - KingHowler/Graph-Plotter
   - KingHowler/Arduino-Language-Support
+  - KingHowler/Oscilloscope-Online
   - KingHowler/Arduino-Interfaces-using-Winforms
   - KingHowler/Line-Follower
   - KingHowler/kinghowler.github.io
