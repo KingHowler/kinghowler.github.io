@@ -12,7 +12,6 @@ repositories:
 
 {% include figure.liquid path="https://img.shields.io/visual-studio-marketplace/d/MUmarShahbaz.als?style=for-the-badge&label=Installs&labelColor=%230854C1&color=%23000000" title="Installs" class="img-fluid rounded z-depth-1" width="300px" %}
 
-
 # Purpose
 
 I am a robotics enthusiast and, on one certain occasion, wanted to edit my Arduino project in Visual Studio Code.
