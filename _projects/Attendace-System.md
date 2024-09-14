@@ -35,6 +35,7 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 # Code Overview
 
 ## NodeMCU-Code
+
 <div style="background-color : #FFFFFF">
   {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-main.svg" title="NodeMCU Main Code" width="500px" class="img-fluid rounded z-depth-1"%}
 </div>
@@ -43,6 +44,7 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 </div>
 
 ## Server-Code
+
 <div style="background-color : #FFFFFF">
   {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Server-side PHP Code" width="500px" class="img-fluid rounded z-depth-1"%}
 </div>
