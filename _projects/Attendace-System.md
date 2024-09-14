@@ -41,10 +41,10 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 ## NodeMCU-Code
 
 <div align="center" style="background-color : #FFFFFF">
-  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-main.svg" title="NodeMCU Main Code" width="500px" class="img-fluid rounded z-depth-1"%}
+  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-main.svg" title="NodeMCU Main Code" max-width="500px" class="img-fluid rounded z-depth-1"%}
 </div>
 <div align="center" style="background-color : #FFFFFF">
-  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-sub.svg" title="NodeMCU Sub Code" width="500px" class="img-fluid rounded z-depth-1"%}
+  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-sub.svg" title="NodeMCU Sub Code" max-width="500px" class="img-fluid rounded z-depth-1"%}
 </div>
 
 ---
@@ -52,7 +52,7 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 ## Server-Code
 
 <div align="center" style="background-color : #FFFFFF">
-  {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Server-side PHP Code" width="900px" class="img-fluid rounded z-depth-1"%}
+  {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Server-side PHP Code" class="img-fluid rounded z-depth-1"%}
 </div>
 
 ---
@@ -61,9 +61,7 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 
 ## This is the circuit for an Attendance Recorder
 
-<div align="center" style="background-color : #FFFFFF;" class="img-fluid rounded z-depth-1">
-  {% include figure.liquid path="assets/img/attendance-sys/Circuit.png" title="Circuit Diagram" width="900px" %}
-</div>
+{% include figure.liquid path="assets/img/attendance-sys/Circuit.png" title="Circuit Diagram" class="img-fluid rounded z-depth-1" %}
 
 ---
 
