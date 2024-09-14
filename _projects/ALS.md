@@ -3,14 +3,14 @@ layout: page
 title: Arduino Language Support
 description: Extension for VS Code
 img: assets/img/als/icon.jpeg
-importance: 1
-category: Work
+importance: 3
+category: Softwares
 related_publications: false
 repositories:
   - KingHowler/Arduino-Language-Support
 ---
 
-{% include figure.liquid path="https://img.shields.io/visual-studio-marketplace/d/MUmarShahbaz.als?style=for-the-badge&label=Installs&labelColor=%230854C1&color=%23000000" title="Installs" class="img-fluid rounded z-depth-1" width="300px" %}
+{% include figure.liquid path="https://img.shields.io/visual-studio-marketplace/d/MUmarShahbaz.als?style=for-the-badge&label=Installs&labelColor=%230854C1&color=%23000000" title="Installs" class="img-fluid rounded z-depth-1" width="300px"%}
 
 # Purpose
 

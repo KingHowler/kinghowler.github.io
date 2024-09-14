@@ -4,7 +4,7 @@ title: Oscilloscope Online
 description: Online Serial Graph Plotter using p5.js
 img: assets/img/oscilloscope-online/icon.png
 importance: 1
-category: Work
+category: Softwares
 related_publications: false
 repositories:
   - KingHowler/Oscilloscope-Online

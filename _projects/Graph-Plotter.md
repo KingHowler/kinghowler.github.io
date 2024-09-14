@@ -3,8 +3,8 @@ layout: page
 title: Graph Plotter
 description: Library for Processing IDE
 img: assets/img/gp/icon.png
-importance: 1
-category: Work
+importance: 2
+category: Softwares
 related_publications: false
 repositories:
   - KingHowler/Graph-Plotter

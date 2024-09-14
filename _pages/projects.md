@@ -5,7 +5,7 @@ permalink: /projects/
 description: A growing collection of my prominent projects.
 nav: true
 nav_order: 3
-display_categories: [Work, Just for fun]
+display_categories: [Softwares, Robotics, Digital Electronics]
 horizontal: false
 ---
 
