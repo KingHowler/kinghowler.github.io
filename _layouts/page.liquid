@@ -4,9 +4,8 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
     {% if page.icons %}
-      <div align="center">
+      <div align="right" style="display: inline-block;">
         {% for iconLink in page.icons %}
           {% if iconLink contains 'http' %}
             <img src="{{ iconLink }}" height="40">
@@ -17,6 +16,7 @@ layout: default
         {% endfor %}
       </div>
     {% endif %}
+    <p class="post-description">{{ page.description }}</p>
     {% if page.repositories %}
       <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
         {% for repo in page.repositories %}
