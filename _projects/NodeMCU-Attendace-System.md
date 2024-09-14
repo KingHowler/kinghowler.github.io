@@ -9,13 +9,13 @@ category: Robotics
 tags: Robotics
 related_publications: false
 repositories:
-
 - KingHowler/NodeMCU-Attendance-system
-  icons:
+icons:
 - arduino/arduino-original.svg
 - php/php-original.svg
 - postgresql/postgresql-original.svg
 - mysql/mysql-original.svg
+---
 
 # Overview
 

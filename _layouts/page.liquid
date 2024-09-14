@@ -5,13 +5,6 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-description">{{ page.description }}</p>
-    {% if page.repositories %}
-      <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-        {% for repo in page.repositories %}
-          {% include repository/repo.liquid repository=repo %}
-        {% endfor %}
-      </div>
-    {% endif %}
     {% if page.icons %}
       <div align="center">
         {% for iconLink in page.icons %}
@@ -21,6 +14,13 @@ layout: default
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ iconLink }}" height="40">
           {% endif %}
           <img width="12">
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if page.repositories %}
+      <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+        {% for repo in page.repositories %}
+          {% include repository/repo.liquid repository=repo %}
         {% endfor %}
       </div>
     {% endif %}
