@@ -16,9 +16,11 @@ icons:
   - mysql/mysql-original.svg
 ---
 
-# Overview
+# General Overview
 
 An online attendance system made using the **NodeMCU**. The project uses **RFID** (Radio-Frequency Identification) with indicator lights, to record student attendances. A webpage handles the registration of new RFID tags under the name of the student. A second webpage is used to get the attendance records of the entire student body. The system is secure and has 3 custom "**Keys**" to ensure there is no access to any third party or false records made by someone with malicious intents.
+
+---
 
 ## Summary of Features
 
@@ -32,6 +34,8 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
    - Key #3 : For registering new tags, possessed by school administration
 5. **SQL Server** : All records are stored on an SQL server and can hence be modified as the administration wills to
 
+---
+
 # Code Overview
 
 ## NodeMCU-Code
@@ -43,24 +47,32 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
   {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-sub.svg" title="NodeMCU Sub Code" width="500px" class="img-fluid rounded z-depth-1"%}
 </div>
 
+---
+
 ## Server-Code
 
 <div align="center" style="background-color : #FFFFFF">
   {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Server-side PHP Code" width="900px" class="img-fluid rounded z-depth-1"%}
 </div>
 
+---
+
 # Circuit Overview
 
 ## This is the circuit for an Attendance Recorder
 
-<div align="center" style="background-color : #FFFFFF; padding : 50px;" class="img-fluid rounded z-depth-1">
-  {% include figure.liquid path="assets/img/attendance-sys/Circuit.svg" title="Circuit Diagram" width="900px" %}
+<div align="center" style="background-color : #FFFFFF;" class="img-fluid rounded z-depth-1">
+  {% include figure.liquid path="assets/img/attendance-sys/Circuit.png" title="Circuit Diagram" width="900px" %}
 </div>
+
+---
 
 ## The Attendance Recorder
 
 {% include figure.liquid path="assets/img/attendance-sys/Top-view.jpeg" title="Top view" class="img-fluid rounded z-depth-1" %}
 {% include figure.liquid path="assets/img/attendance-sys/Side-view.jpeg" title="Side view" class="img-fluid rounded z-depth-1" %}
+
+---
 
 ## The RFID Tags
 
