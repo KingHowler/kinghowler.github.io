@@ -2,7 +2,7 @@
 layout: page
 title: NodeMCU Attendance System
 description: An RFID based Attendance System using NodeMCU, integrated with an SQL server.
-img:    
+img:
 importance: 1
 category: Robotics
 tags: Robotics
