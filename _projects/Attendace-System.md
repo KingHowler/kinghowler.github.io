@@ -50,7 +50,9 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 </div>
 
 # Circuit Overview
+
 ## This is the circuit for an Attendance Recorder
+
 <div align="center" style="background-color : #FFFFFF; padding : 50px;" class="img-fluid rounded z-depth-1">
   {% include figure.liquid path="assets/img/attendance-sys/Circuit.svg" title="Circuit Diagram" width="900px" %}
 </div>
