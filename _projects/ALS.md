@@ -19,6 +19,7 @@ icons:
 </div>
 
 ---
+
 # Purpose
 
 I am a robotics enthusiast and, on one certain occasion, wanted to edit my Arduino project in Visual Studio Code.
