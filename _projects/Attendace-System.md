@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NodeMCU Attendance System
+title: Attendance System
 description: An RFID based Attendance System using NodeMCU, integrated with an SQL server.
 img:
 importance: 1
@@ -31,3 +31,8 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
      - For a "key-less" viewing of the attendance record, the student must state it's registration ID (Personal RFID assigned by administration). This will allow the student to see his own attendance records only
    - Key #3 : For registering new tags, possessed by school administration
 5. **SQL Server** : All records are stored on an SQL server and can hence be modified as the administration wills to
+
+# Code Overview
+<div style="background-color : #000000">
+  {% include figure.liquid path="assets/img/attendance-sys/Arduino-main.svg" title="Arduino Main Code" width="900px"%}
+</div>
