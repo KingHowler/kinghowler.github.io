@@ -2,7 +2,7 @@
 layout: page
 title: Attendance System
 description: An RFID based Attendance System using NodeMCU, integrated with an SQL server.
-img:
+img: assets/img/attendance-sys/Top-view.jpeg
 importance: 1
 category: Robotics
 tags: Robotics
@@ -48,3 +48,18 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 <div align="center" style="background-color : #FFFFFF">
   {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Server-side PHP Code" width="900px" class="img-fluid rounded z-depth-1"%}
 </div>
+
+# Circuit Overview
+## This is the circuit for an Attendance Recorder
+<div align="center" style="background-color : #FFFFFF; padding : 50px;" class="img-fluid rounded z-depth-1">
+  {% include figure.liquid path="assets/img/attendance-sys/Circuit.svg" title="Circuit Diagram" width="900px" %}
+</div>
+
+## The Attendance Recorder
+
+{% include figure.liquid path="assets/img/attendance-sys/Top-view.jpeg" title="Top view" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/attendance-sys/Side-view.jpeg" title="Side view" class="img-fluid rounded z-depth-1" %}
+
+## The RFID Tags
+
+{% include figure.liquid path="assets/img/attendance-sys/Tags.jpeg" title="Tags" class="img-fluid rounded z-depth-1" %}
