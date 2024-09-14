@@ -8,6 +8,10 @@ category: Softwares
 related_publications: false
 repositories:
   - KingHowler/Oscilloscope-Online
+icons:
+  - https://skillicons.dev/icons?i=processing
+  - javascript/javascript-original.svg
+  - html5/html5-original.svg
 ---
 
 An online Oscilloscope that lets you read data from your serial device and plot a graph of it. At the moment, it can plot 4 graphs.

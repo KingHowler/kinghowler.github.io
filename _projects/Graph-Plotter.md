@@ -8,6 +8,8 @@ category: Softwares
 related_publications: false
 repositories:
   - KingHowler/Graph-Plotter
+icons:
+  - https://skillicons.dev/icons?i=processing
 ---
 
 A custom library for plotting graphs on Processing IDE.
