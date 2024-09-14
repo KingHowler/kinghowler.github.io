@@ -33,7 +33,9 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 5. **SQL Server** : All records are stored on an SQL server and can hence be modified as the administration wills to
 
 # Code Overview
+
 ## NodeMCU-Code
+
 <div style="background-color : #000000">
   {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-main.svg" title="Arduino Main Code" width="900px" class="img-fluid rounded z-depth-1"%}
 </div>
@@ -42,6 +44,7 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 </div>
 
 ## Server-Code
+
 <div style="background-color : #000000">
   {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Arduino Main Code" width="900px" class="img-fluid rounded z-depth-1"%}
 </div>
