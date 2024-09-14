@@ -35,16 +35,14 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 # Code Overview
 
 ## NodeMCU-Code
-
-<div style="background-color : #000000">
-  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-main.svg" title="Arduino Main Code" width="900px" class="img-fluid rounded z-depth-1"%}
+<div style="background-color : #FFFFFF">
+  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-main.svg" title="NodeMCU Main Code" width="500px" class="img-fluid rounded z-depth-1"%}
 </div>
-<div style="background-color : #000000">
-  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-sub.svg" title="Arduino Main Code" width="900px" class="img-fluid rounded z-depth-1"%}
+<div style="background-color : #FFFFFF">
+  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-sub.svg" title="NodeMCU Sub Code" width="500px" class="img-fluid rounded z-depth-1"%}
 </div>
 
 ## Server-Code
-
-<div style="background-color : #000000">
-  {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Arduino Main Code" width="900px" class="img-fluid rounded z-depth-1"%}
+<div style="background-color : #FFFFFF">
+  {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Server-side PHP Code" width="500px" class="img-fluid rounded z-depth-1"%}
 </div>
