@@ -25,6 +25,13 @@ th, td {
 }
 </style>
 
+<div align="center" class="light-items">
+{% include figure.liquid path="https://img.shields.io/github/stars/KingHowler?style=for-the-badge&logo=github&logoColor=%23ffffff&label=KingHowler&labelColor=%23000000&color=%23ffffff&link=github.com%2FKingHowler" title="My Stars" class="img-fluid rounded z-depth-1" width="300px"%}
+</div>
+<div align="center" class="dark-items">
+{% include figure.liquid path="https://img.shields.io/github/stars/KingHowler?style=for-the-badge&logo=github&logoColor=%23000000&label=KingHowler&labelColor=%23ffffff&color=%23000000&link=github.com%2FKingHowler" title="My Stars" class="img-fluid rounded z-depth-1" width="300px"%}
+</div>
+
 My name is Muhammad Umar Shahbaz, born in Pakistan. From a young age, I've been deeply fascinated by the world of technology, particularly in the fields of programming, Physics, Robotics, and Digital Electronics. I spend a lot of my time working on projects that challenge my creativity and technical skills, constantly pushing myself to learn more and innovate.
 
 In addition to my passion for technology, I also enjoy reading books. Whether it's fiction, non-fiction, or something technical, I find that reading broadens my perspective and fuels my curiosity. When I'm not coding, building, or reading, you can often find me on a sports field. Playing sports is another significant part of my life, keeping me active and helping me maintain a balanced lifestyle. Through all these pursuits, I remain committed to learning, growing, and pursuing excellence in everything I do.

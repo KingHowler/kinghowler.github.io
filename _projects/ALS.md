@@ -14,8 +14,11 @@ icons:
 
 ---
 
-<div style = "padding : 9px;">
+<div align="center" class="light-items">
 {% include figure.liquid path="https://img.shields.io/visual-studio-marketplace/d/MUmarShahbaz.als?style=for-the-badge&label=Installs&labelColor=%230854C1&color=%23000000" title="Installs" class="img-fluid rounded z-depth-1" width="300px"%}
+</div>
+<div align="center" class="dark-items">
+{% include figure.liquid path="https://img.shields.io/visual-studio-marketplace/d/MUmarShahbaz.als?style=for-the-badge&label=Installs&labelColor=%230854C1&color=%23FFFFFF" title="Installs" class="img-fluid rounded z-depth-1" width="300px"%}
 </div>
 
 ---

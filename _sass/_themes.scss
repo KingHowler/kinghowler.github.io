@@ -55,6 +55,12 @@
   .repo-img-dark {
     display: none;
   }
+  .dark-items {
+    display: block;
+  }
+  .light-items {
+    display: none;
+  }
 
   #back-to-top {
     color: var(--global-back-to-top-text-color);
@@ -104,6 +110,12 @@ html[data-theme="dark"] {
   }
   .repo-img-dark {
     display: block;
+  }
+  .dark-items {
+    display: block;
+  }
+  .light-items {
+    display: none;
   }
 }
 

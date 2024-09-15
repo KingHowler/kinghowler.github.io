@@ -12,7 +12,6 @@ repositories:
 icons:
   - arduino/arduino-original.svg
   - php/php-original.svg
-  - postgresql/postgresql-original.svg
   - mysql/mysql-original.svg
 ---
 
@@ -26,6 +25,9 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 
 1. **RFID**: modern, fast and accurate system
 2. **LED Indicators**
+   - Green LED : Student marked as present successfully
+   - Yellow LED : Student already marked as present
+   - Red LED : Student not recognized
 3. **Registered students only**
 4. **Security Keys** : Ensure a controlled access
    - Key #1 : For marking attendance of students, possessed by "**School Certified**" attendance recorders
@@ -40,19 +42,19 @@ An online attendance system made using the **NodeMCU**. The project uses **RFID*
 
 ## NodeMCU-Code
 
-<div align="center" style="background-color : #FFFFFF">
-  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-main.svg" title="NodeMCU Main Code" max-width="500px" class="img-fluid rounded z-depth-1"%}
+<div align="center" style="background-color : #FFFFFF" class="img-fluid rounded z-depth-1">
+  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-main.svg" title="NodeMCU Main Code" max-width="500px" %}
 </div>
-<div align="center" style="background-color : #FFFFFF">
-  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-sub.svg" title="NodeMCU Sub Code" max-width="500px" class="img-fluid rounded z-depth-1"%}
+<div align="center" style="background-color : #FFFFFF" class="img-fluid rounded z-depth-1">
+  {% include figure.liquid path="assets/img/attendance-sys/NodeMCU-sub.svg" title="NodeMCU Sub Code" max-width="500px" %}
 </div>
 
 ---
 
 ## Server-Code
 
-<div align="center" style="background-color : #FFFFFF">
-  {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Server-side PHP Code" class="img-fluid rounded z-depth-1"%}
+<div align="center" style="background-color : #FFFFFF" class="img-fluid rounded z-depth-1">
+  {% include figure.liquid path="assets/img/attendance-sys/PHP.svg" title="Server-side PHP Code" %}
 </div>
 
 ---
