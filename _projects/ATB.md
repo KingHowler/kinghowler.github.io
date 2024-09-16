@@ -29,19 +29,19 @@ Contains the following :
 #### Port viewer
 
 <div align=center>
-{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (1).png" title="Port Viewer" class="img-fluid rounded z-depth-1" max-height="500px" %}
+{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (1).png" title="Port Viewer" class="img-fluid rounded z-depth-1" max-height="500px" width="auto" %}
 </div>
 
 #### Serial Monitor
 
 <div align=center>
-{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (2).png" title="Serial Monitor" class="img-fluid rounded z-depth-1" max-height="500px" %}
+{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (2).png" title="Serial Monitor" class="img-fluid rounded z-depth-1" max-height="500px" width="auto" %}
 </div>
 
 #### Gyroscope Reader
 
 <div align=center>
-{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (3).png" title="Gyroscope Reader" class="img-fluid rounded z-depth-1" max-height="500px" %}
+{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (3).png" title="Gyroscope Reader" class="img-fluid rounded z-depth-1" max-height="500px"  width="auto"%}
 </div>
 
 #### Servo Arm Controller
