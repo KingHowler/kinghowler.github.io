@@ -11,15 +11,18 @@ related_posts: false
 ## New additions
 
 ### Robotics
+
 1. Attendance System
 2. Yellow Rammer
 3. NanoNinja's LFR
 4. Home Automation
 
 ### Softwares
+
 1. Arduino Toolbox
 
 ### Digital Electronics
+
 1. Automatic Night Light (No microcontrollers used, cost decreased by 80%)
 2. Laser Security System (No microcontrollers used, cost decreased by 60%)
 

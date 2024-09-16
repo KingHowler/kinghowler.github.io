@@ -21,7 +21,7 @@ Contains the following :
 
 1. A port viewer : To view the available Serial Ports
 2. A Serial Monitor : To view if data is being received, and if it is in the correct format
-3. A Gyroscope Reader :  A visual representation of the Pitch and Roll of the appropriate sensors, to view if the Robotic Arm is moving in the correct manner or not
+3. A Gyroscope Reader : A visual representation of the Pitch and Roll of the appropriate sensors, to view if the Robotic Arm is moving in the correct manner or not
 4. A Servo Arm Controller : To manually control the servo arm, useful for finding hardware faults and malfunctions
 
 ---
