@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: github-project
 title: Arduino Language Support
 description: Extension for VS Code
 img: assets/img/als/icon.jpeg

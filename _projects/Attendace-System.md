@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: github-project
 title: Attendance System
 description: An RFID based Attendance System using NodeMCU, integrated with an SQL server.
 img: assets/img/attendance-sys/Top-view.jpeg

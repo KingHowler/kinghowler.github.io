@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: github-project
 title: Graph Plotter
 description: Library for Processing IDE
 img: assets/img/gp/icon.png

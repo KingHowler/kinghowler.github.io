@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: github-project
 title: Oscilloscope Online
 description: Online Serial Graph Plotter using p5.js
 img: assets/img/oscilloscope-online/icon.png
