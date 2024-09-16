@@ -28,16 +28,22 @@ Contains the following :
 
 #### Port viewer
 
-{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (1).png" title="Port Viewer" class="img-fluid rounded z-depth-1" %}
+<div align=center>
+{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (1).png" title="Port Viewer" class="img-fluid rounded z-depth-1" max-height="500px" %}
+</div>
 
 #### Serial Monitor
 
-{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (2).png" title="Serial Monitor" class="img-fluid rounded z-depth-1" %}
+<div align=center>
+{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (2).png" title="Serial Monitor" class="img-fluid rounded z-depth-1" max-height="500px" %}
+</div>
 
 #### Gyroscope Reader
 
-{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (3).png" title="Gyroscope Reader" class="img-fluid rounded z-depth-1" %}
+<div align=center>
+{% include figure.liquid path="assets/img/atb/Screenshots/Screenshot (3).png" title="Gyroscope Reader" class="img-fluid rounded z-depth-1" max-height="500px" %}
+</div>
 
 #### Servo Arm Controller
 
-{% include video.liquid path="assets/videos/atb/Servo Arm Preview.mp4" title="Servo Arm Controller Demo" autoplay=true loop = true%}
+{% include video.liquid path="assets/videos/atb/Servo Arm Preview.mp4" class="img-fluid rounded z-depth-1" title="Servo Arm Controller Demo" autoplay=true loop = true%}
