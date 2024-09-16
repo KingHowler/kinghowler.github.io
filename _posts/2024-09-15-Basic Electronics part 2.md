@@ -33,4 +33,3 @@ The Input can be whatever you wish it to be, the only rule is that it must have 
 The following is an example of a pushbutton being used as an input. When pressed, the "pin" receives an input of **LOW** and when the pushbutton is released, the "pin" receives an input of **HIGH**.
 
 {% include figure.liquid path="assets/img/dec/pull-up and pull-down/Pull-Up.png" title="PULL-UP" class="img-fluid rounded z-depth-1" %}
-

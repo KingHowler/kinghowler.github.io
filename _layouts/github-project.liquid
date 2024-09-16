@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-  {% if page._styles %}
-    <!-- Page/Post style -->
-    <style type="text/css">
-      {{ page._styles }}
-    </style>
-  {% endif %}
-  
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
 <div class="post">
   <header class="post-header">
     <div>
@@ -16,7 +16,7 @@ layout: default
         {% if page.icons %}
           <div style="display: inline-block; float : right;">
             {% for iconLink in page.icons %}
-              {%  include icon.liquid icon=iconLink %}
+              {% include icon.liquid icon=iconLink %}
             {% endfor %}
           </div>
         {% endif %}
