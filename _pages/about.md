@@ -78,7 +78,7 @@ My own quote: <br> **I believe that experience is everything. Once you have seen
 
 <br>
 
-<div align="center">
+<div align="center" style="background-color:#ffffff; padding:5px">
   {% include icon.liquid icon="github/github-original.svg" title="GitHub" spaceAfter="12" %}
   {% include icon.liquid icon="vscode/vscode-original.svg" title="Visual Studio Code" spaceAfter="12" %}
   {% include icon.liquid icon="https://www.gitkraken.com/wp-content/uploads/2021/12/gitkraken-icon-stencil-color.svg" title="GitKraken" spaceAfter="12" %}
@@ -88,9 +88,9 @@ My own quote: <br> **I believe that experience is everything. Once you have seen
   {% include icon.liquid icon="filezilla/filezilla-original.svg" title="FileZilla" spaceAfter="12" %}
   {% include icon.liquid icon="unity/unity-original.svg" title="Unity" %}
 </div>
-<div align="center">
+<div align="center" style="background-color:#ffffff; padding:5px">
   {% include icon.liquid icon="cplusplus/cplusplus-original.svg" title="C++" spaceAfter="12" %}
-  {% include icon.liquid icon="csharp-original.svg" title="C#" spaceAfter="12" %}
+  {% include icon.liquid icon="csharp/csharp-original.svg" title="C#" spaceAfter="12" %}
   {% include icon.liquid icon="python/python-original.svg" title="Python" spaceAfter="12" %}
   {% include icon.liquid icon="javascript/javascript-original.svg" title="JavaScript" spaceAfter="12" %}
   {% include icon.liquid icon="php/php-original.svg" title="PHP" spaceAfter="12" %}
