@@ -4,9 +4,12 @@ github_users:
 repo_description_lines_max: 3
 
 github_repos:
+  - KingHowler/Oscilloscope-Online
   - KingHowler/Graph-Plotter
   - KingHowler/Arduino-Language-Support
-  - KingHowler/Oscilloscope-Online
-  - KingHowler/Arduino-Interfaces-using-Winforms
+  - KingHowler/Arduino-Toolbox
+  - KingHowler/NodeMCU-Attendance-system
+  - KingHowler/NodeMCU-Controller
   - KingHowler/Line-Follower
+  - KingHowler/UNO-Card-Game
   - KingHowler/kinghowler.github.io

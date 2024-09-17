@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /repositories/
-title: Repositories
+permalink: /github%20stats/
+title: GitHub
 description: Information regarding my github account
 nav: true
 nav_order: 4
@@ -35,7 +35,7 @@ nav_order: 4
 {% endif %}
 {% endif %}
 
-## GitHub Repositories
+## Prominent GitHub Repositories
 
 {% if site.data.repositories.github_repos %}
 
