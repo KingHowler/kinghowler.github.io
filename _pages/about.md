@@ -79,23 +79,23 @@ My own quote: <br> **I believe that experience is everything. Once you have seen
 <br>
 
 <div align="center">
-  {% include icon.liquid src="github/github-original.svg" title="GitHub" spaceAfter="12" %}
-  {% include icon.liquid src="vscode/vscode-original.svg" title="Visual Studio Code" spaceAfter="12" %}
-  {% include icon.liquid src="https://www.gitkraken.com/wp-content/uploads/2021/12/gitkraken-icon-stencil-color.svg" title="GitKraken" spaceAfter="12" %}
-  {% include icon.liquid src="visualstudio/visualstudio-original.svg" title="Visual Studio" spaceAfter="12" %}
-  {% include icon.liquid src="arduino/arduino-original.svg" title="Arduino" spaceAfter="12" %}
-  {% include icon.liquid src="https://skillicons.dev/icons?i=processing" title="Processing IDE" spaceAfter="12" %}
-  {% include icon.liquid src="filezilla/filezilla-original.svg" title="FileZilla" spaceAfter="12" %}
-  {% include icon.liquid src="unity/unity-original.svg" title="Unity" %}
+  {% include icon.liquid icon="github/github-original.svg" title="GitHub" spaceAfter="12" %}
+  {% include icon.liquid icon="vscode/vscode-original.svg" title="Visual Studio Code" spaceAfter="12" %}
+  {% include icon.liquid icon="https://www.gitkraken.com/wp-content/uploads/2021/12/gitkraken-icon-stencil-color.svg" title="GitKraken" spaceAfter="12" %}
+  {% include icon.liquid icon="visualstudio/visualstudio-original.svg" title="Visual Studio" spaceAfter="12" %}
+  {% include icon.liquid icon="arduino/arduino-original.svg" title="Arduino" spaceAfter="12" %}
+  {% include icon.liquid icon="https://skillicons.dev/icons?i=processing" title="Processing IDE" spaceAfter="12" %}
+  {% include icon.liquid icon="filezilla/filezilla-original.svg" title="FileZilla" spaceAfter="12" %}
+  {% include icon.liquid icon="unity/unity-original.svg" title="Unity" %}
 </div>
 <div align="center">
-  {% include icon.liquid src="cplusplus/cplusplus-original.svg" title="C++" spaceAfter="12" %}
-  {% include icon.liquid src="csharp-original.svg" title="C#" spaceAfter="12" %}
-  {% include icon.liquid src="python/python-original.svg" title="Python" spaceAfter="12" %}
-  {% include icon.liquid src="javascript/javascript-original.svg" title="JavaScript" spaceAfter="12" %}
-  {% include icon.liquid src="php/php-original.svg" title="PHP" spaceAfter="12" %}
-  {% include icon.liquid src="html5/html5-original.svg" title="HTML" spaceAfter="12" %}
-  {% include icon.liquid src="css3/css3-original.svg" title="CSS" %}
+  {% include icon.liquid icon="cplusplus/cplusplus-original.svg" title="C++" spaceAfter="12" %}
+  {% include icon.liquid icon="csharp-original.svg" title="C#" spaceAfter="12" %}
+  {% include icon.liquid icon="python/python-original.svg" title="Python" spaceAfter="12" %}
+  {% include icon.liquid icon="javascript/javascript-original.svg" title="JavaScript" spaceAfter="12" %}
+  {% include icon.liquid icon="php/php-original.svg" title="PHP" spaceAfter="12" %}
+  {% include icon.liquid icon="html5/html5-original.svg" title="HTML" spaceAfter="12" %}
+  {% include icon.liquid icon="css3/css3-original.svg" title="CSS" %}
 </div>
 <br><br>
 
