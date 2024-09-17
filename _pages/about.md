@@ -26,15 +26,21 @@ th, td {
 </style>
 
 <div align="center" class="light-items">
-{% include figure.liquid path="https://img.shields.io/github/stars/KingHowler?style=for-the-badge&logo=github&logoColor=%23ffffff&label=M.%20Umar%20Shahbaz&labelColor=%23000000&color=%23ffffff&link=github.com%2FKingHowler" title="My Stars" class="img-fluid rounded z-depth-1" border="2px solid #000000" width="300px"%}
+{% include figure.liquid path="https://img.shields.io/github/stars/KingHowler?style=for-the-badge&logo=github&logoColor=%23ffffff&label=My%20Stars&labelColor=%23000000&color=%23ffffff&link=github.com%2FKingHowler" title="My Stars" class="img-fluid rounded z-depth-1" border="2px solid #000000" width="300px"%}
 </div>
 <div align="center" class="dark-items">
-{% include figure.liquid path="https://img.shields.io/github/stars/KingHowler?style=for-the-badge&logo=github&logoColor=%23000000&label=M.%20Umar%20Shahbaz&labelColor=%23ffffff&color=%23000000&link=github.com%2FKingHowler" title="My Stars" class="img-fluid rounded z-depth-1" border="2px solid #FFFFFF" width="300px"%}
+{% include figure.liquid path="https://img.shields.io/github/stars/KingHowler?style=for-the-badge&logo=github&logoColor=%23000000&label=My%20Stars&labelColor=%23ffffff&color=%23000000&link=github.com%2FKingHowler" title="My Stars" class="img-fluid rounded z-depth-1" border="2px solid #FFFFFF" width="300px"%}
 </div>
 
-My name is Muhammad Umar Shahbaz, born in Pakistan. From a young age, I've been deeply fascinated by the world of technology, particularly in the fields of programming, Physics, Robotics, and Digital Electronics. I spend a lot of my time working on projects that challenge my creativity and technical skills, constantly pushing myself to learn more and innovate.
+My name is Muhammad Umar Shahbaz, born in the bustling city of Lahore, Pakistan. In **6th grade** I somehow stumbled upon a video of **"Intruder Detector"** project using an **HC-SR04** and an **Arduino Uno**. That was how I jumped into the field of **Robotics**. These days **Robotics** is the talk of the world with almost every student trying their very best to become a part of the industry, but back in my day, meaning when I started **Robotics**, people barely knew about it.
 
-In addition to my passion for technology, I also enjoy reading books. Whether it's fiction, non-fiction, or something technical, I find that reading broadens my perspective and fuels my curiosity. When I'm not coding, building, or reading, you can often find me on a sports field. Playing sports is another significant part of my life, keeping me active and helping me maintain a balanced lifestyle. Through all these pursuits, I remain committed to learning, growing, and pursuing excellence in everything I do.
+**Robotics** is not the only field that gives me "worth". I am also an industrious student when it comes to **Software Sciences** and **Physics**. I have been making softwares since **7th grade**, for that part I don't have a grand story. It was a part of the school syllabus, we were tasked with making a discount calculator for a shop using Visual Studio 2010. You can find a list of my many projects [here](projects/).
+
+Enough talk about skills, let's talk about my hobbies. I am a frequent reader, to be honest I don't read many **Classical** or **Romance** or any other genres a lot. If you ever find me reading a book, there an extremely high chance that I am reading either **Fantasy** or **Crime Fiction**. My favourite novel series include Harry Potter by JK Rowling, Agent 21 by Chris Ryan and Nevernight Chronicles by Jay Kristoff. Other than reading I am also known for playing sports. I have played football in my High School days as one of the most trustworthy defenders. Nowadays I am mostly playing Table Tennis with the rest of my college friends.
+
+I am not great when it comes to academics, my weak memory as well as slow math may make me seem like a liability, but I assure you I have got the skills needed. Although I may not work well under an unreasonably tight deadline, I can still produce amazing results.
+
+My own quote: <br> **I believe that experience is everything. Once you have seen it all, you are the apex.**
 
 <br><br><br><br>
 
@@ -73,29 +79,23 @@ In addition to my passion for technology, I also enjoy reading books. Whether it
 <br>
 
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="40" alt="arduino logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=processing" height="40" alt="processing logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="40" alt="csharp logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" height="40" alt="unity logo"  />
+  {% include icon.liquid src="github/github-original.svg" title="GitHub" spaceAfter="12" %}
+  {% include icon.liquid src="vscode/vscode-original.svg" title="Visual Studio Code" spaceAfter="12" %}
+  {% include icon.liquid src="https://www.gitkraken.com/wp-content/uploads/2021/12/gitkraken-icon-stencil-color.svg" title="GitKraken" spaceAfter="12" %}
+  {% include icon.liquid src="visualstudio/visualstudio-original.svg" title="Visual Studio" spaceAfter="12" %}
+  {% include icon.liquid src="arduino/arduino-original.svg" title="Arduino" spaceAfter="12" %}
+  {% include icon.liquid src="https://skillicons.dev/icons?i=processing" title="Processing IDE" spaceAfter="12" %}
+  {% include icon.liquid src="filezilla/filezilla-original.svg" title="FileZilla" spaceAfter="12" %}
+  {% include icon.liquid src="unity/unity-original.svg" title="Unity" %}
+</div>
+<div align="center">
+  {% include icon.liquid src="cplusplus/cplusplus-original.svg" title="C++" spaceAfter="12" %}
+  {% include icon.liquid src="csharp-original.svg" title="C#" spaceAfter="12" %}
+  {% include icon.liquid src="python/python-original.svg" title="Python" spaceAfter="12" %}
+  {% include icon.liquid src="javascript/javascript-original.svg" title="JavaScript" spaceAfter="12" %}
+  {% include icon.liquid src="php/php-original.svg" title="PHP" spaceAfter="12" %}
+  {% include icon.liquid src="html5/html5-original.svg" title="HTML" spaceAfter="12" %}
+  {% include icon.liquid src="css3/css3-original.svg" title="CSS" %}
 </div>
 <br><br>
 
