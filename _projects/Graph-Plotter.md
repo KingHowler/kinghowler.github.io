@@ -8,6 +8,7 @@ category: Softwares
 related_publications: false
 repositories:
   - KingHowler/Graph-Plotter
+github: https://github.com/KingHowler/Graph-Plotter
 icons:
   - https://skillicons.dev/icons?i=processing
 ---
