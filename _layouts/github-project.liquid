@@ -19,8 +19,8 @@ layout: default
       </h1>
       {% if page.icons %}
         <div>
-          {% for iconLink in page.icons %}
-            {% include icon.liquid icon=iconLink %}
+          {% for pageIcon in page.icons %}
+            {% include icon.liquid icon=pageIcon %}
           {% endfor %}
         </div>
       {% endif %}
