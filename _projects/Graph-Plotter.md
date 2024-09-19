@@ -10,7 +10,8 @@ repositories:
   - KingHowler/Graph-Plotter
 github: https://github.com/KingHowler/Graph-Plotter
 icons:
-  - https://skillicons.dev/icons?i=processing
+  - file: processing
+    site: skillicons
 ---
 
 A custom library for plotting graphs on Processing IDE.

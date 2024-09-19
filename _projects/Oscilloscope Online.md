@@ -10,11 +10,12 @@ repositories:
   - KingHowler/Oscilloscope-Online
 github: https://github.com/KingHowler/Oscilloscope-Online
 icons:
-  - link: processing
+  - file: processing
     site: skillicons
-  - link: javascript/javascript-original.svg
+  - file: javascript/javascript-original.svg
     site: devicons
-  - link: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg
+  - file: html5/html5-original.svg
+    site: devicons
 ---
 
 ## Purpose

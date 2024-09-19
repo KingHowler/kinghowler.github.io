@@ -11,9 +11,12 @@ repositories:
   - KingHowler/NodeMCU-Attendance-system
 github: https://github.com/KingHowler/NodeMCU-Attendance-system
 icons:
-  - arduino/arduino-original.svg
-  - php/php-original.svg
-  - mysql/mysql-original.svg
+  - file: arduino/arduino-original.svg
+    site: devicons
+  - file: php/php-original.svg
+    site: devicons
+  - file: mysql/mysql-original.svg
+    site: devicons
 ---
 
 # General Overview

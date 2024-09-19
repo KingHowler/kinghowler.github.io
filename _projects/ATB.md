@@ -10,7 +10,8 @@ repositories:
   - KingHowler/Arduino-Toolbox
 github: https://github.com/KingHowler/Arduino-Toolbox
 icons:
-  - visualstudio/visualstudio-original.svg
+  - file: visualstudio/visualstudio-original.svg
+    site: devicons
 ---
 
 ---

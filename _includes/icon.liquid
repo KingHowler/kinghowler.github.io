@@ -1,12 +1,12 @@
 <img
-  {% if include.icon.site %}
-    {% if include.icon.site == 'devicons' %}
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ include.icon.link }}"
-    {% elsif include.icon.site == 'skillicons' %}
-      src="https://skillicons.dev/icons?i={{ include.icon.link }}"
+  {% if include.site %}
+    {% if include.site == 'devicons' %}
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{{ include.file }}"
+    {% elsif include.site == 'skillicons' %}
+      src="https://skillicons.dev/icons?i={{ include.file }}"
     {% endif %}
   {% else %}
-    src="{{ include.icon.link }}"
+    src="{{ include.file }}"
   {% endif %}
 
   {% if include.alt %}
