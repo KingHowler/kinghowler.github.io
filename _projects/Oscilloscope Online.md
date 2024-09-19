@@ -8,6 +8,7 @@ category: Softwares
 related_publications: false
 repositories:
   - KingHowler/Oscilloscope-Online
+github: https://KingHowler/Oscilloscope-Online
 icons:
   - https://skillicons.dev/icons?i=processing
   - javascript/javascript-original.svg
