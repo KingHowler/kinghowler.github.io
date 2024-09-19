@@ -20,7 +20,7 @@ layout: default
       {% if page.icons %}
         <div>
           {% for pageIcon in page.icons %}
-            {% include icon.liquid link=pageIcon.file site=pageIcon.site %}
+            {% include icon.liquid file=pageIcon.file site=pageIcon.site %}
           {% endfor %}
         </div>
       {% endif %}
