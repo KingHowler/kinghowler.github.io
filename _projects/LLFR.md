@@ -26,7 +26,8 @@ The project is being made as an educational project. I am building it to gain ha
 Almost all line follower projects use a microcontroller, namely the Arduino. I have already done that, now I am making a line follower bot that doesn't use an Arduino or any other microcontrollers, but instead it uses a custom logic circuit made using the 74XX IC Series
 
 ## The ICs being used
-| IC no# | IC name             |
+
+| IC no  | IC name             |
 |--------|---------------------|
 | 7404   | **HEX INVERTER**    |
 | 7408   | **QUAD 2-INPUT AND**|
