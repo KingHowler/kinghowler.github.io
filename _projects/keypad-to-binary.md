@@ -4,7 +4,7 @@ title: Keypad to binary
 description: A project for learning digital electronics
 img:
 importance: 1
-category: Digital Electronics
+category: Coming Soon
 tags: Electronics
 related_publications: false
 ---
