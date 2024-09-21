@@ -20,15 +20,17 @@ th, td {
 </style>
 
 # Why?
+
 The project is being made as an educational project. I am building it to gain hands-on experience with **digital electronics** and **embedded systems**.
 
 # What's new?
+
 Almost all line follower projects use a microcontroller, namely the Arduino. I have already done that, now I am making a line follower bot that doesn't use an Arduino or any other microcontrollers, but instead it uses a custom logic circuit made using the 74XX IC Series
 
 ## The ICs being used
 
-| IC no  | IC name             |
-|--------|---------------------|
-| 7404   | **HEX INVERTER**    |
-| 7408   | **QUAD 2-INPUT AND**|
-| 74279  | **QUAD SR LATCH**   |
+| IC no | IC name              |
+| ----- | -------------------- |
+| 7404  | **HEX INVERTER**     |
+| 7408  | **QUAD 2-INPUT AND** |
+| 74279 | **QUAD SR LATCH**    |
