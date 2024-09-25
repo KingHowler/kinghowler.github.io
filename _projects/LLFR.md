@@ -36,19 +36,20 @@ Almost all line follower projects use a microcontroller, namely the Arduino. I h
 | 555    | **555 Timer IC**     |
 
 ## 555-bistable 5-bit memory for storing the current state of the bot
+
 {% include figure.liquid path="assets/img/llfr/Memory-unit.jpeg" title="Memory Unit" class="img-fluid rounded z-depth-1" %}
 
 Next I will make a Control Unit using Inverters and diodes.
 
 ## The 5 states
 
-| State | Full Name                    |
-| ----- | ---------------------------- |
-| LF    | **Left - Full speed**        |
-| LH    | **Left - Half speed**        |
-| FF    | **Forward - Full speed**     |
-| RH    | **Right - Half speed**       |
-| RF    | **Right - Full speed**       |
+| State | Full Name                |
+| ----- | ------------------------ |
+| LF    | **Left - Full speed**    |
+| LH    | **Left - Half speed**    |
+| FF    | **Forward - Full speed** |
+| RH    | **Right - Half speed**   |
+| RF    | **Right - Full speed**   |
 
 ## The Control system
 
@@ -57,13 +58,12 @@ Next I will make a Control Unit using Inverters and diodes.
 ### I/O
 
 | Inputs | Purpose                   |
-| -----  | ------------------------  |
+| ------ | ------------------------- |
 | A      | **Very Left sensor**      |
 | B      | **Slightly Left sensor**  |
 | C      | **Middle sensor**         |
 | D      | **Slightly Right sensor** |
 | E      | **Very Right sensor**     |
-
 
 ### State Saver
 
@@ -74,4 +74,3 @@ Next I will make a Control Unit using Inverters and diodes.
 | FF    | C **ANOS** | A + B + D + E |
 | RH    | D **ANOS** | C + E         |
 | RF    | E **ANOS** | C             |
-
