@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Keypad to binary
-description: A project for learning digital electronics
+description: Embedded system to convert input from keypad to binary number
 img:
 importance: 1
 category: Coming Soon

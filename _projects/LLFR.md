@@ -29,8 +29,49 @@ Almost all line follower projects use a microcontroller, namely the Arduino. I h
 
 ## The ICs being used
 
-| IC no | IC name              |
-| ----- | -------------------- |
-| 7404  | **HEX INVERTER**     |
-| 7408  | **QUAD 2-INPUT AND** |
-| 74279 | **QUAD SR LATCH**    |
+| IC no. | IC name              |
+| ------ | -------------------- |
+| 7404   | **HEX INVERTER**     |
+| 7408   | **QUAD 2-INPUT AND** |
+| 555    | **555 Timer IC**     |
+
+## 555-bistable 5-bit memory for storing the current state of the bot
+{% include figure.liquid path="assets/img/llfr/Memory-unit.jpeg" title="Memory Unit" class="img-fluid rounded z-depth-1" %}
+
+Next I will make a Control Unit using Inverters and diodes.
+
+## The 5 states
+
+| State | Full Name                    |
+| ----- | ---------------------------- |
+| LF    | **Left - Full speed**        |
+| LH    | **Left - Half speed**        |
+| FF    | **Forward - Full speed**     |
+| RH    | **Right - Half speed**       |
+| RF    | **Right - Full speed**       |
+
+## The Control system
+
+**NOTE : "ANOS" means "AND NO OTHER STATES"**
+
+### I/O
+
+| Inputs | Purpose                   |
+| -----  | ------------------------  |
+| A      | **Very Left sensor**      |
+| B      | **Slightly Left sensor**  |
+| C      | **Middle sensor**         |
+| D      | **Slightly Right sensor** |
+| E      | **Very Right sensor**     |
+
+
+### State Saver
+
+| State | Entry      | Exit          |
+| ----- | ---------- | ------------- |
+| LF    | A **ANOS** | C             |
+| LH    | B **ANOS** | A + C         |
+| FF    | C **ANOS** | A + B + D + E |
+| RH    | D **ANOS** | C + E         |
+| RF    | E **ANOS** | C             |
+
