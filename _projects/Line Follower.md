@@ -2,7 +2,7 @@
 layout: github-project
 title: Line Follower
 description: A Line Follower bot using an Arduino.
-img: assets\img\lfr\Icon.webp
+img: assets/img/lfr/Icon.webp
 importance: 4
 category: Robotics
 tags: Robotics
@@ -19,6 +19,6 @@ icons:
 
 ### Algorithm
 
-{% include figure.liquid path="assets\img\lfr\Optimized Control Flow.png" class="img-fluid rounded z-depth-1" title="Optimized Control Flow" %}
+{% include figure.liquid path="assets/img/lfr/Optimized Control Flow.png" class="img-fluid rounded z-depth-1" title="Optimized Control Flow" %}
 
 **The code is designed on the basis of "correct and exit", It tries to correct any errors it finds and exit as soon as possible so that it can restart and get updated data swiftly and act accordingly**
