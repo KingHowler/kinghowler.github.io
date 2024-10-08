@@ -15,10 +15,13 @@ icons:
     site: devicons
 ---
 
-{% include video.liquid path="assets/videos/lfr/Demo.mp4" class="img-fluid rounded z-depth-1" title="Line Follower (No PID) Demo" autoplay=true loop = true %}
+{% include figure.liquid path="assets/img/lfr/Side.jpg" class="img-fluid rounded z-depth-1" title="Side-View" %}
+
+{% include figure.liquid path="assets/img/lfr/Front.jpg" class="img-fluid rounded z-depth-1" title="Side-View" %}
 
 ### Algorithm
 
 {% include figure.liquid path="assets/img/lfr/Optimized Control Flow.png" class="img-fluid rounded z-depth-1" title="Optimized Control Flow" %}
 
 **The code is designed on the basis of "correct and exit", It tries to correct any errors it finds and exit as soon as possible so that it can restart and get updated data swiftly and act accordingly**
+**This will minimize the time spent with a certain reading and hence increasing the "Refresh Rate" of the program**
