@@ -14,4 +14,4 @@ icons:
 
 {% include figure.liquid path="assets/img/y-rammer/Internal-Cover.jpg" class="img-fluid rounded z-depth-1" title="Internals (Cover)" %}
 
-{% include figure.liquid path="assets/img/lfr/Internal-Base.jpg" class="img-fluid rounded z-depth-1" title="Internals (Base)" %}
+{% include figure.liquid path="assets/img/y-rammer/Internal-Base.jpg" class="img-fluid rounded z-depth-1" title="Internals (Base)" %}
