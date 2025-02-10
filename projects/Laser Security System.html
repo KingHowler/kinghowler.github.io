@@ -70,7 +70,19 @@
 
 <h2 id="explanation">Explanation</h2>
 
-<p>The apparatus is set up so that an LDR module will send live status of whether the laser is present or not. The reason why an alarm can’t be directly attached is that as soon as the intruder has passed through, the laser will once again get in contact with the LDR and it will stop sounding the alarm. This means that the alarm will only sound for approximately 1s which is not an appropriate duration for a security alarm. To counter act this I am using a bits to store 1 when a laser is broken and 0 when manually set to via a pushbutton. For this I used a 5 Bit Memory Unit—a previous project of mine, a link is given below at the end of the page—and by assigning each laser to a separate but, we can also store exactly which laser was broken as can be seen above in the demo video.</p>
+<p>The apparatus is set up so that each laser is perfectly aligned with a LDR Sensor. Using a pre-built LDR sensor allows the output to always be digital, either 1 or 0, ensuring a clean and usable input. Alternatively, Creating an LDR potential divider and attaching the output to a NPN or PNP Bi-polar Junction Transistor can simulate similar results.</p>
+
+<p>After this, a 555 timer IC is being used in Bi-stable mode. This will essentially result in it becoming a single SR Latch which can then store the states. An NPN is being used to invert the output of the LDR as the trigger pin of 555 IC is Active LOW.</p>
+
+<p>Finally, a pushbutton is attached to the reset pin of the 555 IC to reset the circuit.</p>
+
+<h3 id="circuit-diagram">Circuit Diagram</h3>
+
+<div style="max-width: 1000px; max-height: ; margin: 0 auto;">
+    <img src="/assets/images/Projects/LSS/LSS%20Schematic.png" style="width: 100%; height: 100%; border-radius: " />
+</div>
+
+<p><strong>Note: As there is a separate circuit for each laser and LDR pair, this means that they can be independently tracked. Not only will we know that a laser was broken, we will also know exactly which laser was broken giving us the whereabouts of the intruder</strong></p>
 
 
     <br><br><br>
