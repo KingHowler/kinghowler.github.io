@@ -177,7 +177,7 @@ table tr:hover {
   right: 10px;
 }
 
-.slideshow-container::before {
+.overlay::before {
   content: "";
   position: absolute;
   top: 0;

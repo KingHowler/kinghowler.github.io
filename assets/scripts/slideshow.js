@@ -18,8 +18,10 @@ function showNextSlide(next) {
 
   // Update text overlay from data attributes
   const currentSlide = images[next];
+  if (titleElement) {
   titleElement.textContent = currentSlide.getAttribute('data-title');
   descriptionElement.textContent = currentSlide.getAttribute('data-description');
+  }
 }
 
 function autoSlide() {
