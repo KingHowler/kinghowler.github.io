@@ -7,10 +7,10 @@ jobs:
   format:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout gh-pages branch
+      - name: Checkout jekyll branch
         uses: actions/checkout@v4
         with:
-          ref: gh-pages
+          ref: jekyll
 
       - name: Find and Remove </source> Tags
         run: find . -type f -name "*.html" -exec sed -i 's/<\/source>//g' {} +
