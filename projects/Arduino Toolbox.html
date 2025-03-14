@@ -1,141 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Arduino Toolbox" />
-    <meta
-      name="description"
-      content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
-"
-    />
-    <meta name="keywords" content="" />
-    <meta name="author" content="M. Umar Shahbaz" />
-    <meta property="og:title" content="Arduino Toolbox" />
-    <meta
-      property="og:description"
-      content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
-"
-    />
-    <meta
-      property="og:image"
-      content="https://m-umar.me/assets/media/Projects/ATB/ATB.png"
-    />
-    <meta property="og:url" content="/projects/Arduino Toolbox.html" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Arduino Toolbox" />
-    <meta
-      name="twitter:description"
-      content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
-"
-    />
-    <meta
-      name="twitter:image"
-      content="https://m-umar.me/assets/media/Projects/ATB/ATB.png"
-    />
+    <meta name="title" content="Arduino Toolbox">
+    <meta name="description" content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
+">
+    <meta name="keywords" content="">
+    <meta name="author" content="M. Umar Shahbaz">
+    <meta property="og:title" content="Arduino Toolbox">
+    <meta property="og:description" content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
+">
+    <meta property="og:image" content="https://m-umar.me/assets/media/Projects/ATB/ATB.png">
+    <meta property="og:url" content="/projects/Arduino Toolbox.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arduino Toolbox">
+    <meta name="twitter:description" content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
+">
+    <meta name="twitter:image" content="https://m-umar.me/assets/media/Projects/ATB/ATB.png">
 
-    <link rel="stylesheet" href="/assets/style/master.css" />
-    <link rel="stylesheet" href="/assets/style/elements.css" />
-    <link rel="stylesheet" href="/assets/style/project.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/media/icon.png" />
+    <link rel="stylesheet" href="/assets/style/master.css">
+    <link rel="stylesheet" href="/assets/style/elements.css">
+    <link rel="stylesheet" href="/assets/style/project.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/media/icon.png">
     <script defer src="/assets/scripts/nav.js"></script>
+    
+    
 
     <title>Arduino Toolbox</title>
   </head>
   <body>
     <div class="navigation">
-      <button title="Menu" id="menu">☰</button>
-      <nav class="dropdown-content">
+    <button title="Menu" id="menu">☰</button>
+    <nav class="dropdown-content">
         <a href="/events&affiliations/">Events & Affiliations</a>
         <a href="/publications/">Publications</a>
         <a href="/projects/">Projects</a>
         <a href="/github/">GitHub</a>
         <a href="/">Home</a>
-      </nav>
-      <div id="progress"></div>
-      <div
-        id="progress"
-        style="width: 100%; background-color: #272626; z-index: 999"
-      ></div>
-    </div>
+    </nav>
+    <div id="progress"></div>
+    <div id="progress" style="width: 100%; background-color: #272626; z-index: 999;"></div>
+</div>
     <div id="main-outer">
       <div class="mainPage">
         <div class="Intro">
-          <div id="Icon">
-            <div style="max-width: 250px; max-height: 250px; margin: 0 auto">
-              <img
-                src="/assets/media/Projects/ATB/ATB.png"
-                style="width: 100%; height: 100%; border-radius: 15px"
-              />
-            </div>
-          </div>
+  
+    <div class="Icon">
+      <div style="max-width: 300px; max-height: 300px; margin: 0 auto;">
+    <img src="/assets/media/Projects/ATB/ATB.png" style="width: 100%; height: 100%; border-radius: 15px">
+</div>
+    </div>
+    <hr class="vertical-hr">
+  
 
-          <div id="Info">
-            <h1 id="Title">Arduino Toolbox</h1>
-            <div id="TechIconsBox">
-              <div id="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
+  <div class="Info">
+    <h1 class="Title">Arduino Toolbox</h1>
+    <div class="TechIconsBox">
+      
+        <div class="TechIcon">
+          <img
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+    
+  
 
-              <div id="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
-            </div>
-            <h2 id="Grade">Difficulty: A</h2>
-            <p>
-              A WinForms app for robotic arm debugging with real-time tilt
-              sensor data visualization and sliders to control each individual
-              motor.
-            </p>
-            <p id="Category" class="sub-heading">
-              <strong>Community Projects & Developer Tools</strong>
-            </p>
-          </div>
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
         </div>
-        <hr />
+      
+        <div class="TechIcon">
+          <img
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
+    
+  
 
-        <div class="card-container">
-          <a
-            href="https://github.com/MUmarShahbaz/Arduino-Toolbox"
-            rel="external nofollow noopener"
-            target="_blank"
-          >
-            <img
-              style="width: 100%; height: auto"
-              alt="MUmarShahbaz/Arduino-Toolbox"
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=Arduino-Toolbox&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3"
-            />
-          </a>
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
         </div>
-        <hr />
-
-        <br /><br /><br />
-        <hr />
-        <h1>Relevant Projects</h1>
-        <div class="card-container">
-          <div class="card">
-            <img src="/assets/media/Projects/RBA/RBA.jpg" class="card-image" />
-
-            <div class="card-body">
-              <h3>Robotic Arm</h3>
-
-              <h2 class="Grade">A</h2>
-            </div>
+      
+    </div>
+    <h2 class="Grade">Difficulty: A</h2>
+    <p>A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
+</p>
+    <p class="sub-heading Category">
+      <strong>Community Projects & Developer Tools</strong>
+    </p>
+    
+  </div>
+</div>
+        <hr>
+        
+          <div class="card-container">
+            
+              <a href="https://github.com/MUmarShahbaz/Arduino-Toolbox" rel="external nofollow noopener" target="_blank">
+    <img style="width: 100%; height: auto;" alt="MUmarShahbaz/Arduino-Toolbox" src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=Arduino-Toolbox&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3">
+</a>
+            
           </div>
+          <hr>
+        
+        
+
+        
+          <br><br><br>
+          <hr>
+          <h1>Relevant Projects</h1>
+          <div class="card-container">
+            
+              
+              
+    <div class="card">
+        
+            <img src="/assets/media/Projects/RBA/RBA.jpg" class="card-image">
+        
+        <div class="card-body">
+            <h3>Robotic Arm</h3>
+            
+                <h2 class="Grade">A</h2>
+            
         </div>
+    </div>
+
+            
+          </div>
+        
       </div>
     </div>
     <footer>
-      <p>Thanks for visiting</p>
-    </footer>
+    <p>Thanks for visiting</p>
+</footer>
   </body>
 </html>

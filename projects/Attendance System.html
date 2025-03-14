@@ -1,256 +1,233 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Attendance System" />
-    <meta
-      name="description"
-      content="NodeMCU based RFID attendance marking system that marks and stores student attendance on an SQL server using PHP.
-"
-    />
-    <meta name="keywords" content="" />
-    <meta name="author" content="M. Umar Shahbaz" />
-    <meta property="og:title" content="Attendance System" />
-    <meta
-      property="og:description"
-      content="NodeMCU based RFID attendance marking system that marks and stores student attendance on an SQL server using PHP.
-"
-    />
-    <meta
-      property="og:image"
-      content="https://m-umar.me/assets/media/Projects/ATS/ATS.jpg"
-    />
-    <meta property="og:url" content="/projects/Attendance System.html" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Attendance System" />
-    <meta
-      name="twitter:description"
-      content="NodeMCU based RFID attendance marking system that marks and stores student attendance on an SQL server using PHP.
-"
-    />
-    <meta
-      name="twitter:image"
-      content="https://m-umar.me/assets/media/Projects/ATS/ATS.jpg"
-    />
+    <meta name="title" content="Attendance System">
+    <meta name="description" content="NodeMCU based RFID attendance marking system that marks and stores student attendance on an SQL server using PHP.
+">
+    <meta name="keywords" content="">
+    <meta name="author" content="M. Umar Shahbaz">
+    <meta property="og:title" content="Attendance System">
+    <meta property="og:description" content="NodeMCU based RFID attendance marking system that marks and stores student attendance on an SQL server using PHP.
+">
+    <meta property="og:image" content="https://m-umar.me/assets/media/Projects/ATS/ATS.jpg">
+    <meta property="og:url" content="/projects/Attendance System.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Attendance System">
+    <meta name="twitter:description" content="NodeMCU based RFID attendance marking system that marks and stores student attendance on an SQL server using PHP.
+">
+    <meta name="twitter:image" content="https://m-umar.me/assets/media/Projects/ATS/ATS.jpg">
 
-    <link rel="stylesheet" href="/assets/style/master.css" />
-    <link rel="stylesheet" href="/assets/style/elements.css" />
-    <link rel="stylesheet" href="/assets/style/project.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/media/icon.png" />
+    <link rel="stylesheet" href="/assets/style/master.css">
+    <link rel="stylesheet" href="/assets/style/elements.css">
+    <link rel="stylesheet" href="/assets/style/project.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/media/icon.png">
     <script defer src="/assets/scripts/nav.js"></script>
-
-    <script defer src="/assets/scripts/slideshow.js"></script>
+    
+      <script defer src="/assets/scripts/slideshow.js"></script>
+    
+    
 
     <title>Attendance System</title>
   </head>
   <body>
     <div class="navigation">
-      <button title="Menu" id="menu">☰</button>
-      <nav class="dropdown-content">
+    <button title="Menu" id="menu">☰</button>
+    <nav class="dropdown-content">
         <a href="/events&affiliations/">Events & Affiliations</a>
         <a href="/publications/">Publications</a>
         <a href="/projects/">Projects</a>
         <a href="/github/">GitHub</a>
         <a href="/">Home</a>
-      </nav>
-      <div id="progress"></div>
-      <div
-        id="progress"
-        style="width: 100%; background-color: #272626; z-index: 999"
-      ></div>
-    </div>
+    </nav>
+    <div id="progress"></div>
+    <div id="progress" style="width: 100%; background-color: #272626; z-index: 999;"></div>
+</div>
     <div id="main-outer">
       <div class="mainPage">
         <div class="Intro">
-          <div id="Icon">
-            <div style="max-width: 250px; max-height: 250px; margin: 0 auto">
-              <img
-                src="/assets/media/Projects/ATS/ATS.jpg"
-                style="width: 100%; height: 100%; border-radius: 15px"
-              />
-            </div>
-          </div>
+  
+    <div class="Icon">
+      <div style="max-width: 300px; max-height: 300px; margin: 0 auto;">
+    <img src="/assets/media/Projects/ATS/ATS.jpg" style="width: 100%; height: 100%; border-radius: 15px">
+</div>
+    </div>
+    <hr class="vertical-hr">
+  
 
-          <div id="Info">
-            <h1 id="Title">Attendance System</h1>
-            <div id="TechIconsBox">
-              <div id="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
+  <div class="Info">
+    <h1 class="Title">Attendance System</h1>
+    <div class="TechIconsBox">
+      
+        <div class="TechIcon">
+          <img
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
+    
+  
 
-              <div id="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
-
-              <div id="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
-            </div>
-            <h2 id="Grade">Difficulty: A</h2>
-            <p>
-              NodeMCU based RFID attendance marking system that marks and stores
-              student attendance on an SQL server using PHP.
-            </p>
-            <p id="Category" class="sub-heading">
-              <strong>Community Projects & Developer Tools</strong>
-            </p>
-          </div>
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
         </div>
-        <hr />
+      
+        <div class="TechIcon">
+          <img
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+    
+  
 
-        <div class="card-container">
-          <a
-            href="https://github.com/MUmarShahbaz/NodeMCU-Attendance-system"
-            rel="external nofollow noopener"
-            target="_blank"
-          >
-            <img
-              style="width: 100%; height: auto"
-              alt="MUmarShahbaz/NodeMCU-Attendance-system"
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=NodeMCU-Attendance-system&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3"
-            />
-          </a>
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
         </div>
-        <hr />
+      
+        <div class="TechIcon">
+          <img
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+    
+  
 
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
+        </div>
+      
+    </div>
+    <h2 class="Grade">Difficulty: A</h2>
+    <p>NodeMCU based RFID attendance marking system that marks and stores student attendance on an SQL server using PHP.
+</p>
+    <p class="sub-heading Category">
+      <strong>Community Projects & Developer Tools</strong>
+    </p>
+    
+  </div>
+</div>
+        <hr>
+        
+          <div class="card-container">
+            
+              <a href="https://github.com/MUmarShahbaz/NodeMCU-Attendance-system" rel="external nofollow noopener" target="_blank">
+    <img style="width: 100%; height: auto;" alt="MUmarShahbaz/NodeMCU-Attendance-system" src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=NodeMCU-Attendance-system&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3">
+</a>
+            
+          </div>
+          <hr>
+        
         <h1 id="general-overview">General Overview</h1>
 
-        <p>
-          An online attendance system made using the <strong>NodeMCU</strong>.
-          The project uses <strong>RFID</strong> (Radio-Frequency
-          Identification) with indicator lights, to record student attendances.
-          A webpage handles the registration of new RFID tags under the name of
-          the student. A second webpage is used to get the attendance records of
-          the entire student body. The system is secure and has 3 custom
-          “<strong>Keys</strong>” to ensure there is no access to any third
-          party or false records made by someone with malicious intents.
-        </p>
+<p>An online attendance system made using the <strong>NodeMCU</strong>. The project uses <strong>RFID</strong> (Radio-Frequency Identification) with indicator lights, to record student attendances. A webpage handles the registration of new RFID tags under the name of the student. A second webpage is used to get the attendance records of the entire student body. The system is secure and has 3 custom “<strong>Keys</strong>” to ensure there is no access to any third party or false records made by someone with malicious intents.</p>
 
-        <hr />
+<hr />
 
-        <h2 id="summary-of-features">Summary of Features</h2>
+<h2 id="summary-of-features">Summary of Features</h2>
 
-        <ol>
-          <li><strong>RFID</strong>: modern, fast and accurate system</li>
-          <li>
-            <strong>LED Indicators</strong>
-            <ul>
-              <li>Green LED : Student marked as present successfully</li>
-              <li>Yellow LED : Student already marked as present</li>
-              <li>Red LED : Student not recognized</li>
-            </ul>
-          </li>
-          <li><strong>Registered students only</strong></li>
-          <li>
-            <strong>Security Keys</strong> : Ensure a controlled access
-            <ul>
-              <li>
-                Key #1 : For marking attendance of students, possessed by
-                “<strong>School Certified</strong>” attendance recorders
-              </li>
-              <li>
-                Key #2 : For viewing the attendance record of the entire school
-                body, possessed by school administration
-                <ul>
-                  <li>
-                    For a “key-less” viewing of the attendance record, the
-                    student must state it’s registration ID (Personal RFID
-                    assigned by administration). This will allow the student to
-                    see his own attendance records only
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Key #3 : For registering new tags, possessed by school
-                administration
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>SQL Server</strong> : All records are stored on an SQL
-            server and can hence be modified as the administration wills to
-          </li>
-        </ol>
+<ol>
+  <li><strong>RFID</strong>: modern, fast and accurate system</li>
+  <li><strong>LED Indicators</strong>
+    <ul>
+      <li>Green LED : Student marked as present successfully</li>
+      <li>Yellow LED : Student already marked as present</li>
+      <li>Red LED : Student not recognized</li>
+    </ul>
+  </li>
+  <li><strong>Registered students only</strong></li>
+  <li><strong>Security Keys</strong> : Ensure a controlled access
+    <ul>
+      <li>Key #1 : For marking attendance of students, possessed by “<strong>School Certified</strong>” attendance recorders</li>
+      <li>Key #2 : For viewing the attendance record of the entire school body, possessed by school administration
+        <ul>
+          <li>For a “key-less” viewing of the attendance record, the student must state it’s registration ID (Personal RFID assigned by administration). This will allow the student to see his own attendance records only</li>
+        </ul>
+      </li>
+      <li>Key #3 : For registering new tags, possessed by school administration</li>
+    </ul>
+  </li>
+  <li><strong>SQL Server</strong> : All records are stored on an SQL server and can hence be modified as the administration wills to</li>
+</ol>
 
-        <hr />
+<hr />
 
-        <h1 id="code-overview">Code Overview</h1>
+<h1 id="code-overview">Code Overview</h1>
 
-        <h2 id="nodemcu-code">NodeMCU-Code</h2>
-        <div style="max-width: 500px; max-height:; margin: 0 auto">
-          <img
-            src="https://raw.githubusercontent.com/MUmarShahbaz/mumarshahbaz.github.io/refs/heads/master/assets/img/attendance-sys/NodeMCU-main.svg"
-            style="width: 100%; height: 100%; border-radius:"
-          />
-        </div>
-        <div style="max-width: 400px; max-height:; margin: 0 auto">
-          <img
-            src="https://raw.githubusercontent.com/MUmarShahbaz/mumarshahbaz.github.io/refs/heads/master/assets/img/attendance-sys/NodeMCU-sub.svg"
-            style="width: 100%; height: 100%; border-radius:"
-          />
-        </div>
+<h2 id="nodemcu-code">NodeMCU-Code</h2>
+<div style="max-width: 500px; max-height: ; margin: 0 auto;">
+    <img src="https://raw.githubusercontent.com/MUmarShahbaz/mumarshahbaz.github.io/refs/heads/master/assets/img/attendance-sys/NodeMCU-main.svg" style="width: 100%; height: 100%; border-radius: " />
+</div>
+<div style="max-width: 400px; max-height: ; margin: 0 auto;">
+    <img src="https://raw.githubusercontent.com/MUmarShahbaz/mumarshahbaz.github.io/refs/heads/master/assets/img/attendance-sys/NodeMCU-sub.svg" style="width: 100%; height: 100%; border-radius: " />
+</div>
 
-        <hr />
+<hr />
 
-        <h2 id="server-code">Server-Code</h2>
+<h2 id="server-code">Server-Code</h2>
 
-        <div style="max-width: 800px; max-height:; margin: 0 auto">
-          <img
-            src="https://raw.githubusercontent.com/MUmarShahbaz/mumarshahbaz.github.io/refs/heads/master/assets/img/attendance-sys/PHP.svg"
-            style="width: 100%; height: 100%; border-radius:"
-          />
-        </div>
+<div style="max-width: 800px; max-height: ; margin: 0 auto;">
+    <img src="https://raw.githubusercontent.com/MUmarShahbaz/mumarshahbaz.github.io/refs/heads/master/assets/img/attendance-sys/PHP.svg" style="width: 100%; height: 100%; border-radius: " />
+</div>
 
-        <hr />
+<hr />
 
-        <h1 id="circuit-overview">Circuit Overview</h1>
+<h1 id="circuit-overview">Circuit Overview</h1>
 
-        <h2 id="this-is-the-circuit-for-an-attendance-recorder">
-          This is the circuit for an Attendance Recorder
-        </h2>
+<h2 id="this-is-the-circuit-for-an-attendance-recorder">This is the circuit for an Attendance Recorder</h2>
 
-        <div style="max-width: 500px; max-height:; margin: 0 auto">
-          <img
-            src="https://raw.githubusercontent.com/MUmarShahbaz/mumarshahbaz.github.io/refs/heads/master/assets/img/attendance-sys/Circuit.png"
-            style="width: 100%; height: 100%; border-radius:"
-          />
-        </div>
+<div style="max-width: 500px; max-height: ; margin: 0 auto;">
+    <img src="https://raw.githubusercontent.com/MUmarShahbaz/mumarshahbaz.github.io/refs/heads/master/assets/img/attendance-sys/Circuit.png" style="width: 100%; height: 100%; border-radius: " />
+</div>
 
-        <hr />
+<hr />
 
-        <h2 id="the-attendance-recorder">The Attendance Recorder</h2>
+<h2 id="the-attendance-recorder">The Attendance Recorder</h2>
 
-        <div class="slideshow-container">
-          <button class="nav-btn prev-btn">«</button>
-          <button class="nav-btn next-btn">»</button>
-          <div class="slide-image active" data-title="" data-description="">
-            <img src="/assets/media/Projects/ATS/Top-view.jpeg" />
-          </div>
-          <div class="slide-image" data-title="" data-description="">
-            <img src="/assets/media/Projects/ATS/Side-view.jpeg" />
-          </div>
-          <div class="slide-image" data-title="" data-description="">
-            <img src="/assets/media/Projects/ATS/Tags.jpeg" />
-          </div>
-        </div>
+<div class="slideshow-container">
+
+<button class="nav-btn prev-btn">«</button>
+<button class="nav-btn next-btn">»</button>
+<div class="slide-image active" data-title="" data-description="">
+    <img src="/assets/media/Projects/ATS/Top-view.jpeg" />
+</div>
+<div class="slide-image " data-title="" data-description="">
+    <img src="/assets/media/Projects/ATS/Side-view.jpeg" />
+</div>
+<div class="slide-image " data-title="" data-description="">
+    <img src="/assets/media/Projects/ATS/Tags.jpeg" />
+</div>
+</div>
+
+        
       </div>
     </div>
     <footer>
-      <p>Thanks for visiting</p>
-    </footer>
+    <p>Thanks for visiting</p>
+</footer>
   </body>
 </html>

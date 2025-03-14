@@ -1,31 +1,38 @@
 .Intro {
   display: flex;
-  margin: 0 auto 20px;
+  margin: 0 auto;
 }
-.Intro #Info {
-  padding-left: 20px;
+.Intro .Icon {
+  margin: auto;
+  padding-right: 20px;
+}
+.Intro .vertical-hr {
+  display: inline-block;
+  margin: 20px 20px;
+}
+.Intro .Info {
   width: 100%;
   align-items: center;
 }
-.Intro #Info #Title {
+.Intro .Info .Title {
   display: inline;
 }
-.Intro #Info #TechIconsBox {
+.Intro .Info .TechIconsBox {
   display: block;
   gap: 10px;
   margin-bottom: 10px;
   float: right;
 }
-.Intro #Info #TechIconsBox #TechIcon {
+.Intro .Info .TechIconsBox .TechIcon {
   display: inline;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-.Intro #Info #Grade {
+.Intro .Info .Grade {
   color: #66b3ff;
 }
-.Intro #Info #Category {
+.Intro .Info .Category {
   vertical-align: middle;
   height: 30px;
   padding: 17px;
@@ -35,28 +42,34 @@
   .Intro {
     display: block;
   }
-  .Intro #Info {
+  .Intro .vertical-hr {
+    display: none;
+  }
+  .Intro .Info {
     padding: 0;
   }
-  .Intro #Info #Title {
+  .Intro .Info .Title {
     display: block;
     text-align: center;
   }
-  .Intro #Info #TechIconsBox {
+  .Intro .Info .TechIconsBox {
     float: none;
     display: flex;
     justify-content: center;
     margin: 0 auto;
   }
-  .Intro #Info #TechIconsBox #TechIcon {
+  .Intro .Info .TechIconsBox .TechIcon {
     display: flex;
   }
-  .Intro #Info #Grade {
+  .Intro .Info .Grade {
     text-align: center;
   }
 }
 @media (max-width: 500px) {
-  .Intro #Info #TechIconsBox {
+  .Intro .vertical-hr {
+    display: none;
+  }
+  .Intro .Info .TechIconsBox {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
