@@ -1,142 +1,211 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Arduino Toolbox" />
-    <meta
-      name="description"
-      content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
-"
-    />
-    <meta name="keywords" content="" />
-    <meta name="author" content="M. Umar Shahbaz" />
-    <meta property="og:title" content="Arduino Toolbox" />
-    <meta
-      property="og:description"
-      content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
-"
-    />
-    <meta
-      property="og:image"
-      content="https://m-umar.me/assets/media/Projects/ATB/ATB.png"
-    />
-    <meta property="og:url" content="/projects/Arduino Toolbox.html" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Arduino Toolbox" />
-    <meta
-      name="twitter:description"
-      content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
-"
-    />
-    <meta
-      name="twitter:image"
-      content="https://m-umar.me/assets/media/Projects/ATB/ATB.png"
-    />
+    <meta name="title" content="Arduino Toolbox">
+    <meta name="description" content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
+">
+    <meta name="keywords" content="">
+    <meta name="author" content="M. Umar Shahbaz">
+    <meta property="og:title" content="Arduino Toolbox">
+    <meta property="og:description" content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
+">
+    <meta property="og:image" content="https://m-umar.me/assets/media/Projects/ATB/ATB.png">
+    <meta property="og:url" content="/projects/Arduino Toolbox.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arduino Toolbox">
+    <meta name="twitter:description" content="A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
+">
+    <meta name="twitter:image" content="https://m-umar.me/assets/media/Projects/ATB/ATB.png">
 
-    <link rel="stylesheet" href="/assets/style/master.css" />
-    <link rel="stylesheet" href="/assets/style/elements.css" />
-    <link rel="stylesheet" href="/assets/style/project.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/media/icon.png" />
+    <link rel="stylesheet" href="/assets/style/master.css">
+    <link rel="stylesheet" href="/assets/style/elements.css">
+    <link rel="stylesheet" href="/assets/style/project.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/media/icon.png">
     <script defer src="/assets/scripts/nav.js"></script>
+    
+    
 
     <title>Arduino Toolbox</title>
   </head>
   <body>
     <div class="navigation">
-      <button title="Menu" id="menu">☰</button>
-      <nav class="dropdown-content">
+    <button title="Menu" id="menu">☰</button>
+    <nav class="dropdown-content">
         <a href="/events&affiliations/">Events & Affiliations</a>
         <a href="/publications/">Publications</a>
         <a href="/projects/">Projects</a>
         <a href="/github/">GitHub</a>
         <a href="/">Home</a>
-      </nav>
-      <div id="progress"></div>
-      <div
-        id="progress"
-        style="width: 100%; background-color: #272626; z-index: 999"
-      ></div>
-    </div>
+    </nav>
+    <div id="progress"></div>
+    <div id="progress" style="width: 100%; background-color: #272626; z-index: 999;"></div>
+</div>
     <div id="main-outer">
       <div class="mainPage">
         <div class="Intro">
-          <div class="Icon">
-            <div style="max-width: 300px; max-height: 300px; margin: 0 auto">
-              <img
-                src="/assets/media/Projects/ATB/ATB.png"
-                style="width: 100%; height: 100%; border-radius: 15px"
-              />
-            </div>
-          </div>
-          <hr class="vertical-hr" />
+  
+    <div class="Icon">
+      <div style="max-width: 300px; max-height: 300px; margin: 0 auto;">
+    <img src="/assets/media/Projects/ATB/ATB.png" style="width: 100%; height: 100%; border-radius: 15px">
+</div>
+    </div>
+    <hr class="vertical-hr">
+  
 
-          <div class="Info">
-            <h1 class="Title">Arduino Toolbox</h1>
-            <div class="TechIconsBox">
-              <div class="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
+  <div class="Info">
+    <h1 class="Title">Arduino Toolbox</h1>
+    <div class="TechIconsBox">
+      
+        <div class="TechIcon">
+          <img
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+    
+  
 
-              <div class="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
-            </div>
-            <h2 class="Grade">Difficulty: A</h2>
-            <p>
-              A WinForms app for robotic arm debugging with real-time tilt
-              sensor data visualization and sliders to control each individual
-              motor.
-            </p>
-            <p class="sub-heading Category">
-              <strong>Community Projects & Developer Tools</strong>
-            </p>
-          </div>
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
         </div>
-        <hr />
+      
+        <div class="TechIcon">
+          <img
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
+    
+  
 
-        <div class="card-container">
-          <a
-            href="https://github.com/MUmarShahbaz/Arduino-Toolbox"
-            rel="external nofollow noopener"
-            target="_blank"
-          >
-            <img
-              style="width: 100%; height: auto"
-              alt="MUmarShahbaz/Arduino-Toolbox"
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=Arduino-Toolbox&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3"
-            />
-          </a>
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
         </div>
-        <hr />
-
-        <br /><br /><br />
-        <hr />
-        <h1>Relevant Projects</h1>
-        <div class="card-container">
-          <div class="card">
-            <img src="/assets/media/Projects/RBA/RBA.jpg" class="card-image" />
-
-            <div class="card-body">
-              <h3>Robotic Arm</h3>
-
-              <h2 class="Grade">A</h2>
-            </div>
+      
+    </div>
+    <h2 class="Grade">Difficulty: A</h2>
+    <p>A WinForms app for robotic arm debugging with real-time tilt sensor data visualization and sliders to control each individual motor.
+</p>
+    <p class="sub-heading Category">
+      <strong>Community Projects & Developer Tools</strong>
+    </p>
+    
+  </div>
+</div>
+        <hr>
+        
+          <div class="card-container">
+            
+              <a href="https://github.com/MUmarShahbaz/Arduino-Toolbox" rel="external nofollow noopener" target="_blank">
+    <img style="width: 100%; height: auto;" alt="MUmarShahbaz/Arduino-Toolbox" src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=Arduino-Toolbox&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3">
+</a>
+            
           </div>
+          <hr>
+        
+        <h1 id="arduino-toolbox--the-ultimate-utility-for-robotic-arm-diagnostics">Arduino Toolbox – The Ultimate Utility for Robotic Arm Diagnostics</h1>
+
+<p>Arduino Toolbox is a WinForms application designed for diagnosing and testing robotic arms. Whether you’re developing a robotic system or troubleshooting an existing one, this toolbox provides essential tools to analyze movement, detect faults, and ensure precise control.</p>
+
+<p>Robotic arms rely on accurate servo movements and sensor feedback, making real-time monitoring crucial. Arduino Toolbox simplifies this process by offering a Serial Monitor, Gyro Reader, and Servo Controller, all designed to work efficiently over UART communication.</p>
+
+<h2 id="key-features">Key Features</h2>
+
+<h3 id="-built-in-serial-monitor">🔍 Built-in Serial Monitor</h3>
+<p>Unlike traditional serial monitors like the one in the Arduino IDE, which logs data in a multiline format, Arduino Toolbox presents incoming serial data on a single updating line. This makes it easier to identify patterns and verify if the robotic arm’s output is formatted correctly without scrolling through excessive text. This is particularly useful for debugging structured data like sensor readings or control signals.</p>
+
+<h3 id="-gyro-reader--real-time-orientation-tracking">📡 Gyro Reader – Real-Time Orientation Tracking</h3>
+<p>For robotic arms equipped with MEMS gyroscopes, the Gyro Reader provides graphical, real-time visualization of pitch and roll data. This helps developers track orientation changes dynamically, ensuring mechanical components move as expected. Whether you’re testing balance, stability, or rotational movement, this feature gives immediate feedback on how the robotic arm responds to motion.</p>
+
+<h3 id="️-servo-controller--intuitive-motion-control">🎛️ Servo Controller – Intuitive Motion Control</h3>
+<p>Robotic arms depend on precise servo movements, and Arduino Toolbox includes a Servo Controller to fine-tune each joint in real time. The controller features:</p>
+<ul>
+  <li>Four independent sliders for adjusting servo positions</li>
+  <li>A live graphical representation of the robotic arm that updates as servos move</li>
+</ul>
+
+<h2 id="why-use-arduino-toolbox">Why Use Arduino Toolbox?</h2>
+<ul>
+  <li>Eliminate guesswork – See live sensor data and servo positions</li>
+  <li>Enhance debugging – Quickly identify communication errors and movement faults</li>
+  <li>Improve efficiency – Simplify robotic arm testing, calibration, and troubleshooting</li>
+</ul>
+
+<hr />
+
+<div class="card-container">
+  <div class="card" style=" ">
+    <a href="https://github.com/MUmarShahbaz/Arduino-Toolbox/releases/download/v4.0/Arduino-Toolbox-Installer.exe">
+      <div class="card-body">
+        <h1 class="redirect">Download App</h1>
+      </div>
+    </a>
+  </div>
+</div>
+
+<hr />
+
+<h3 id="gyro-reader">Gyro Reader</h3>
+<div style=" max-width: 100%;   margin: 0 auto;">
+    <video width="100%" height="auto" autoplay="" controls="" loop="" style="border-radius: 15px">
+        <source src="https://private-user-images.githubusercontent.com/68814294/369629998-a39c6077-7753-4f47-8020-a943a00c31aa.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIxOTMyNDEsIm5iZiI6MTc0MjE5Mjk0MSwicGF0aCI6Ii82ODgxNDI5NC8zNjk2Mjk5OTgtYTM5YzYwNzctNzc1My00ZjQ3LTgwMjAtYTk0M2EwMGMzMWFhLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE3VDA2MjkwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTIwYWU0ZGY5ZjRmMTI0NDU1MDRmZTI1MGU5Yjc4YTRiODM0ZjFlNjhjNzMyMjVlYjBmZjkzMWE0ZWIzZjBmMTYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.I4ELYaZaqRCY1P3cVvLTvsRGaqipRRTb-LAl3RpTRAE" />
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<h3 id="servo-controller">Servo Controller</h3>
+<div style=" max-width: 100%;   margin: 0 auto;">
+    <video width="100%" height="auto" autoplay="" controls="" loop="" style="border-radius: 15px">
+        <source src="https://private-user-images.githubusercontent.com/68814294/369629347-fa91fba7-c5ab-4c97-9501-ff718f0ab113.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDIxOTMyNDEsIm5iZiI6MTc0MjE5Mjk0MSwicGF0aCI6Ii82ODgxNDI5NC8zNjk2MjkzNDctZmE5MWZiYTctYzVhYi00Yzk3LTk1MDEtZmY3MThmMGFiMTEzLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE3VDA2MjkwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYxZTA1OWZkNjE1YTJhOGI3ZjY3MDBhNWJhNjNmODY4N2I3YTVhZTk1MjY5ZGYwYmM1MzUxZWQyMTJkZmI1NjMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.TGQRZzIoRbyndTYKh4MP0XYZXJbg0OkKJLpGY9ayyNk" />
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+        
+          <br><br><br>
+          <hr>
+          <h1>Relevant Projects</h1>
+          <div class="card-container">
+            
+              
+              
+    <div class="card">
+        
+            <img src="/assets/media/Projects/RBA/RBA.jpg" class="card-image">
+        
+        <div class="card-body">
+            <h3>Robotic Arm</h3>
+            
+                <h2 class="Grade">A</h2>
+            
         </div>
+    </div>
+
+            
+          </div>
+        
       </div>
     </div>
     <footer>
-      <p>Thanks for visiting</p>
-    </footer>
+    <p>Thanks for visiting</p>
+</footer>
   </body>
 </html>
