@@ -1,366 +1,351 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="GreenScope">
-    <meta name="description" content="A low-cost environmental data logger and mini-weather station network that collects live data, stores it on an SQL Server, and provides public access via graphs, raw data, and an AI chatbot.
-">
-    <meta name="keywords" content="">
-    <meta name="author" content="M. Umar Shahbaz">
-    <meta property="og:title" content="GreenScope">
-    <meta property="og:description" content="A low-cost environmental data logger and mini-weather station network that collects live data, stores it on an SQL Server, and provides public access via graphs, raw data, and an AI chatbot.
-">
-    <meta property="og:image" content="https://m-umar.me/assets/media/Projects/GS/GS.jpg">
-    <meta property="og:url" content="/projects/GreenScope.html">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GreenScope">
-    <meta name="twitter:description" content="A low-cost environmental data logger and mini-weather station network that collects live data, stores it on an SQL Server, and provides public access via graphs, raw data, and an AI chatbot.
-">
-    <meta name="twitter:image" content="https://m-umar.me/assets/media/Projects/GS/GS.jpg">
+    <meta name="title" content="GreenScope" />
+    <meta
+      name="description"
+      content="A low-cost environmental data logger and mini-weather station network that collects live data, stores it on an SQL Server, and provides public access via graphs, raw data, and an AI chatbot.
+"
+    />
+    <meta name="keywords" content="" />
+    <meta name="author" content="M. Umar Shahbaz" />
+    <meta property="og:title" content="GreenScope" />
+    <meta
+      property="og:description"
+      content="A low-cost environmental data logger and mini-weather station network that collects live data, stores it on an SQL Server, and provides public access via graphs, raw data, and an AI chatbot.
+"
+    />
+    <meta
+      property="og:image"
+      content="https://m-umar.me/assets/media/Projects/GS/GS.jpg"
+    />
+    <meta property="og:url" content="/projects/GreenScope.html" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GreenScope" />
+    <meta
+      name="twitter:description"
+      content="A low-cost environmental data logger and mini-weather station network that collects live data, stores it on an SQL Server, and provides public access via graphs, raw data, and an AI chatbot.
+"
+    />
+    <meta
+      name="twitter:image"
+      content="https://m-umar.me/assets/media/Projects/GS/GS.jpg"
+    />
 
-    <link rel="stylesheet" href="/assets/style/master.css">
-    <link rel="stylesheet" href="/assets/style/elements.css">
-    <link rel="stylesheet" href="/assets/style/project.css">
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/media/icon.png">
+    <link rel="stylesheet" href="/assets/style/master.css" />
+    <link rel="stylesheet" href="/assets/style/elements.css" />
+    <link rel="stylesheet" href="/assets/style/project.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/media/icon.png" />
     <script defer src="/assets/scripts/nav.js"></script>
-    
-    
 
     <title>GreenScope</title>
   </head>
   <body>
     <div class="navigation">
-    <button title="Menu" id="menu">☰</button>
-    <nav class="dropdown-content">
+      <button title="Menu" id="menu">☰</button>
+      <nav class="dropdown-content">
         <a href="/events&affiliations/">Events & Affiliations</a>
         <a href="/publications/">Publications</a>
         <a href="/projects/">Projects</a>
         <a href="/github/">GitHub</a>
         <a href="/">Home</a>
-    </nav>
-    <div id="progress"></div>
-    <div id="progress" style="width: 100%; background-color: #272626; z-index: 999;"></div>
-</div>
+      </nav>
+      <div id="progress"></div>
+      <div
+        id="progress"
+        style="width: 100%; background-color: #272626; z-index: 999"
+      ></div>
+    </div>
     <div id="main-outer">
       <div class="mainPage">
         <div class="Intro">
-  
-    <div class="Icon">
-      <div style="max-width: 300px; max-height: 300px; margin: 0 auto;">
-    <img src="/assets/media/Projects/GS/GS.jpg" style="width: 100%; height: 100%; border-radius: 15px">
-</div>
-    </div>
-    <hr class="vertical-hr">
-  
-
-  <div class="Info">
-    <h1 class="Title">GreenScope</h1>
-    <div class="TechIconsBox">
-      
-        <div class="TechIcon">
-          <img
-  
-    
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-    
-  
-
-  
-  
-  
-    width="auto"
-  
-  
-    height="40"
-  
->
-        </div>
-      
-        <div class="TechIcon">
-          <img
-  
-    
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-    
-  
-
-  
-  
-  
-    width="auto"
-  
-  
-    height="40"
-  
->
-        </div>
-      
-        <div class="TechIcon">
-          <img
-  
-    
-      src="https://skillicons.dev/icons?i=processing"
-    
-  
-
-  
-  
-  
-    width="auto"
-  
-  
-    height="40"
-  
->
-        </div>
-      
-        <div class="TechIcon">
-          <img
-  
-    
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-    
-  
-
-  
-  
-  
-    width="auto"
-  
-  
-    height="40"
-  
->
-        </div>
-      
-        <div class="TechIcon">
-          <img
-  
-    
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-    
-  
-
-  
-  
-  
-    width="auto"
-  
-  
-    height="40"
-  
->
-        </div>
-      
-        <div class="TechIcon">
-          <img
-  
-    
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-    
-  
-
-  
-  
-  
-    width="auto"
-  
-  
-    height="40"
-  
->
-        </div>
-      
-        <div class="TechIcon">
-          <img
-  
-    src="https://sissel.gallerycdn.vsassets.io/extensions/sissel/shopify-liquid/4.0.1/1699358936199/Microsoft.VisualStudio.Services.Icons.Default"
-  
-
-  
-  
-  
-    width="auto"
-  
-  
-    height="40"
-  
->
-        </div>
-      
-    </div>
-    <h2 class="Grade">Difficulty: S+</h2>
-    <p>A low-cost environmental data logger and mini-weather station network that collects live data, stores it on an SQL Server, and provides public access via graphs, raw data, and an AI chatbot.
-</p>
-    <p class="sub-heading Category">
-      <strong>Work in Progress</strong>
-    </p>
-    
-  </div>
-</div>
-        <hr>
-        
-          <div class="card-container">
-            
-              <a href="https://github.com/GreenScope/greenscope.github.io" rel="external nofollow noopener" target="_blank">
-    <img style="width: 100%; height: auto;" alt="GreenScope/greenscope.github.io" src="https://github-readme-stats.vercel.app/api/pin/?username=GreenScope&amp;repo=greenscope.github.io&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3">
-</a>
-            
-              <a href="https://github.com/GreenScope/Environmental-Data-Logger" rel="external nofollow noopener" target="_blank">
-    <img style="width: 100%; height: auto;" alt="GreenScope/Environmental-Data-Logger" src="https://github-readme-stats.vercel.app/api/pin/?username=GreenScope&amp;repo=Environmental-Data-Logger&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3">
-</a>
-            
+          <div class="Icon">
+            <div style="max-width: 300px; max-height: 300px; margin: 0 auto">
+              <img
+                src="/assets/media/Projects/GS/GS.jpg"
+                style="width: 100%; height: 100%; border-radius: 15px"
+              />
+            </div>
           </div>
-          <hr>
-        
+          <hr class="vertical-hr" />
+
+          <div class="Info">
+            <h1 class="Title">GreenScope</h1>
+            <div class="TechIconsBox">
+              <div class="TechIcon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  width="auto"
+                  height="40"
+                />
+              </div>
+
+              <div class="TechIcon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  width="auto"
+                  height="40"
+                />
+              </div>
+
+              <div class="TechIcon">
+                <img
+                  src="https://skillicons.dev/icons?i=processing"
+                  width="auto"
+                  height="40"
+                />
+              </div>
+
+              <div class="TechIcon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  width="auto"
+                  height="40"
+                />
+              </div>
+
+              <div class="TechIcon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  width="auto"
+                  height="40"
+                />
+              </div>
+
+              <div class="TechIcon">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                  width="auto"
+                  height="40"
+                />
+              </div>
+
+              <div class="TechIcon">
+                <img
+                  src="https://sissel.gallerycdn.vsassets.io/extensions/sissel/shopify-liquid/4.0.1/1699358936199/Microsoft.VisualStudio.Services.Icons.Default"
+                  width="auto"
+                  height="40"
+                />
+              </div>
+            </div>
+            <h2 class="Grade">Difficulty: S+</h2>
+            <p>
+              A low-cost environmental data logger and mini-weather station
+              network that collects live data, stores it on an SQL Server, and
+              provides public access via graphs, raw data, and an AI chatbot.
+            </p>
+            <p class="sub-heading Category">
+              <strong>Work in Progress</strong>
+            </p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="card-container">
+          <a
+            href="https://github.com/GreenScope/greenscope.github.io"
+            rel="external nofollow noopener"
+            target="_blank"
+          >
+            <img
+              style="width: 100%; height: auto"
+              alt="GreenScope/greenscope.github.io"
+              src="https://github-readme-stats.vercel.app/api/pin/?username=GreenScope&amp;repo=greenscope.github.io&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3"
+            />
+          </a>
+
+          <a
+            href="https://github.com/GreenScope/Environmental-Data-Logger"
+            rel="external nofollow noopener"
+            target="_blank"
+          >
+            <img
+              style="width: 100%; height: auto"
+              alt="GreenScope/Environmental-Data-Logger"
+              src="https://github-readme-stats.vercel.app/api/pin/?username=GreenScope&amp;repo=Environmental-Data-Logger&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3"
+            />
+          </a>
+        </div>
+        <hr />
+
         <h2 id="brief-description">Brief Description</h2>
-<p>GreenScope is a an Archive that stores information regarding the environment of Pakistan. It uses it’s own apparatus called EEDLs (ESP Environmental Data Loggers) to gather relevant information. EEDLs are mini weather stations which take live readings and transmit them to the GreenScope database. GreenScope offers features such as graphing, AI data analysis and API keys to import readings for your own projects.</p>
+        <p>
+          GreenScope is a an Archive that stores information regarding the
+          environment of Pakistan. It uses it’s own apparatus called EEDLs (ESP
+          Environmental Data Loggers) to gather relevant information. EEDLs are
+          mini weather stations which take live readings and transmit them to
+          the GreenScope database. GreenScope offers features such as graphing,
+          AI data analysis and API keys to import readings for your own
+          projects.
+        </p>
 
-<h2 id="goal">Goal</h2>
-<p>We wish to promote the usage of Robotics in Measuring &amp; Monitoring the environmental conditions of Pakistan at a greater extent. We wish to display a method cheap enough so that it can be used in remote non-urban areas. For this purpose the apparatus we developed, EEDL, costs roughly Rs 50K. We wish to make the data collected by GreenScope available to all including students to promote student projects based upon environment. This is why we not only provide an AI chatbot to analyze the data based on user requirements, but we also provide API keys to import the data into your own program.</p>
+        <h2 id="goal">Goal</h2>
+        <p>
+          We wish to promote the usage of Robotics in Measuring &amp; Monitoring
+          the environmental conditions of Pakistan at a greater extent. We wish
+          to display a method cheap enough so that it can be used in remote
+          non-urban areas. For this purpose the apparatus we developed, EEDL,
+          costs roughly Rs 50K. We wish to make the data collected by GreenScope
+          available to all including students to promote student projects based
+          upon environment. This is why we not only provide an AI chatbot to
+          analyze the data based on user requirements, but we also provide API
+          keys to import the data into your own program.
+        </p>
 
-<h2 id="scalability">Scalability</h2>
-<p>At the current stage, Green Scope is just going to record data from different parts of Lahore, Pakistan, but the main selling point of our site is it’s scalability. We are creating Green Scope in such a way that minimizes initial configurations and helps in the ease of expansion of the system. We intend to use a unified transmission setup that can be configured directly from the EEDL allowing us to introduce as many new EEDLs with no changes to the website. Should there be a need to make changes to the website we are using Jekyll, a static site builder, to ensure that any additions can be made by simply filling up a few variables.</p>
+        <h2 id="scalability">Scalability</h2>
+        <p>
+          At the current stage, Green Scope is just going to record data from
+          different parts of Lahore, Pakistan, but the main selling point of our
+          site is it’s scalability. We are creating Green Scope in such a way
+          that minimizes initial configurations and helps in the ease of
+          expansion of the system. We intend to use a unified transmission setup
+          that can be configured directly from the EEDL allowing us to introduce
+          as many new EEDLs with no changes to the website. Should there be a
+          need to make changes to the website we are using Jekyll, a static site
+          builder, to ensure that any additions can be made by simply filling up
+          a few variables.
+        </p>
 
-<hr />
+        <hr />
 
-<h1 id="the-plan">The Plan</h1>
+        <h1 id="the-plan">The Plan</h1>
 
-<div style="max-width: 1500px; max-height: ; margin: 0 auto;">
-    <img src="/assets/media/Projects/GS/Mind%20Map.png" style="width: 100%; height: 100%; border-radius: " />
-</div>
-
-<div class="card-container">
-  <div class="card" style=" ">
-    <a href="/assets/media/Projects/GS/Mind%20Map.pdf">
-      <div class="card-body">
-        <h1 class="redirect">Download PDF</h1>
-      </div>
-    </a>
-  </div>
-</div>
-
-<hr />
-
-<h2 id="eedl">EEDL</h2>
-<p>EEDL stands for <em>ESP32 Environmental Data Logger</em>. It uses multiple dedicated sensors to take readings and calculate certain values and transmits the values to the GreenScope database using PHP and SQL. The ESP32 serves as the control unit, transmitter and a sequencer. The EEDL costs roughly around Rs 50K and can record the following:</p>
-
-<div class="card-container">
-  <div class="card" style=" ">
-    <a href="EEDL.html">
-      <div class="card-body">
-        <h1 class="redirect">View EEDL</h1>
-      </div>
-    </a>
-  </div>
-</div>
-
-<h1 class="heading" style="text-align: ;">Collaborators</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Name</th>
-      <th style="text-align: left">Contribution</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">M. Umar Shahbaz</td>
-      <td style="text-align: left">Database, EEDL Design, Graph Plotter, Administration, Documentation</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Maarij Zafar</td>
-      <td style="text-align: left">EEDL software, AI Statistics</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">M. Ahsan Saleem</td>
-      <td style="text-align: left">Website, EEDL Build</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">M. Haris</td>
-      <td style="text-align: left">Website, EEDL Build</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">M. Taha</td>
-      <td style="text-align: left">Website, Media</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Ch. Abdur Rehman</td>
-      <td style="text-align: left">Finances</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Arafat Bhatti</td>
-      <td style="text-align: left">EEDL Build, 3D Modelling</td>
-    </tr>
-  </tbody>
-</table>
-
-        
-          <br><br><br>
-          <hr>
-          <h1>Relevant Projects</h1>
-          <div class="card-container">
-            
-              
-              
-    <div class="card Link"><a href="/projects/EEDL.html" target="_self">
-        
-            <img src="/assets/media/Projects/EEDL/EEDL.png" class="card-image">
-        
-        <div class="card-body">
-            <h3>ESP32 Environmental Data Logger</h3>
-            
-                <h2 class="Grade">S+</h2>
-            
+        <div style="max-width: 1500px; max-height:; margin: 0 auto">
+          <img
+            src="/assets/media/Projects/GS/Mind%20Map.png"
+            style="width: 100%; height: 100%; border-radius:"
+          />
         </div>
-        <p class="viewMore">More Information</p>
-    </a></div>
 
-            
-              
-              
-    <div class="card Link"><a href="/projects/Oscilloscope Online.html" target="_self">
-        
-            <img src="/assets/media/Projects/OO/OO.png" class="card-image">
-        
-        <div class="card-body">
-            <h3>Oscilloscope Online</h3>
-            
-                <h2 class="Grade">S</h2>
-            
-        </div>
-        <p class="viewMore">More Information</p>
-    </a></div>
-
-            
-              
-              
-    <div class="card Link"><a href="/projects/Graph Plotter.html" target="_self">
-        
-            <img src="/assets/media/Projects/GP/GP.png" class="card-image">
-        
-        <div class="card-body">
-            <h3>Graph Plotter</h3>
-            
-                <h2 class="Grade">S</h2>
-            
-        </div>
-        <p class="viewMore">More Information</p>
-    </a></div>
-
-            
+        <div class="card-container">
+          <div class="card" style="">
+            <a href="/assets/media/Projects/GS/Mind%20Map.pdf">
+              <div class="card-body">
+                <h1 class="redirect">Download PDF</h1>
+              </div>
+            </a>
           </div>
-        
+        </div>
+
+        <hr />
+
+        <h2 id="eedl">EEDL</h2>
+        <p>
+          EEDL stands for <em>ESP32 Environmental Data Logger</em>. It uses
+          multiple dedicated sensors to take readings and calculate certain
+          values and transmits the values to the GreenScope database using PHP
+          and SQL. The ESP32 serves as the control unit, transmitter and a
+          sequencer. The EEDL costs roughly around Rs 50K and can record the
+          following:
+        </p>
+
+        <div class="card-container">
+          <div class="card" style="">
+            <a href="EEDL.html">
+              <div class="card-body">
+                <h1 class="redirect">View EEDL</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <h1 class="heading" style="text-align:">Collaborators</h1>
+
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align: center">Name</th>
+              <th style="text-align: left">Contribution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: center">M. Umar Shahbaz</td>
+              <td style="text-align: left">
+                Database, EEDL Design, Graph Plotter, Administration,
+                Documentation
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center">Maarij Zafar</td>
+              <td style="text-align: left">EEDL software, AI Statistics</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">M. Ahsan Saleem</td>
+              <td style="text-align: left">Website, EEDL Build</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">M. Haris</td>
+              <td style="text-align: left">Website, EEDL Build</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">M. Taha</td>
+              <td style="text-align: left">Website, Media</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">Ch. Abdur Rehman</td>
+              <td style="text-align: left">Finances</td>
+            </tr>
+            <tr>
+              <td style="text-align: center">Arafat Bhatti</td>
+              <td style="text-align: left">EEDL Build, 3D Modelling</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br /><br /><br />
+        <hr />
+        <h1>Relevant Projects</h1>
+        <div class="card-container">
+          <div class="card Link">
+            <a href="/projects/EEDL.html" target="_self">
+              <img
+                src="/assets/media/Projects/EEDL/EEDL.png"
+                class="card-image"
+              />
+
+              <div class="card-body">
+                <h3>ESP32 Environmental Data Logger</h3>
+
+                <h2 class="Grade">S+</h2>
+              </div>
+              <p class="viewMore">More Information</p>
+            </a>
+          </div>
+
+          <div class="card Link">
+            <a href="/projects/Oscilloscope Online.html" target="_self">
+              <img src="/assets/media/Projects/OO/OO.png" class="card-image" />
+
+              <div class="card-body">
+                <h3>Oscilloscope Online</h3>
+
+                <h2 class="Grade">S</h2>
+              </div>
+              <p class="viewMore">More Information</p>
+            </a>
+          </div>
+
+          <div class="card Link">
+            <a href="/projects/Graph Plotter.html" target="_self">
+              <img src="/assets/media/Projects/GP/GP.png" class="card-image" />
+
+              <div class="card-body">
+                <h3>Graph Plotter</h3>
+
+                <h2 class="Grade">S</h2>
+              </div>
+              <p class="viewMore">More Information</p>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
-    <p>Thanks for visiting</p>
-</footer>
+      <p>Thanks for visiting</p>
+    </footer>
   </body>
 </html>
