@@ -1,273 +1,237 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="RGB Mouse Controller" />
-    <meta
-      name="description"
-      content="RGB Lighting system using Arduino Nano. A WinForms app to control the lighting system, RGBC, is also provided.
-"
-    />
-    <meta name="keywords" content="" />
-    <meta name="author" content="M. Umar Shahbaz" />
-    <meta property="og:title" content="RGB Mouse Controller" />
-    <meta
-      property="og:description"
-      content="RGB Lighting system using Arduino Nano. A WinForms app to control the lighting system, RGBC, is also provided.
-"
-    />
-    <meta
-      property="og:image"
-      content="https://m-umar.me/assets/media/Projects/RGBC/RGBC.png"
-    />
-    <meta property="og:url" content="/projects/RGB Controller.html" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RGB Mouse Controller" />
-    <meta
-      name="twitter:description"
-      content="RGB Lighting system using Arduino Nano. A WinForms app to control the lighting system, RGBC, is also provided.
-"
-    />
-    <meta
-      name="twitter:image"
-      content="https://m-umar.me/assets/media/Projects/RGBC/RGBC.png"
-    />
+    <meta name="title" content="RGB Mouse Controller">
+    <meta name="description" content="RGB Lighting system using Arduino Nano. A WinForms app to control the lighting system, RGBC, is also provided.
+">
+    <meta name="keywords" content="">
+    <meta name="author" content="M. Umar Shahbaz">
+    <meta property="og:title" content="RGB Mouse Controller">
+    <meta property="og:description" content="RGB Lighting system using Arduino Nano. A WinForms app to control the lighting system, RGBC, is also provided.
+">
+    <meta property="og:image" content="https://m-umar.me/assets/media/Projects/RGBC/RGBC.png">
+    <meta property="og:url" content="/projects/RGB Controller.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RGB Mouse Controller">
+    <meta name="twitter:description" content="RGB Lighting system using Arduino Nano. A WinForms app to control the lighting system, RGBC, is also provided.
+">
+    <meta name="twitter:image" content="https://m-umar.me/assets/media/Projects/RGBC/RGBC.png">
 
-    <link rel="stylesheet" href="/assets/style/master.css" />
-    <link rel="stylesheet" href="/assets/style/elements.css" />
-    <link rel="stylesheet" href="/assets/style/project.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/media/icon.png" />
+    <link rel="stylesheet" href="/assets/style/master.css">
+    <link rel="stylesheet" href="/assets/style/elements.css">
+    <link rel="stylesheet" href="/assets/style/project.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/media/icon.png">
     <script defer src="/assets/scripts/nav.js"></script>
-
-    <script defer src="/assets/scripts/slideshow.js"></script>
+    
+      <script defer src="/assets/scripts/slideshow.js"></script>
+    
+    
 
     <title>RGB Mouse Controller</title>
   </head>
   <body>
     <div class="navigation">
-      <button title="Menu" id="menu">☰</button>
-      <nav class="dropdown-content">
+    <button title="Menu" id="menu">☰</button>
+    <nav class="dropdown-content">
         <a href="/events&affiliations/">Events & Affiliations</a>
         <a href="/publications/">Publications</a>
         <a href="/projects/">Projects</a>
         <a href="/github/">GitHub</a>
+        <a href="/education/">Education</a>
         <a href="/">Home</a>
-      </nav>
-      <div id="progress"></div>
-      <div
-        id="progress"
-        style="width: 100%; background-color: #272626; z-index: 999"
-      ></div>
-    </div>
+    </nav>
+    <div id="progress"></div>
+    <div id="progress" style="width: 100%; background-color: #272626; z-index: 999;"></div>
+</div>
     <div id="main-outer">
       <div class="mainPage">
         <div class="Intro">
-          <div class="Icon">
-            <div style="max-width: 300px; max-height: 300px; margin: 0 auto">
-              <img
-                src="/assets/media/Projects/RGBC/RGBC.png"
-                style="width: 100%; height: 100%; border-radius: 15px"
-              />
-            </div>
-          </div>
-          <hr class="vertical-hr" />
+  
+    <div class="Icon">
+      <div style="max-width: 300px; max-height: 300px; margin: 0 auto;">
+    <img src="/assets/media/Projects/RGBC/RGBC.png" style="width: 100%; height: 100%; border-radius: 15px">
+</div>
+    </div>
+    <hr class="vertical-hr">
+  
 
-          <div class="Info">
-            <h1 class="Title">RGB Mouse Controller</h1>
-            <div class="TechIconsBox">
-              <div class="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
-
-              <div class="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
-
-              <div class="TechIcon">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
-                  width="auto"
-                  height="40"
-                />
-              </div>
-            </div>
-            <h2 class="Grade">Difficulty: B</h2>
-            <p>
-              RGB Lighting system using Arduino Nano. A WinForms app to control
-              the lighting system, RGBC, is also provided.
-            </p>
-            <p class="sub-heading Category">
-              <strong>Community Projects & Developer Tools</strong>
-            </p>
-          </div>
-        </div>
-        <hr />
-
-        <div class="card-container">
-          <a
-            href="https://github.com/MUmarShahbaz/RGB-Mouse-Controller"
-            rel="external nofollow noopener"
-            target="_blank"
-          >
-            <img
-              style="width: 100%; height: auto"
-              alt="MUmarShahbaz/RGB-Mouse-Controller"
-              src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=RGB-Mouse-Controller&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3"
-            />
-          </a>
-        </div>
-        <hr />
-
-        <h1 id="custom-rgb-lighting-system-for-wireless-gaming-mouse">
-          Custom RGB Lighting System for Wireless Gaming Mouse
-        </h1>
-
-        <h2 id="overview">Overview</h2>
-
-        <p>
-          This project is a custom RGB lighting system designed for a wireless
-          gaming mouse. It utilizes a 4-pin common cathode RGB LED setup and an
-          Arduino microcontroller to provide dynamic lighting effects. The
-          system is controlled through a desktop application built with Visual
-          Studio using WinForms.
-        </p>
-
-        <h3 id="key-features">Key Features</h3>
-        <ul>
-          <li>
-            <strong>Customizable RGB Lighting</strong>: Users can configure
-            their RGB settings using a desktop application.
-          </li>
-          <li>
-            <strong>Live Preview</strong>: The desktop app offers a live preview
-            of the colors as they are selected.
-          </li>
-          <li>
-            <strong>Persistent Settings</strong>: RGB color configurations are
-            stored in the Arduino’s EEPROM, allowing the settings to persist
-            even after a reboot.
-          </li>
-        </ul>
-
-        <hr />
-
-        <h2 id="hardware-requirements">Hardware Requirements</h2>
-        <ul>
-          <li><strong>RGB LEDs</strong>: 2 4-pin common cathode RGB LEDs.</li>
-          <li>
-            <strong>Microcontroller</strong>: Arduino (or alternatives—to keep
-            it cost-effective I suggest using an STM8)
-          </li>
-          <li><strong>Resistor</strong>: 1 220 Ohms</li>
-        </ul>
-
-        <div style="max-width: 400px; max-height:; margin: 0 auto">
+  <div class="Info">
+    <h1 class="Title">RGB Mouse Controller</h1>
+    <div class="TechIconsBox">
+      
+        <div class="TechIcon">
           <img
-            src="https://github.com/user-attachments/assets/14ca1e85-301d-4beb-9ff9-eaac92d13934"
-            style="width: 100%; height: 100%; border-radius:"
-          />
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+    
+  
+
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
         </div>
-
-        <h2 id="software-requirements">Software Requirements</h2>
-        <ul>
-          <li>
-            <strong>Arduino IDE</strong>: For uploading the code to the Arduino.
-          </li>
-          <li>
-            <strong>Desktop Application</strong>: RGB Controller - RGBC.
-            <a
-              href="https://github.com/MUmarShahbaz/RGB-Mouse-Controller/releases/1.0/"
-              >View App</a
-            >
-          </li>
-        </ul>
-
-        <hr />
-
-        <h2 id="installation--usage">Installation &amp; Usage</h2>
-
-        <h3 id="arduino-setup">Arduino Setup</h3>
-        <ol>
-          <li>
-            Install the Arduino IDE from
-            <a href="https://www.arduino.cc/en/software">Arduino’s website</a>.
-          </li>
-          <li>Connect your Arduino board to your computer via USB.</li>
-          <li>
-            Open the provided Arduino sketch (<a
-              href="https://github.com/MUmarShahbaz/RGB-Mouse-Controller/blob/main/Arduino/RGBC.ino"
-              >RGBC.ino</a
-            >) in the Arduino IDE and upload it to your Arduino board.
-          </li>
-        </ol>
-
-        <h3 id="desktop-application">Desktop Application</h3>
-
-        <div style="max-width: 750px; max-height:; margin: 0 auto">
+      
+        <div class="TechIcon">
           <img
-            src="https://github.com/user-attachments/assets/a4a5c31c-925a-4b46-8f5e-816d1c19e86a"
-            style="width: 100%; height: 100%; border-radius:"
-          />
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
+    
+  
+
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
         </div>
+      
+        <div class="TechIcon">
+          <img
+  
+    
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg"
+    
+  
 
-        <div class="card-container">
-          <div class="card" style="">
-            <a
-              href="https://github.com/MUmarShahbaz/RGB-Mouse-Controller/releases/download/1.0/RGBC.Installer.exe"
-            >
-              <div class="card-body">
-                <h1 class="redirect">Download App</h1>
-              </div>
-            </a>
-          </div>
+  
+  
+  
+    width="auto"
+  
+  
+    height="40"
+  
+>
         </div>
-
-        <h4 id="instructions">Instructions</h4>
-        <ul>
-          <li>Connect the Arduino</li>
-          <li>
-            Use the provided controls to select RGB colors for your gaming
-            mouse.
-          </li>
-          <li>A live preview will show the changes in real-time.</li>
-          <li>
-            Once satisfied with your configuration, click the
-            <strong>Save</strong> button to store the settings in the EEPROM.
-          </li>
-          <li>
-            The RGB settings are saved to the Arduino’s EEPROM, which ensures
-            that the colors remain even after rebooting the Arduino.
-          </li>
-        </ul>
-
-        <hr />
-
-        <h2 id="example-usage">Example Usage</h2>
-
-        <div class="slideshow-container">
-          <button class="nav-btn prev-btn">«</button>
-          <button class="nav-btn next-btn">»</button>
-          <div class="slide-image active" data-title="" data-description="">
-            <img src="/assets/media/Projects/RGBC/Img1.jpg" />
+      
+    </div>
+    <h2 class="Grade">Difficulty: B</h2>
+    <p>RGB Lighting system using Arduino Nano. A WinForms app to control the lighting system, RGBC, is also provided.
+</p>
+    <p class="sub-heading Category">
+      <strong>Community Projects & Developer Tools</strong>
+    </p>
+    
+  </div>
+</div>
+        <hr>
+        
+          <div class="card-container">
+            
+              <a href="https://github.com/MUmarShahbaz/RGB-Mouse-Controller" rel="external nofollow noopener" target="_blank">
+    <img style="width: 100%; height: auto;" alt="MUmarShahbaz/RGB-Mouse-Controller" src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=RGB-Mouse-Controller&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3">
+</a>
+            
           </div>
-          <div class="slide-image" data-title="" data-description="">
-            <img src="/assets/media/Projects/RGBC/Img2.jpg" />
-          </div>
-        </div>
+          <hr>
+        
+        <h1 id="custom-rgb-lighting-system-for-wireless-gaming-mouse">Custom RGB Lighting System for Wireless Gaming Mouse</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>This project is a custom RGB lighting system designed for a wireless gaming mouse. It utilizes a 4-pin common cathode RGB LED setup and an Arduino microcontroller to provide dynamic lighting effects. The system is controlled through a desktop application built with Visual Studio using WinForms.</p>
+
+<h3 id="key-features">Key Features</h3>
+<ul>
+  <li><strong>Customizable RGB Lighting</strong>: Users can configure their RGB settings using a desktop application.</li>
+  <li><strong>Live Preview</strong>: The desktop app offers a live preview of the colors as they are selected.</li>
+  <li><strong>Persistent Settings</strong>: RGB color configurations are stored in the Arduino’s EEPROM, allowing the settings to persist even after a reboot.</li>
+</ul>
+
+<hr />
+
+<h2 id="hardware-requirements">Hardware Requirements</h2>
+<ul>
+  <li><strong>RGB LEDs</strong>: 2 4-pin common cathode RGB LEDs.</li>
+  <li><strong>Microcontroller</strong>: Arduino (or alternatives—to keep it cost-effective I suggest using an STM8)</li>
+  <li><strong>Resistor</strong>: 1 220 Ohms</li>
+</ul>
+
+<div style="max-width: 400px; max-height: ; margin: 0 auto;">
+    <img src="https://github.com/user-attachments/assets/14ca1e85-301d-4beb-9ff9-eaac92d13934" style="width: 100%; height: 100%; border-radius: " />
+</div>
+
+<h2 id="software-requirements">Software Requirements</h2>
+<ul>
+  <li><strong>Arduino IDE</strong>: For uploading the code to the Arduino.</li>
+  <li><strong>Desktop Application</strong>: RGB Controller - RGBC. <a href="https://github.com/MUmarShahbaz/RGB-Mouse-Controller/releases/1.0/">View App</a></li>
+</ul>
+
+<hr />
+
+<h2 id="installation--usage">Installation &amp; Usage</h2>
+
+<h3 id="arduino-setup">Arduino Setup</h3>
+<ol>
+  <li>Install the Arduino IDE from <a href="https://www.arduino.cc/en/software">Arduino’s website</a>.</li>
+  <li>Connect your Arduino board to your computer via USB.</li>
+  <li>Open the provided Arduino sketch (<a href="https://github.com/MUmarShahbaz/RGB-Mouse-Controller/blob/main/Arduino/RGBC.ino">RGBC.ino</a>) in the Arduino IDE and upload it to your Arduino board.</li>
+</ol>
+
+<h3 id="desktop-application">Desktop Application</h3>
+
+<div style="max-width: 750px; max-height: ; margin: 0 auto;">
+    <img src="https://github.com/user-attachments/assets/a4a5c31c-925a-4b46-8f5e-816d1c19e86a" style="width: 100%; height: 100%; border-radius: " />
+</div>
+
+<div class="card-container">
+  <div class="card" style=" ">
+    <a href="https://github.com/MUmarShahbaz/RGB-Mouse-Controller/releases/download/1.0/RGBC.Installer.exe">
+      <div class="card-body">
+        <h1 class="redirect">Download App</h1>
+      </div>
+    </a>
+  </div>
+</div>
+
+<h4 id="instructions">Instructions</h4>
+<ul>
+  <li>Connect the Arduino</li>
+  <li>Use the provided controls to select RGB colors for your gaming mouse.</li>
+  <li>A live preview will show the changes in real-time.</li>
+  <li>Once satisfied with your configuration, click the <strong>Save</strong> button to store the settings in the EEPROM.</li>
+  <li>The RGB settings are saved to the Arduino’s EEPROM, which ensures that the colors remain even after rebooting the Arduino.</li>
+</ul>
+
+<hr />
+
+<h2 id="example-usage">Example Usage</h2>
+
+<div class="slideshow-container">
+
+<button class="nav-btn prev-btn">«</button>
+<button class="nav-btn next-btn">»</button>
+<div class="slide-image active" data-title="" data-description="">
+    <img src="/assets/media/Projects/RGBC/Img1.jpg" />
+</div>
+<div class="slide-image " data-title="" data-description="">
+    <img src="/assets/media/Projects/RGBC/Img2.jpg" />
+</div>
+</div>
+
+        
       </div>
     </div>
     <footer>
-      <p>Thanks for visiting</p>
-    </footer>
+    <p>Thanks for visiting</p>
+</footer>
   </body>
 </html>

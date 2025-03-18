@@ -93,7 +93,7 @@ footer p {
   color: #66b3ff;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .navigation #menu {
     display: block;
   }
