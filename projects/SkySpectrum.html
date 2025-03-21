@@ -144,32 +144,474 @@
           </div>
           <hr>
         
-        <h1 id="assembled-look">Assembled look</h1>
-
-<div class="slideshow-container">
-
-<button class="nav-btn prev-btn">«</button>
-<button class="nav-btn next-btn">»</button>
-<div class="slide-image active" data-title="" data-description="">
-    <img src="https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/RC%20Transmitter/images/RC%20Transmitter%203D.png" />
-</div>
-<div class="slide-image " data-title="" data-description="">
-    <img src="https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/Universal%20Receiver/images/Universal%20Receiver%203D.png" />
-</div>
-</div>
-
-<hr />
+        <h1 id="view-3d-models-below">View 3D Models below</h1>
 
 <h1 id="skyspectrum">SkySpectrum</h1>
 
 <h2 id="overview">Overview</h2>
-<p>SkySpectrum is a cutting-edge, multi-protocol wireless communication system designed for a wide range of applications, from RC vehicles to smart home automation. It features a custom-built <strong>RF transmitter</strong> and a <strong>universal receiver</strong>, offering seamless integration with <strong>RF, WiFi, Bluetooth, and ESP-NOW</strong> technologies.</p>
+<p>SkySpectrum is a cutting-edge, multi-protocol wireless communication system designed for a wide range of applications, from RC vehicles to smart home automation. It features a custom-built <strong>Universal Transceiver</strong>, offering seamless integration with <strong>RF, WiFi, Bluetooth, and ESP-NOW</strong> technologies.</p>
 
 <p>With its modular design and adaptable features, SkySpectrum enables precise wireless control, making it ideal for hobbyists, developers, and engineers alike.</p>
 
-<h2 id="system-architecture">System Architecture</h2>
+<hr />
 
-<h3 id="rc-transmitter-skyspectrum-tx">RC Transmitter (SkySpectrum TX)</h3>
+<h1 id="universal-transceiver">Universal Transceiver</h1>
+
+<div class="card-container">
+<div id="Transceiver" style="width:100%; height:500px;"></div>
+<script>
+    (function () {
+        // Get Container
+        const container = document.getElementById('Transceiver');
+        function aspectRatio() {
+            return container.clientWidth / container.clientHeight;
+        }
+
+        // Initialize Environment
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+
+        const camera = new THREE.PerspectiveCamera(45, aspectRatio(), 1, 1500);
+        camera.position.set(0, 0, 100);
+        camera.lookAt(0, 0, 0);
+
+        const scene = new THREE.Scene();
+
+        const light = new THREE.AmbientLight(0x6F6F6F);
+        scene.add(light);
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(10, 10, 10).normalize();
+        scene.add(directionalLight);
+
+
+        // Add OrbitControls for pan, zoom, and rotate
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true; // Add smooth damping (inertia)
+        controls.dampingFactor = 0.05; // Adjust damping strength
+        controls.screenSpacePanning = true; // Allow panning in screen space
+        controls.minDistance = 5; // Minimum zoom distance
+        controls.maxDistance = 1000; // Maximum zoom distance
+
+        // Load MTL files
+        const mtlLoader = new THREE.MTLLoader();
+        mtlLoader.load(
+            'https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/Universal%20Transceiver/3D%20Model/Universal%20Transceiver.mtl',    // mtl to load
+            (materials) => {
+                materials.preload();
+
+                // OBJ Loader | Initialize with MTL
+                const objLoader = new THREE.OBJLoader();
+                objLoader.setMaterials(materials);
+                objLoader.load(
+                    'https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/Universal%20Transceiver/3D%20Model/Universal%20Transceiver.obj',
+                    (object) => {
+                        // Get Object Dimensions
+                        const bounds = new THREE.Box3().setFromObject(object);
+                        const size = new THREE.Vector3();
+                        bounds.getSize(size);
+
+                        // Center the Object
+                        object.position.set(-size.x / 2, -size.y / 2, 0);
+                        scene.add(object);
+
+                        // Distance the Camera to always show 2*Object Height at all times | 50% spacing below object and 50% spacing above
+                        const cameraDistance = (1.3 * size.y) / (Math.tan((Math.PI / 180) * camera.fov));
+                        camera.position.set(0, 0, cameraDistance); // Set camera.position.y to 0
+                        camera.lookAt(scene.position);
+
+                        object.traverse((child) => {
+                            if (child.isMesh) {
+                                child.material.side = THREE.DoubleSide; // Render both sides
+                                child.material.needsUpdate = true;
+                            }
+                        });
+
+                        // Update Controls
+                        controls.update();
+                    },
+                    (xhr) => { console.log((xhr.loaded / xhr.total) * 100 + '% loaded of MTL'); },  // Loading Progress
+                    (error) => { alert(`Could not load Materials for 3D Viewer \n \n ${error}`); }  // Error in Loading
+                );
+            },
+            (xhr) => { console.log((xhr.loaded / xhr.total) * 100 + '% loaded of MTL'); },  // Loading Progress
+            (error) => { alert(`Could not load Materials for 3D Viewer \n \n ${error}`); }  // Error in Loading
+        );
+
+        // Create an animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = aspectRatio();
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        });
+    })();
+</script>
+<div style="max-width: 49%; max-height: auto; margin: 0 auto;">
+    <img src="https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/Universal%20Transceiver/images/Universal%20Transceiver%20-%202DF.png" style="width: 100%; height: 100%; border-radius: 5px" />
+</div>
+<div style="max-width: 49%; max-height: auto; margin: 0 auto;">
+    <img src="https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/Universal%20Transceiver/images/Universal%20Transceiver%20-%202DB.png" style="width: 100%; height: 100%; border-radius: 5px" />
+</div>
+</div>
+
+<ul>
+  <li><strong>Solder, Code and Use</strong></li>
+  <li><strong>Microcontroller:</strong> ESP32 Devkit V1</li>
+</ul>
+
+<h2 id="specifications">Specifications</h2>
+<h3 id="communication-modules">Communication Modules:</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Method</th>
+      <th style="text-align: center">Hardware</th>
+      <th style="text-align: left">Use Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">RF (Radio)</td>
+      <td style="text-align: center">nRF24l01 (with/without PA)</td>
+      <td style="text-align: left">For long distance communication / Direct communication</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Bluetooth</td>
+      <td style="text-align: center">ESP32 (Builtin)</td>
+      <td style="text-align: left">For receiving data via mobile phones</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">WiFi</td>
+      <td style="text-align: center">ESP32 (Builtin)</td>
+      <td style="text-align: left">For long distance communication / indirect communication</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="rf-range">RF Range:</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Master nRF</th>
+      <th style="text-align: center">Slave nRF</th>
+      <th style="text-align: left">Communication (in open areas)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">without PA</td>
+      <td style="text-align: center">without PA</td>
+      <td style="text-align: left">100m Half-Duplex</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">with PA</td>
+      <td style="text-align: center">without PA</td>
+      <td style="text-align: left">1km Simplex or 100m Half-Duplex</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">with PA</td>
+      <td style="text-align: center">with PA</td>
+      <td style="text-align: left">1km Half-Duplex</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">without PA</td>
+      <td style="text-align: center">with PA</td>
+      <td style="text-align: left">100m Half-Duplex (or 1km Simplex but from receiver to sender)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pins">Pins</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Pin Type</th>
+      <th style="text-align: center">Pin Count</th>
+      <th style="text-align: left">Pin Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">ADC (12-bit)</td>
+      <td style="text-align: center">13</td>
+      <td style="text-align: left">Analog Input pins, value ranges from 0 to 4095</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">DAC</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">Produces a clean analog output without using PWM</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">UART</td>
+      <td style="text-align: center">2 channels</td>
+      <td style="text-align: left">Serial Communication Channels</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">I2C</td>
+      <td style="text-align: center">5 (Hard-wired)</td>
+      <td style="text-align: left">I2C Communication (<strong>Bus Topology</strong> : can use unlimited components with unique addresses)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">PWM</td>
+      <td style="text-align: center">15</td>
+      <td style="text-align: left">Controlled square waves produced in a manner to “emulate” analog signals</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Capacitive Touch Sensing</td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: left">Pins that can detect human fingers by conduction</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RTC_GPIO</td>
+      <td style="text-align: center">13</td>
+      <td style="text-align: left">Wake up pins. Wakes up ESP32 from Ultra Power Saver mode</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Enable</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">Turns ESP32 on or off (negligible power is still consumed)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="rc-transmitter-mini---internal-circuit-for-rf-remote-control">RC Transmitter Mini - Internal Circuit for RF Remote Control</h1>
+
+<div class="card-container">
+<div id="Transmitter-Mini" style="width:100%; height:500px;"></div>
+<script>
+    (function () {
+        // Get Container
+        const container = document.getElementById('Transmitter-Mini');
+        function aspectRatio() {
+            return container.clientWidth / container.clientHeight;
+        }
+
+        // Initialize Environment
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+
+        const camera = new THREE.PerspectiveCamera(45, aspectRatio(), 1, 1500);
+        camera.position.set(0, 0, 100);
+        camera.lookAt(0, 0, 0);
+
+        const scene = new THREE.Scene();
+
+        const light = new THREE.AmbientLight(0x6F6F6F);
+        scene.add(light);
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+        directionalLight.position.set(10, 10, 10).normalize();
+        scene.add(directionalLight);
+
+
+        // Add OrbitControls for pan, zoom, and rotate
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true; // Add smooth damping (inertia)
+        controls.dampingFactor = 0.05; // Adjust damping strength
+        controls.screenSpacePanning = true; // Allow panning in screen space
+        controls.minDistance = 5; // Minimum zoom distance
+        controls.maxDistance = 1000; // Maximum zoom distance
+
+        // Load MTL files
+        const mtlLoader = new THREE.MTLLoader();
+        mtlLoader.load(
+            'https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/RC%20Transmitter%20Mini/3D%20Model/RC%20Transmitter%20Mini.mtl',    // mtl to load
+            (materials) => {
+                materials.preload();
+
+                // OBJ Loader | Initialize with MTL
+                const objLoader = new THREE.OBJLoader();
+                objLoader.setMaterials(materials);
+                objLoader.load(
+                    'https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/RC%20Transmitter%20Mini/3D%20Model/RC%20Transmitter%20Mini.obj',
+                    (object) => {
+                        // Get Object Dimensions
+                        const bounds = new THREE.Box3().setFromObject(object);
+                        const size = new THREE.Vector3();
+                        bounds.getSize(size);
+
+                        // Center the Object
+                        object.position.set(-size.x / 2, -size.y / 2, 0);
+                        scene.add(object);
+
+                        // Distance the Camera to always show 2*Object Height at all times | 50% spacing below object and 50% spacing above
+                        const cameraDistance = (1.3 * size.y) / (Math.tan((Math.PI / 180) * camera.fov));
+                        camera.position.set(0, 0, cameraDistance); // Set camera.position.y to 0
+                        camera.lookAt(scene.position);
+
+                        object.traverse((child) => {
+                            if (child.isMesh) {
+                                child.material.side = THREE.DoubleSide; // Render both sides
+                                child.material.needsUpdate = true;
+                            }
+                        });
+
+                        // Update Controls
+                        controls.update();
+                    },
+                    (xhr) => { console.log((xhr.loaded / xhr.total) * 100 + '% loaded of MTL'); },  // Loading Progress
+                    (error) => { alert(`Could not load Materials for 3D Viewer \n \n ${error}`); }  // Error in Loading
+                );
+            },
+            (xhr) => { console.log((xhr.loaded / xhr.total) * 100 + '% loaded of MTL'); },  // Loading Progress
+            (error) => { alert(`Could not load Materials for 3D Viewer \n \n ${error}`); }  // Error in Loading
+        );
+
+        // Create an animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = aspectRatio();
+            camera.updateProjectionMatrix();
+            renderer.setSize(container.clientWidth, container.clientHeight);
+        });
+    })();
+</script>
+<div style="max-width: 49%; max-height: auto; margin: 0 auto;">
+    <img src="https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/RC%20Transmitter%20Mini/images/RC%20Transmitter%20Mini%20-%202DF.png" style="width: 100%; height: 100%; border-radius: 5px" />
+</div>
+<div style="max-width: 49%; max-height: auto; margin: 0 auto;">
+    <img src="https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/RC%20Transmitter%20Mini/images/RC%20Transmitter%20Mini%20-%202DB.png" style="width: 100%; height: 100%; border-radius: 5px" />
+</div>
+</div>
+
+<ul>
+  <li><strong>Microcontroller :</strong> Arduino Nano</li>
+</ul>
+
+<h2 id="specifications-1">Specifications</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Pin/Port type</th>
+      <th style="text-align: center">Count</th>
+      <th style="text-align: left">Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">FTDI</td>
+      <td style="text-align: center">0 + 1.A</td>
+      <td style="text-align: left">For greater accessibility of the programmer</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">nRF24l01</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">RF communication</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">MPU6050</td>
+      <td style="text-align: center">0 + 1.B</td>
+      <td style="text-align: left">Controlling via Orientation of the board</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Joysticks</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">Controlling via Joysticks</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Potentiometers</td>
+      <td style="text-align: center">2 + 2.B</td>
+      <td style="text-align: left">Controlling via Potentiometers</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Pushbuttons</td>
+      <td style="text-align: center">4 + 2.A</td>
+      <td style="text-align: left">Controlling via Pushbuttons</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Toggle Switches</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">Controlling via Pushbuttons</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>NOTE: Count is written in the format “Hard-Wired + Selectable.Selector</strong></p>
+
+<p><strong>For Pins/Ports with the same selector, only one of them will work at a time</strong></p>
+
+<hr />
+
+<h2 id="development--customization">Development &amp; Customization</h2>
+<ul>
+  <li><strong>Programming Platform:</strong> Arduino IDE</li>
+  <li><strong>Core Libraries:</strong>
+    <ul>
+      <li>RF24 (For nRF24L01 wireless communication)</li>
+    </ul>
+  </li>
+  <li><strong>Configurable Parameters:</strong> Any settings adjustable in the Arduino IDE, including RF24 settings such as frequency, data rate, and power level.</li>
+</ul>
+
+<h2 id="applications">Applications</h2>
+<p>SkySpectrum is designed for flexible, multi-purpose applications, including:</p>
+<ul>
+  <li><strong>RC Airplanes &amp; Drones:</strong> Long-range, stable wireless control.</li>
+  <li><strong>Smart Home Automation:</strong> Wireless integration with home automation systems.</li>
+  <li><strong>Bluetooth/WiFi-Controlled Vehicles:</strong> Control RC cars and boats seamlessly.</li>
+  <li><strong>General RF-Based Wireless Systems:</strong> Ideal for various wireless control applications.</li>
+</ul>
+
+<h3 id="repository-structure">Repository Structure</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Folder</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>PCBs/</strong></td>
+      <td>Custom-designed PCB schematics and Gerber files</td>
+    </tr>
+    <tr>
+      <td><strong>PCBs/Discontinued</strong></td>
+      <td>Discontinued variations</td>
+    </tr>
+    <tr>
+      <td><strong>PCBs/RC Transmitter Mini</strong></td>
+      <td>The PCB files for the RC Transmitter Mini</td>
+    </tr>
+    <tr>
+      <td><strong>PCBs/Universal Transceiver</strong></td>
+      <td>The PCB files for the Universal Transceiver</td>
+    </tr>
+    <tr>
+      <td><strong>README.md</strong></td>
+      <td>Project documentation and overview</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h1 id="discontinued">Discontinued</h1>
+<p>The following architectures were discontinued because of PCB complexity and inability to have it manufactured locally in Pakistan.</p>
+
+<p><strong>RC Transmitter (SkySpectrum TX)</strong></p>
 <ul>
   <li><strong>Microcontroller:</strong> Arduino Nano</li>
   <li><strong>Communication Method:</strong>
@@ -206,7 +648,7 @@
   <li><strong>Functionality:</strong> Reads input data, processes it into structured packets, and transmits wirelessly over RF.</li>
 </ul>
 
-<h3 id="universal-receiver-skyspectrum-rx">Universal Receiver (SkySpectrum RX)</h3>
+<p><strong>Universal Receiver (SkySpectrum RX)</strong></p>
 <ul>
   <li><strong>Microcontroller:</strong> ESP32 Devkit V1</li>
   <li><strong>Communication Modules:</strong>
@@ -244,7 +686,7 @@
   <li><strong>Pseudo-Transmitter Mode:</strong> The receiver can be reconfigured as a transmitter to send additional data, such as environmental readings or external control inputs.</li>
 </ul>
 
-<h2 id="communication-capabilities">Communication Capabilities</h2>
+<p><strong>Communication Capabilities</strong></p>
 
 <table>
   <thead>
@@ -274,252 +716,6 @@
 </table>
 
 <p><strong>NOTE: Transmission range of receiver can be extended to 1km for when using PA Variant of nRF24l01</strong></p>
-
-<h2 id="development--customization">Development &amp; Customization</h2>
-<ul>
-  <li><strong>Programming Platform:</strong> Arduino IDE</li>
-  <li><strong>Core Libraries:</strong>
-    <ul>
-      <li>RF24 (For nRF24L01 wireless communication)</li>
-      <li>Custom MPU6050 library (may or may not be developed)</li>
-    </ul>
-  </li>
-  <li><strong>Configurable Parameters:</strong> Any settings adjustable in the Arduino IDE, including RF24 settings such as frequency, data rate, and power level.</li>
-</ul>
-
-<h2 id="applications">Applications</h2>
-<p>SkySpectrum is designed for flexible, multi-purpose applications, including:</p>
-<ul>
-  <li><strong>RC Airplanes &amp; Drones:</strong> Long-range, stable wireless control.</li>
-  <li><strong>Smart Home Automation:</strong> Wireless integration with home automation systems.</li>
-  <li><strong>Bluetooth/WiFi-Controlled Vehicles:</strong> Control RC cars and boats seamlessly.</li>
-  <li><strong>General RF-Based Wireless Systems:</strong> Ideal for various wireless control applications.</li>
-</ul>
-
-<h3 id="repository-structure">Repository Structure</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Folder</th>
-      <th>Purpose</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>PCBs/</strong></td>
-      <td>Custom-designed PCB schematics and Gerber files</td>
-    </tr>
-    <tr>
-      <td><strong>PCBs/RC Receiver</strong></td>
-      <td>Discontinued (Replaced by Universal Receiver)</td>
-    </tr>
-    <tr>
-      <td><strong>PCBs/Universal Receiver</strong></td>
-      <td>The main receiver module</td>
-    </tr>
-    <tr>
-      <td><strong>PCBs/RC Transmitter</strong></td>
-      <td>The main transmitter module</td>
-    </tr>
-    <tr>
-      <td><strong>README.md</strong></td>
-      <td>Project documentation and overview</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="getting-started">Getting Started</h2>
-<ul>
-  <li><strong>No Special Setup Required:</strong> Simply solder the components and upload the firmware.</li>
-  <li><strong>MPU6050 Calibration:</strong> Recommended for optimal motion tracking.</li>
-</ul>
-
-<hr />
-
-<p>SkySpectrum is engineered to be a <strong>versatile, high-performance communication system</strong> for various wireless applications. Whether you’re piloting an RC drone, setting up a smart home network, or experimenting with RF technology, SkySpectrum provides the tools and flexibility to bring your projects to life.</p>
-
-<hr />
-
-<h1 id="3d-models-of-pcbs">3D Models of PCBs</h1>
-<h3 id="rc-transmitter">RC Transmitter</h3>
-
-<div id="Transmitter" style="width:100%; height:500px;"></div>
-
-<script>
-    (function () {
-        // Get Container
-        const container = document.getElementById('Transmitter');
-        function aspectRatio() {
-            return container.clientWidth / container.clientHeight;
-        }
-  
-        // Initialize Environment
-        const renderer = new THREE.WebGLRenderer({ antialias : true});
-        renderer.setSize( container.clientWidth, container.clientHeight );
-        container.appendChild( renderer.domElement );
-  
-        const camera = new THREE.PerspectiveCamera( 45, aspectRatio(), 1, 1500 );
-        camera.position.set( 0, 0, 100 );
-        camera.lookAt( 0, 0, 0 );
-  
-        const scene = new THREE.Scene();
-  
-        const light = new THREE.AmbientLight(0xFFFFFF);
-        scene.add(light);
-  
-        // Add OrbitControls for pan, zoom, and rotate
-        const controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true; // Add smooth damping (inertia)
-        controls.dampingFactor = 0.05; // Adjust damping strength
-        controls.screenSpacePanning = true; // Allow panning in screen space
-        controls.minDistance = 5; // Minimum zoom distance
-        controls.maxDistance = 1000; // Maximum zoom distance
-  
-        // Load MTL files
-        const mtlLoader = new THREE.MTLLoader();
-        mtlLoader.load(
-            'https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/RC%20Transmitter/3D%20Model/RC%20Transmitter.mtl',    // mtl to load
-            (materials) => {
-                materials.preload();
-  
-                // OBJ Loader | Initialize with MTL
-                const objLoader = new THREE.OBJLoader();
-                objLoader.setMaterials(materials);
-                objLoader.load(
-                    'https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/RC%20Transmitter/3D%20Model/RC%20Transmitter.obj',
-                    (object) => {
-                        // Get Object Dimensions
-                        const bounds = new THREE.Box3().setFromObject(object);
-                        const size = new THREE.Vector3();
-                        bounds.getSize(size);
-  
-                        // Center the Object
-                        object.position.set(-size.x/2, -size.y/2, 0);
-                        scene.add(object);
-  
-                        // Distance the Camera to always show 2*Object Height at all times | 50% spacing below object and 50% spacing above
-                        const cameraDistance = (1.3*size.y) / (Math.tan((Math.PI/180) * camera.fov));
-                        camera.position.set(0, 0, cameraDistance); // Set camera.position.y to 0
-                        camera.lookAt(scene.position);
-  
-                        // Update Controls
-                        controls.update();
-                    },
-                    (xhr) => { console.log((xhr.loaded / xhr.total) * 100 + '% loaded of MTL'); },  // Loading Progress
-                    (error) => { alert(`Could not load Materials for 3D Viewer \n \n ${error}`); }  // Error in Loading
-                );
-            },
-            (xhr) => { console.log((xhr.loaded / xhr.total) * 100 + '% loaded of MTL'); },  // Loading Progress
-            (error) => { alert(`Could not load Materials for 3D Viewer \n \n ${error}`); }  // Error in Loading
-        );
-  
-        // Create an animation loop
-        function animate() {
-            requestAnimationFrame(animate);
-            controls.update();
-            renderer.render( scene, camera );
-        }
-        animate();
-  
-        // Handle window resize
-        window.addEventListener('resize', () => {
-        camera.aspect = aspectRatio();
-        camera.updateProjectionMatrix();
-        renderer.setSize(container.clientWidth, container.clientHeight);
-        });
-    })();
-</script>
-
-<h3 id="universal-receiver">Universal Receiver</h3>
-
-<div id="Receiver" style="width:100%; height:500px;"></div>
-
-<script>
-    (function () {
-        // Get Container
-        const container = document.getElementById('Receiver');
-        function aspectRatio() {
-            return container.clientWidth / container.clientHeight;
-        }
-  
-        // Initialize Environment
-        const renderer = new THREE.WebGLRenderer({ antialias : true});
-        renderer.setSize( container.clientWidth, container.clientHeight );
-        container.appendChild( renderer.domElement );
-  
-        const camera = new THREE.PerspectiveCamera( 45, aspectRatio(), 1, 1500 );
-        camera.position.set( 0, 0, 100 );
-        camera.lookAt( 0, 0, 0 );
-  
-        const scene = new THREE.Scene();
-  
-        const light = new THREE.AmbientLight(0xFFFFFF);
-        scene.add(light);
-  
-        // Add OrbitControls for pan, zoom, and rotate
-        const controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true; // Add smooth damping (inertia)
-        controls.dampingFactor = 0.05; // Adjust damping strength
-        controls.screenSpacePanning = true; // Allow panning in screen space
-        controls.minDistance = 5; // Minimum zoom distance
-        controls.maxDistance = 1000; // Maximum zoom distance
-  
-        // Load MTL files
-        const mtlLoader = new THREE.MTLLoader();
-        mtlLoader.load(
-            'https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/Universal%20Receiver/3D%20Model/Universal%20Receiver.mtl',    // mtl to load
-            (materials) => {
-                materials.preload();
-  
-                // OBJ Loader | Initialize with MTL
-                const objLoader = new THREE.OBJLoader();
-                objLoader.setMaterials(materials);
-                objLoader.load(
-                    'https://raw.githubusercontent.com/MUmarShahbaz/SkySpectrum/refs/heads/main/PCBs/Universal%20Receiver/3D%20Model/Universal%20Receiver.obj',
-                    (object) => {
-                        // Get Object Dimensions
-                        const bounds = new THREE.Box3().setFromObject(object);
-                        const size = new THREE.Vector3();
-                        bounds.getSize(size);
-  
-                        // Center the Object
-                        object.position.set(-size.x/2, -size.y/2, 0);
-                        scene.add(object);
-  
-                        // Distance the Camera to always show 2*Object Height at all times | 50% spacing below object and 50% spacing above
-                        const cameraDistance = (1.3*size.y) / (Math.tan((Math.PI/180) * camera.fov));
-                        camera.position.set(0, 0, cameraDistance); // Set camera.position.y to 0
-                        camera.lookAt(scene.position);
-  
-                        // Update Controls
-                        controls.update();
-                    },
-                    (xhr) => { console.log((xhr.loaded / xhr.total) * 100 + '% loaded of MTL'); },  // Loading Progress
-                    (error) => { alert(`Could not load Materials for 3D Viewer \n \n ${error}`); }  // Error in Loading
-                );
-            },
-            (xhr) => { console.log((xhr.loaded / xhr.total) * 100 + '% loaded of MTL'); },  // Loading Progress
-            (error) => { alert(`Could not load Materials for 3D Viewer \n \n ${error}`); }  // Error in Loading
-        );
-  
-        // Create an animation loop
-        function animate() {
-            requestAnimationFrame(animate);
-            controls.update();
-            renderer.render( scene, camera );
-        }
-        animate();
-  
-        // Handle window resize
-        window.addEventListener('resize', () => {
-        camera.aspect = aspectRatio();
-        camera.updateProjectionMatrix();
-        renderer.setSize(container.clientWidth, container.clientHeight);
-        });
-    })();
-</script>
-
 
         
       </div>
