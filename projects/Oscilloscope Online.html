@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Oscilloscope Online">
-    <meta name="description" content="A web-based oscilloscope that interfaces with microcontrollers to capture, visualize, and analyze real-time signals remotely.
-">
-    <meta name="keywords" content="">
-    <meta name="author" content="M. Umar Shahbaz">
-    <meta property="og:title" content="Oscilloscope Online">
-    <meta property="og:description" content="A web-based oscilloscope that interfaces with microcontrollers to capture, visualize, and analyze real-time signals remotely.
-">
-    <meta property="og:image" content="https://m-umar.me/assets/media/Projects/OO/OO.png">
-    <meta property="og:url" content="/projects/Oscilloscope Online.html">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Oscilloscope Online">
-    <meta name="twitter:description" content="A web-based oscilloscope that interfaces with microcontrollers to capture, visualize, and analyze real-time signals remotely.
-">
-    <meta name="twitter:image" content="https://m-umar.me/assets/media/Projects/OO/OO.png">
 
-    <link rel="stylesheet" href="/assets/style/master.css">
-    <link rel="stylesheet" href="/assets/style/elements.css">
-    <link rel="stylesheet" href="/assets/style/project.css">
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/media/icon.png">
-    <script defer src="/assets/scripts/nav.js"></script>
-    
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Oscilloscope Online">
+  <meta name="description" content="A web-based oscilloscope that interfaces with microcontrollers to capture, visualize, and analyze real-time signals remotely.
+">
+  <meta name="keywords" content="">
+  <meta name="author" content="M. Umar Shahbaz">
+  <meta property="og:title" content="Oscilloscope Online">
+  <meta property="og:description" content="A web-based oscilloscope that interfaces with microcontrollers to capture, visualize, and analyze real-time signals remotely.
+">
+  <meta property="og:image" content="https://m-umar.me/assets/media/Projects/OO/OO.png">
+  <meta property="og:url" content="/projects/Oscilloscope Online.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Oscilloscope Online">
+  <meta name="twitter:description" content="A web-based oscilloscope that interfaces with microcontrollers to capture, visualize, and analyze real-time signals remotely.
+">
+  <meta name="twitter:image" content="https://m-umar.me/assets/media/Projects/OO/OO.png">
 
-    <title>Oscilloscope Online</title>
-  </head>
-  <body>
-    <div class="navigation">
+  <link rel="stylesheet" href="/assets/style/master.css">
+  <link rel="stylesheet" href="/assets/style/elements.css">
+  <link rel="stylesheet" href="/assets/style/project.css">
+  <link rel="icon" type="image/x-icon" href="/assets/media/icon.png">
+  <script defer src="/assets/scripts/nav.js"></script>
+  
+  
+
+  <title>Oscilloscope Online</title>
+</head>
+
+<body>
+  <div class="navigation">
     <button title="Menu" id="menu">☰</button>
-    <nav class="dropdown-content">
+    <nav class="dropdown-content navigation-bar">
         <a href="/events&affiliations/">Events & Affiliations</a>
         <a href="/publications/">Publications</a>
         <a href="/projects/">Projects</a>
@@ -47,9 +46,9 @@
     <div id="progress"></div>
     <div id="progress" style="width: 100%; background-color: #272626; z-index: 999;"></div>
 </div>
-    <div id="main-outer">
-      <div class="mainPage">
-        <div class="Intro">
+  <div id="main-outer">
+    <div class="mainPage">
+      <div class="Intro">
   
     <div class="Icon">
       <div style="max-width: 300px; max-height: 300px; margin: 0 auto;">
@@ -130,18 +129,22 @@
     
   </div>
 </div>
-        <hr>
+      <hr>
+      
+      <div class="card-container">
         
-          <div class="card-container">
-            
-              <a href="https://github.com/MUmarShahbaz/Oscilloscope-Online" rel="external nofollow noopener" target="_blank">
-    <img style="width: 100%; height: auto;" alt="MUmarShahbaz/Oscilloscope-Online" src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=Oscilloscope-Online&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3">
+        <a 
+    href="https://github.com/MUmarShahbaz/Oscilloscope-Online"
+    rel="external nofollow noopener" target="_blank">
+    <img style="width: 100%; height: auto;"
+        alt="MUmarShahbaz/Oscilloscope-Online"
+        src="https://github-readme-stats.vercel.app/api/pin/?username=MUmarShahbaz&amp;repo=Oscilloscope-Online&amp;theme=default&amp;show_owner=false&amp;description_lines_count=3">
 </a>
-            
-          </div>
-          <hr>
         
-        <h2 id="how-it-began">How it began</h2>
+      </div>
+      <hr>
+      
+      <h2 id="how-it-began">How it began</h2>
 <p>Initially I was working on a circuit where I ended up needing to measure the frequency of a clock circuit. My first attempt was using a slow motion camera and counting the number of times an LED connected to it would light up in 1 second, but doing it over and over again became tedious. My second solution was to connect it to a serial device and count the number of 1s and 0s, I soon realized that the sea of 1s and 0s would not allow me to do so. Finally I tried to use the serial plotter provided in the Arduino IDE and count the number of peaks in 1 second. In the Arduino IDE you can’t view more than a certain number of readings at once, this meant that I would need to count the peaks whilst it is plotting around 50 readings per second. After exhausting all options, I decided to create my own Plug &amp; Play Serial Data Plotter. This is the Oscilloscope Online.</p>
 
 <h2 id="goal">Goal</h2>
@@ -186,7 +189,7 @@
 <p>The website also provides a link to the code for the website as well as a link telling how to use the oscilloscope locally which offers even more customizable options.</p>
 
 <div class="card-container">
-  <div class="card" style=" ">
+  <div class="card" id="View-OO" style=" ">
     <a href="https://mumarshahbaz.github.io/Oscilloscope-Online/">
       <div class="card-body">
         <h1 class="redirect">Open Oscilloscope</h1>
@@ -278,15 +281,16 @@
     <img src="https://raw.githubusercontent.com/MUmarShahbaz/mumarshahbaz.github.io/refs/heads/master/assets/img/oscilloscope-online/LDR-1k-10k-100k-1M.png" style="width: 100%; height: 100%; border-radius: " />
 </div>
 
+      
+      <br><br><br>
+      <hr>
+      <h1>Relevant Projects</h1>
+      <div class="card-container" id="related-projects">
         
-          <br><br><br>
-          <hr>
-          <h1>Relevant Projects</h1>
-          <div class="card-container">
-            
-              
-              
-<div class="card Link"><a href="/projects/Graph Plotter.html" target="_self">
+        
+        
+<div class="card Link" ><a href="/projects/Graph Plotter.html"
+        target="_self">
         
         <img src="/assets/media/Projects/GP/GP.png" class="card-image">
         
@@ -299,13 +303,14 @@
         <p class="viewMore">More Information</p>
     </a></div>
 
-            
-          </div>
         
       </div>
+      
     </div>
-    <footer>
+  </div>
+  <footer>
     <p>Thanks for visiting</p>
 </footer>
-  </body>
+</body>
+
 </html>
